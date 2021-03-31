@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Algorithm - Note</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Note</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">C++ Base <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../c_base/callable/" class="dropdown-item">callable</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/class/" class="dropdown-item">class</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/Complementary/" class="dropdown-item">complementary</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/const/" class="dropdown-item">const</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/constructor_destructor/" class="dropdown-item">constructor_destructor</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/container/" class="dropdown-item">container</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/exception/" class="dropdown-item">exception</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/function/" class="dropdown-item">function</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/friend_template/" class="dropdown-item">friend_template</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/initialization/" class="dropdown-item">initialization</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inline/" class="dropdown-item">inline</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inherit/" class="dropdown-item">inherit</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/iterator/" class="dropdown-item">iterator</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/memory/" class="dropdown-item">memory</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/new_delete/" class="dropdown-item">new_delete</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/pointer_reference/" class="dropdown-item">pointer_reference</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/static/" class="dropdown-item">static</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/virtual/" class="dropdown-item">virtual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EffectiveCPP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../EffectiveCPP/rule/" class="dropdown-item">RULES</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Linux os <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../os/0_index/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../os/1_introduction/" class="dropdown-item">1_开始</a>
+</li>
+                                    
+<li>
+    <a href="../../os/2_as86/" class="dropdown-item">2_汇编语法</a>
+</li>
+                                    
+<li>
+    <a href="../../os/3_80x86_protect_mode/" class="dropdown-item">3_保护模式</a>
+</li>
+                                    
+<li>
+    <a href="../../os/4_kernel_struct/" class="dropdown-item">4_内核体系结构</a>
+</li>
+                                    
+<li>
+    <a href="../../os/5_os/" class="dropdown-item">5_现代操作系统</a>
+</li>
+                                    
+<li>
+    <a href="../../os/7_simple_os/" class="dropdown-item">7_simple_os</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MySQL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../MySQL/0_start/" class="dropdown-item">home</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DataStruct <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Tree/" class="dropdown-item">Tree</a>
+</li>
+                                    
+<li>
+    <a href="../Sort/" class="dropdown-item">Sort</a>
+</li>
+                                    
+<li>
+    <a href="../Graph/" class="dropdown-item">Graph</a>
+</li>
+                                    
+<li>
+    <a href="../OtherStruct/" class="dropdown-item">Others</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Algorithm</a>
+</li>
+                                    
+<li>
+    <a href="../API/" class="dropdown-item">API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Network <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Network/home/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/1_application/" class="dropdown-item">application</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/2_transport/" class="dropdown-item">transport</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/3_network/" class="dropdown-item">network</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/4_link/" class="dropdown-item">link</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/5_netsafe/" class="dropdown-item">safe</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">interview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interview/" class="dropdown-item">面试</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../OtherStruct/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../API/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#algorithm" class="nav-link">Algorithm</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#binary-search" class="nav-link">Binary Search</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dp" class="nav-link">树形DP</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#shuffle" class="nav-link">实现shuffle</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">约瑟夫环</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">十进制转换</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">快速选择法</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lru" class="nav-link">LRU</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lfu" class="nav-link">LFU</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#kmp" class="nav-link">KMP</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="algorithm">Algorithm</h1>
+<h2 id="binary-search">Binary Search</h2>
+<pre><code class="language-C">    //二分查找, vec递增，
+    int binarySerach(std::vector&lt;int&gt; &amp;vec, int target){
+        if(vec.size()==0 || target&lt;vec[0] || target&gt;vec[vec.size()-1])return -1;
+
+        int left=0, right=vec.size()-1;
+        while(left&lt;=right){
+            int mid=left+(right-left)/2;
+            if(target==vec[mid])return mid;
+            else if(vec[mid] &lt; target) left=mid+1;
+            else if(vec[mid] &gt; target) right=mid-1;
+        }
+        return -1;
+    }
+    // 二分查找，寻找左侧边界, 即最左边的target
+    int binarySearchLSide(std::vector&lt;int&gt;&amp; vec, int target){
+        if(vec.size()==0 || target&lt;vec[0] || target&gt;vec[vec.size()-1])return -1;
+
+        int left=0, right=vec.size()-1;
+        while(left&lt;=right){
+            int mid=left+(right-left)/2;
+            if(target==vec[mid])right=mid-1; //收缩右侧边界，锁定左侧
+            else if(vec[mid] &lt; target) left=mid+1;
+            else if(vec[mid] &gt; target) right=mid-1;
+        }
+        if(left&gt;=vec.size() || vec[left]!=target) return -1;
+        return left;
+    }
+
+    // 二分查找，寻找右侧边界，即最右边的target
+    int binarySearchRSide(std::vector&lt;int&gt;&amp; vec, int target){
+        if(vec.size()==0 || target&lt;vec[0] || target&gt;vec[vec.size()-1])return -1;
+
+        int left=0, right=vec.size()-1;
+        while(left&lt;=right){ //结束循环条件 right=left-1
+            int mid=left+(right-left)/2;
+            if(target==vec[mid])left=mid+1; //收缩左侧边界，锁定右侧
+            else if(vec[mid] &lt; target) left=mid+1;
+            else if(vec[mid] &gt; target) right=mid-1;
+        }
+        if(right&lt;0 || vec[right]!=target) return -1;
+        else return right;
+    }
+</code></pre>
+<h2 id="dp">树形DP</h2>
+<p><img alt="avatar" src="../../images/DataStruct/22.png" /></p>
+<pre><code class="language-C">vector&lt;int&gt; num_son;    //存储每个节点的子节点个数
+vector&lt;vector&lt;int&gt;&gt; sons;   //存储每个节点的子节点
+vector&lt;int&gt; w; //存储快乐指数
+vector&lt;bool&gt; father; //该节点是否有父节点
+
+void dfs(int root, vector&lt;vector&lt;int&gt;&gt;&amp; dp){
+    dp[root][1] = w[root];
+    for(int i=0;i&lt;num_son[root];i++){
+        int son = sons[root][i];
+        dfs(son, dp);
+        dp[root][1] += dp[son][0];
+        dp[root][0] += max(dp[son][0], dp[son][1]);
+    }
+}
+int main(){
+    int N;
+    cin &gt;&gt; N;
+    num_son.resize(N);
+    sons.resize(N);
+    w.resize(N);
+    father.resize(N);
+
+    vector&lt;vector&lt;int&gt;&gt; dp(N, vector&lt;int&gt;(2));
+
+    for(int i=0;i&lt;N;i++)cin &gt;&gt; w[i];
+    //输入子节点和其父节点，0~N-1
+    for(int i=0;i&lt;N-1;i++){
+        int x, y;   //x为子节点，y为父节点
+        cin&gt;&gt;x&gt;&gt;y;
+        num_son[y]++;
+        sons[y].push_back(x);
+        father[x]=true;
+    }
+    int root=0;
+    while(father[root])root++;
+    dfs(root, dp);
+
+    cout&lt;&lt;&quot;result:&quot;&lt;&lt;max(dp[root][0], dp[root][1])&lt;&lt;endl;
+    return 0;
+}
+
+</code></pre>
+<h2 id="shuffle">实现shuffle</h2>
+<p>&emsp;要取得 [a,b] 的随机整数，使用 (rand() % (b-a+1)) + a;<br />
+&emsp;要取得 (a,b] 的随机整数，使用 (rand() % (b-a)) +a+1;  </p>
+<pre><code class="language-C">#define randInt(a, b) ((rand()%(b-a+1))+a) //产生[a, b]之间的随机整数
+
+int N=20;
+vector&lt;int&gt; vec(N);
+for(int i=0;i&lt;N;i++)vec[i]=i;
+
+void shuffle(vector&lt;int&gt;&amp; vec){
+    srand((unsigned)time(NULL)); //采用时间作为随机数种子
+    for(int i=N-1;i&gt;0;i--){ //  i&gt;0与i&gt;=0效果一致
+        int j = randInt(0, i);
+        swap(vec[i], vec[j]);
+    }
+
+    //下面亦可
+    // for(int i=0;i&lt;N;i++)    // i&lt;N与i&lt;N-1, 效果一致，
+    // {
+    //     int j = randInt(i, N-1);
+    //     swap(vec[i], vec[j]);
+    // }
+}
+</code></pre>
+<p>&emsp;如何验证shuffle效果:<br />
+&emsp;首先算法产生的结果必须有N!种，其次对于每种可能出现的结果的概率必须相等。<br />
+&emsp;针对序列0~N-1，执行M次(如1万次或十万次)shuffle算法，记录各种结果的出现次数，各种结果的的出现次数应接近1/N!，这里N一般取个比较小的数，如5或6;<br />
+&emsp;或者让数组中只有某一位为1，其余位为0，依旧执行M次shuffle算法，记录1出现在0~N-1位上的次数，每个位置出现次数应该接近。  </p>
+<pre><code class="language-C">void testShuffle(){
+    vector&lt;int&gt; vec{1, 0, 0, 0, 0};
+    int M=10000;
+    vector&lt;int&gt; res(5);
+    for(int i=0;i&lt;M;i++){
+        shuffle(vec);
+        int j=0;
+        while(vec[j]==0)j++;
+        res[j]++;
+    }
+    for(auto&amp; v:res){
+        cout&lt;&lt;v&lt;&lt;&quot; &quot;;
+    }
+}
+</code></pre>
+<h2 id="_1">约瑟夫环</h2>
+<p>//0,1,···,n-1这n个数字排成一个圆圈，
+//从数字0开始，每次从这个圆圈里删除第M个数字（删除后从下一个数字开始计数）。</p>
+<pre><code class="language-C">//这里打印的是删除顺序，下标基1
+void Josephus2_1(int M, int N){
+    int a[N+1]; //存放指针，a[i]存放着下一个元素
+    int b[N+1]; //出链顺序
+    int i, j, k;
+    for(int i=1;i&lt;N;i++)a[i]=i+1;
+    a[N]=1; //形成闭环
+
+    k=1; j=N;
+    for(i=1;i&lt;=N;i++){
+        while(k&lt;M){
+            j=a[j]; //移动指针
+            k++;
+        }
+        b[i]=a[j];
+        a[j] = a[a[j]];
+        k=1;
+        printf(&quot;%dout a[%d]=%d\n&quot;, b[i], j, a[j]);
+    }
+    for(int i=1;i&lt;=N;i++)std::cout&lt;&lt;b[i]&lt;&lt;&quot; &quot;;      //cout&lt;&lt;b[i]-1, 可以基0
+    std::cout&lt;&lt;std::endl;
+}
+
+//这里仅求出这个圆圈里剩下的最后一个数字
+void Josephus3(int M, int N){
+    int f=0;
+    for(int i=2;i&lt;=N;i++)
+        f = (f+M)%i;
+    std::cout&lt;&lt;f&lt;&lt;std::endl; 
+}
+</code></pre>
+<h2 id="_2">十进制转换</h2>
+<p>&emsp;辗转相除法
+<img alt="avatar" src="../../images/DataStruct/24.png" /></p>
+<pre><code class="language-C">void trans(int target, int num){
+    //规定输出负数的num进制形式为 “-”+abs(target)的num进制
+    stack&lt;int&gt; st;
+    bool neg=false;
+    if(target&lt;0){
+        target*=-1;
+        neg=true;
+    }
+
+    do{
+        st.push(target%num);
+        target /= num;
+    }while(target!=0);  
+    if(neg)cout&lt;&lt;&quot;-&quot;;
+    while(!st.empty()){
+        cout&lt;&lt;st.top();
+        st.pop();
+    }
+}
+</code></pre>
+<h2 id="_3">快速选择法</h2>
+<pre><code class="language-C">// 寻找第K大元素，也可用于计算TOPK，
+class Solution {
+public:
+    int findKth(vector&lt;int&gt; vec, int n, int k) {
+        // write code here
+        int left=0, right=n-1;
+        k = n-k;    // 这里修改 k=k-1; 则求得就是第k小的元素
+        int pos=0;
+        while(true){
+            pos = quickFind(vec, left, right);
+            if(pos==k)break;
+            else if(pos &lt; k)left=pos+1;
+            else right=pos-1;
+        }
+        return vec[pos];    //此时位置&gt;=pos的元素，即为TOPK，整个数组是按增序进行快排的
+    }
+private:
+    void median3(vector&lt;int&gt;&amp; vec, int left, int right){
+        int mid = (left+right)/2;
+        if(vec[mid] &lt; vec[left])
+            swap(vec[mid], vec[left]);
+        if(vec[right] &lt; vec[left])swap(vec[left], vec[right]);
+        if(vec[mid] &gt; vec[right])swap(vec[mid], vec[right]);
+        swap(vec[mid], vec[right-1]);
+    }
+    int quickFind(vector&lt;int&gt;&amp; vec, int left, int right){
+        if(left==right)return left;
+        else if(left+2&lt;=right){
+            median3(vec, left, right);
+            int pivot=vec[right-1];
+            int i=left, j=right-1;
+            while(true){
+                while(vec[++i] &lt; pivot);
+                while(vec[--j] &gt; pivot);
+                if(i&lt;j)swap(vec[i], vec[j]);
+                else break;
+            }
+            swap(vec[i], vec[right-1]);
+            return i;
+        }else{
+            if(vec[left]&gt;vec[right])
+                swap(vec[left], vec[right]);
+            return left;
+        }
+    }
+};
+</code></pre>
+<h2 id="lru">LRU</h2>
+<pre><code>// 手动实现双向链表
+struct DNode{
+    int key, val;
+    DNode* next, *prev;
+    DNode(int k, int v):key(k), val(v), next(nullptr), prev(nullptr){}
+};
+class DoubleList{   //靠近链表尾部的数据表示最近使用的
+private:
+    DNode* head, *tail;
+    int _size;
+public:
+    DoubleList():_size(0){
+        head = new DNode(0, 0);
+        tail = new DNode(0, 0);
+        head-&gt;next=tail;
+        tail-&gt;prev=head;
+    }
+    void addLast(DNode* x){
+        x-&gt;prev=tail-&gt;prev;
+        x-&gt;next=tail;
+        tail-&gt;prev-&gt;next = x;
+        tail-&gt;prev=x;
+        _size++;
+    }
+    void remove(DNode* x, bool reuse){   //要求x一定在链表中
+        x-&gt;prev-&gt;next=x-&gt;next;
+        x-&gt;next-&gt;prev = x-&gt;prev;
+        _size--;
+        if(!reuse)  //因为x节点可能是被永久删除，也有可能是被移到链表尾
+            delete x;
+    }
+    int removeFirst(){
+        if(head-&gt;next == tail)return 0;
+        int key=head-&gt;next-&gt;key;
+        remove(head-&gt;next, false);
+        return key;
+    }
+    int size() const{return _size;}
+};
+
+class LRUCache{
+private:
+    unordered_map&lt;int, DNode*&gt; umap;
+    DoubleList cache;
+    int cap;    //最大容量
+
+    //将某个key提升为最近使用的
+    void makeRecently(int key){
+        DNode* x=umap[key];
+        cache.remove(x, true);
+        cache.addLast(x);
+    }
+    //添加最近使用的
+    void addRecently(int key, int val){
+        DNode *x=new DNode(key, val);
+        cache.addLast(x);
+        umap[key] = x;
+    }
+    //删除某个key
+    void deleteKey(int key){
+        if(umap.count(key)==0)return;
+
+        DNode *x=umap[key];
+        cache.remove(x, false);
+        umap.erase(key);
+    }
+    //删除最久未使用的
+    void removeLeastRecently(){
+        umap.erase(cache.removeFirst());
+    }
+public:
+    LRUCache(int capacity): cap(capacity){}
+    int get(int key){
+        if(umap.count(key)==0) return -1;
+        makeRecently(key);  //将该数据提升为最近使用
+        return umap[key]-&gt;val;
+    }
+    void put(int key, int val){
+        if(umap.count(key)){
+            // deleteKey(key);
+            // addRecently(key, val);
+            umap[key]-&gt;val = val;
+            makeRecently(key);
+            return;
+        }
+        if(cache.size() == cap)
+            removeLeastRecently();
+        addRecently(key, val);
+    }
+};
+
+// 借用list容器
+typedef list&lt;pair&lt;int,int&gt;&gt;::iterator LPIter;   // key-value
+typedef list&lt;pair&lt;int, int&gt;&gt; LP;
+class LRUCache{
+private:
+    int cap;
+    unordered_map&lt;int, LPIter&gt; umap;
+    LP cache;
+
+    void makeRecently(int key){
+        LPIter iter = umap[key];
+        int value=iter-&gt;second;
+        cache.erase(iter);
+        cache.push_back(make_pair(key, value));
+    }
+    void removeLeastRecently(){
+        LPIter iter = cache.begin();
+        umap.erase(iter-&gt;first);
+        cache.pop_front();
+    }
+public:
+    LRUCache(int capacity):cap(capacity){}
+    int get(int key){
+        if(umap.count(key)==0)return -1;
+        makeRecently(key);
+        return (*umap[key]).second;
+    }
+    void set(int key, int value){
+        if(umap.count(key)!=0){
+            (*umap[key]).second = value;
+            makeRecently(key);
+        }else{
+            if(cache.size() == cap)
+                removeLeastRecently();
+            cache.push_back(make_pair(key, value));
+            umap[key] = --cache.end();
+        }
+    }
+};
+</code></pre>
+<h2 id="lfu">LFU</h2>
+<pre><code class="language-C">// 手动实现双向has链表
+struct DNode2{
+    int key;
+    DNode2 *next, *prev;
+    DNode2(int k):key(k){}
+};
+class linkHash{
+private:
+    unordered_map&lt;int, DNode2*&gt; umap;
+    DNode2 *head, *tail;
+    int _size=0;
+public:
+    linkHash(){
+        head = new DNode2(-1); tail=new DNode2(-1);
+        head-&gt;next = tail; tail-&gt;prev=head;
+    }
+    ~linkHash(){
+        while(head){
+            DNode2 *tmp=head-&gt;next;
+            delete head;
+            head=tmp;    
+        }
+    }
+
+    void push_back(int key){//从尾部插入最新访问的
+        DNode2* x = new DNode2(key);
+        umap[key]=x;
+        x-&gt;prev = tail-&gt;prev;
+        x-&gt;next = tail;
+        tail-&gt;prev-&gt;next=x;
+        tail-&gt;prev=x;
+        _size++;
+    }
+    void remove(int key){
+        DNode2 *x=umap[key];
+        umap.erase(key);
+        x-&gt;prev-&gt;next = x-&gt;next;
+        x-&gt;next-&gt;prev = x-&gt;prev;
+        delete x;
+        _size--;
+    }
+    int removeFront(){//返回被删除节点的key
+        DNode2 *x=head-&gt;next;
+        int key = x-&gt;key;
+        remove(key);
+        return key;
+    }
+    int size()const {return _size;}
+};
+class LFUCache {
+public:
+    LFUCache(int capacity): cap(capacity) {}
+
+    int get(int key) {
+        if(key2VF.count(key)==0)return -1;
+        increaseFre(key);
+        return key2VF[key].first;
+    }
+
+    void put(int key, int value) {
+        if(cap==0)return;
+        if(key2VF.count(key)!=0){
+            key2VF[key].first=value;
+        }else{
+            if(key2VF.size()==cap)
+                deleteLeastFreqKey();
+            key2VF[key] = make_pair(value, 0);
+            minFreq = 1;    //插入新节点后
+        }
+        increaseFre(key);
+    }
+
+private:
+    unordered_map&lt;int, linkHash*&gt; freq2key;  // frequency -&gt; list of key order by time
+    unordered_map&lt;int, pair&lt;int, int&gt;&gt; key2VF;  // key-&gt; val+fre
+    int cap=10; //默认值
+    int minFreq;
+
+    void increaseFre(int key){
+        int oldFreq = key2VF[key].second++;
+        int newFreq = key2VF[key].second;
+
+        if(oldFreq!=0){
+            freq2key[oldFreq]-&gt;remove(key);
+            if(freq2key[oldFreq]-&gt;size()==0)
+            {
+                freq2key.erase(oldFreq);
+                if(oldFreq==minFreq)minFreq++;
+            }
+        }
+
+        if(freq2key.count(newFreq)==0)
+            freq2key[newFreq] = new linkHash();
+        freq2key[newFreq]-&gt;push_back(key);
+    }
+    void deleteLeastFreqKey(){
+       linkHash* x = freq2key[minFreq];
+       int key = x-&gt;removeFront();
+       if(x-&gt;size()==0) freq2key.erase(minFreq);
+       key2VF.erase(key);
+    }
+};
+
+
+//借助list容器
+typedef list&lt;int&gt;::iterator LI; //key
+class LFUCache{
+private:
+    int cap, minFreq;
+    unordered_map&lt;int, pair&lt;int, int&gt;&gt; key2VF;
+    unordered_map&lt;int, LI&gt; key2iter;
+    unordered_map&lt;int, list&lt;int&gt; &gt; freq2key;
+    void increaseFreq(int key){
+        int  oldFreq = key2VF[key].second++;
+        int newFreq = key2VF[key].second;
+        if(oldFreq!=0){
+            freq2key[oldFreq].erase(key2iter[key]);
+            if(freq2key[oldFreq].size()==0){
+                freq2key.erase(oldFreq);
+                if(oldFreq==minFreq)minFreq++;
+            }
+        }
+        if(freq2key.count(newFreq)==0)
+            freq2key[newFreq] = list&lt;int&gt;();
+        freq2key[newFreq].push_back(key);
+        key2iter[key] = --freq2key[newFreq].end();
+    }
+    void removeLeastFreqKey(){
+        int key=freq2key[minFreq].front();
+        key2iter.erase(key);
+        key2VF.erase(key);
+        freq2key[minFreq].pop_front();
+        if(freq2key[minFreq].size()==0)
+            freq2key.erase(minFreq);
+    }
+public:
+    LFUCache(int capacity): cap(capacity){}
+    void set(int key, int value){
+        if(cap==0)return;
+        if(key2VF.count(key)!=0){
+            key2VF[key].first = value;
+        }else{
+            if(key2VF.size() == cap)
+                removeLeastFreqKey();
+            key2VF[key] = make_pair(value, 0);
+            minFreq=1;
+        }
+        increaseFreq(key);
+    }
+    int get(int key){
+        if(key2VF.count(key)==0)return -1;
+        increaseFreq(key);
+        return key2VF[key].first;
+    }
+};
+</code></pre>
+<h2 id="kmp">KMP</h2>
+<p>&emsp;递推求解next数组: 已知next[j](子串P[0, j-1]中前缀与后缀的交集中最长元素长度), 求解next[j+1]时，
+若P[next[j]] == P[j]，则next[j+1]=next[j]+1=k+1; 否则需要寻找长度更短的相同前缀后缀, 即让k=next[k]，让新的P[k]与P[j]比较，如果k==-1，则next[j]=0。<br />
+<img alt="avatar" src="../../images/DataStruct/25.png" />  </p>
+<pre><code class="language-C">void getNext(std::vector&lt;int&gt;&amp; next, string&amp; p){
+    next[0] = -1;
+    int j=0, k=-1;
+    while(j&lt;p.size()-1){
+        if(k==-1 || p[j]==p[k]){
+            j++;
+            k++;
+            next[j] = k;
+        }else 
+            k = next[k];
+    }
+}
+int KMP(string&amp; s, string&amp; p){
+    if(p.size() == 0 || s.size()&lt;p.size())return -1;
+    vector&lt;int&gt; next(p.size());
+    /*
+    下标从0开始:
+    前缀子串，即由p[0, i]（0&lt;=i&lt;p.size()-2）构成的集合
+    后缀子串，即由p[j, p.size()-1](1&lt;=j&lt;=p.size()-1)构成的集合
+
+    PMT:部分匹配表
+    PMT[i]的含义是以p[i]字符结尾的后缀子串集合中，与以p[0]字符开头的前缀子串集合，两者交集的最大值；
+    当主串指针指向i, 模式串指向j时发生失配，可知s[i-j, i-1]与p[0, j-1]是相等的，
+    则s[i-PMT[j-1], i-1]自然与p[0, PMT[j-1]-1]是相等的(分别是模式子串p[0, j]有最大交集的后缀和前缀,
+    最大交集的长度即为PMT[j-1])
+    则此时让i保持不变，j回退到PMT[j-1]即可
+    为了方便编程，采用next数组代替PMT，将PMT数组右移一位，第一位置为-1(即规定next[0]=-1)形成，
+    这样j回退到next[j]即可
+    */
+    getNext(next, p);
+    int i=0, j=-1;
+    int sLen = s.size(), pLen = p.size();
+    while(i&lt;sLen &amp;&amp; j&lt;pLen){
+        if(j==-1 || s[i]==p[j]){
+            i++;
+            j++;
+        }else j=next[j];
+    }
+    if(j==pLen)return i-j;
+    else return -1;
+}
+</code></pre>
+<p><img alt="avatar" src="../../images/DataStruct/26.png" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

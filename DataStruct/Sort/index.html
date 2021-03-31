@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Sort - Note</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Note</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">C++ Base <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../c_base/callable/" class="dropdown-item">callable</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/class/" class="dropdown-item">class</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/Complementary/" class="dropdown-item">complementary</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/const/" class="dropdown-item">const</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/constructor_destructor/" class="dropdown-item">constructor_destructor</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/container/" class="dropdown-item">container</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/exception/" class="dropdown-item">exception</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/function/" class="dropdown-item">function</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/friend_template/" class="dropdown-item">friend_template</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/initialization/" class="dropdown-item">initialization</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inline/" class="dropdown-item">inline</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inherit/" class="dropdown-item">inherit</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/iterator/" class="dropdown-item">iterator</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/memory/" class="dropdown-item">memory</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/new_delete/" class="dropdown-item">new_delete</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/pointer_reference/" class="dropdown-item">pointer_reference</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/static/" class="dropdown-item">static</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/virtual/" class="dropdown-item">virtual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EffectiveCPP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../EffectiveCPP/rule/" class="dropdown-item">RULES</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Linux os <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../os/0_index/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../os/1_introduction/" class="dropdown-item">1_开始</a>
+</li>
+                                    
+<li>
+    <a href="../../os/2_as86/" class="dropdown-item">2_汇编语法</a>
+</li>
+                                    
+<li>
+    <a href="../../os/3_80x86_protect_mode/" class="dropdown-item">3_保护模式</a>
+</li>
+                                    
+<li>
+    <a href="../../os/4_kernel_struct/" class="dropdown-item">4_内核体系结构</a>
+</li>
+                                    
+<li>
+    <a href="../../os/5_os/" class="dropdown-item">5_现代操作系统</a>
+</li>
+                                    
+<li>
+    <a href="../../os/7_simple_os/" class="dropdown-item">7_simple_os</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MySQL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../MySQL/0_start/" class="dropdown-item">home</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DataStruct <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Tree/" class="dropdown-item">Tree</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Sort</a>
+</li>
+                                    
+<li>
+    <a href="../Graph/" class="dropdown-item">Graph</a>
+</li>
+                                    
+<li>
+    <a href="../OtherStruct/" class="dropdown-item">Others</a>
+</li>
+                                    
+<li>
+    <a href="../Algorithm/" class="dropdown-item">Algorithm</a>
+</li>
+                                    
+<li>
+    <a href="../API/" class="dropdown-item">API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Network <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Network/home/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/1_application/" class="dropdown-item">application</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/2_transport/" class="dropdown-item">transport</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/3_network/" class="dropdown-item">network</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/4_link/" class="dropdown-item">link</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/5_netsafe/" class="dropdown-item">safe</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">interview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interview/" class="dropdown-item">面试</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../Tree/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../Graph/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">排序</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">稳定排序算法</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">九种排序</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">线性时间排序</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">排序</h1>
+<h2 id="_2">稳定排序算法</h2>
+<p>&emsp;保证在排序之前，2个相等的数其在序列的前后位置顺序和排序之后它们两个的前后位置顺序相同。简而言之，如果Ai = Aj，Ai原来在位置前，排序后Ai还是要在Aj位置前。<br />
+&emsp; 堆排序、快速排序、希尔排序、选择排序是不稳定的排序算法，而基数排序、冒泡排序、插入排序、归并排序是稳定的排序算法。<br />
+&emsp;要排序的内容是一个复杂对象的多个数字属性，且其原本的初始顺序存在意义，那么我们需要在二次排序的基础上保持原有排序的意义，才需要使用到稳定性的算法</p>
+<h2 id="_3">九种排序</h2>
+<ul>
+<li>1、选择排序</li>
+</ul>
+<pre><code class="language-C">    void selection_sort(std::vector&lt;int&gt;&amp; vec){
+        for(int i=0;i&lt;vec.size();i++){
+            int minIndex=i;
+            for(int j=i+1;j&lt;vec.size();j++){  
+                if(vec[j]&lt;vec[minIndex])minIndex=j;
+            }
+            std::swap(vec[i], vec[minIndex]);
+        }
+    }
+</code></pre>
+<ul>
+<li>2、冒泡排序</li>
+</ul>
+<pre><code class="language-C">    void maopao_sort(std::vector&lt;int&gt;&amp; vec){
+        for(int i=0;i&lt;vec.size()-1;i++){
+            for(int j=0;j&lt;vec.size()-1-i;j++){
+                if(vec[j]&gt;vec[j+1])
+                    std::swap(vec[j], vec[j+1]);
+            }
+        }
+    }
+</code></pre>
+<ul>
+<li>3、插入排序  </li>
+</ul>
+<pre><code class="language-C">    void insertion_sort(std::vector&lt;int&gt;&amp; vec){
+        for(int i=1;i&lt;vec.size();i++){
+            int tmp=std::move(vec[i]);
+            int j=i;
+            for(;j&gt;0&amp;&amp;vec[j-1]&gt;tmp;--j){
+                vec[j]=std::move(vec[j-1]); //采用这种方式避免中间过程的相互交换
+            }
+            vec[j]=std::move(tmp);
+        }
+    }
+
+    //对数组范围内的元素进行插入排序
+    void inside_insertion_sort(std::vector&lt;int&gt;&amp; vec, int left, int right){
+        for(int i=left+1;i&lt;right+1;i++){
+            int tmp=std::move(vec[i]);
+            int j=i;
+            for(;j&gt;=left+1&amp;&amp;vec[j-1]&gt;tmp;--j){
+                vec[j]=std::move(vec[j-1]);  //采用这种方式避免中间过程的相互交换
+            }
+            vec[j]=std::move(tmp);
+        }
+    }
+</code></pre>
+<p><strong>简单排序算法的下界</strong>:<br />
+&emsp;N个互异元素的数组其和自身逆序后数组，两个数组中存在的逆序对的数量和是C<sup>2</sup><sub>N</sub>=N(N-1)/2，故N个互异元素的数组中存在的平均逆序对数是N(N-1)/4。<br />
+&emsp;在简单排序算法中(上述三个)，交换一对逆序数，可以消除一对逆序，除此之外，算法中还有O(N)项工作，因此整个算法的时间为O(N+I)，I为逆序对的数量，可知，算法时间复杂度的下界为Ω(N+N(N-1)/4) = O(N^2)。<br />
+&emsp;为了使得排序算法的复杂度降低到二次一下，就意味着每次交换删除不止一个逆序</p>
+<ul>
+<li>4、希尔排序(缩减增量排序)
+<img alt="avatar" src="../../images/DataStruct/9.png" />
+希尔排序中对于增量序列的选择十分重要，直接影响到时间复杂度。下面选择的增量序列为{N/2,(N/2)/2, ..., 1}(希尔增量)，其最坏时间复杂度依然为O(n<sup>2</sup>)，一些经过优化的增量序列如Hibbard经过复杂证明可使得最坏时间复杂度为O(N<sup>3/2</sup>)。</li>
+</ul>
+<pre><code class="language-C">    void shell_sort(std::vector&lt;int&gt;&amp; vec){
+        for(int gap=vec.size()/2; gap&gt;0;gap/=2){
+            for(int i=gap;i&lt;vec.size();i++){
+                // 下面和插入排序过程相同，只不过交换的元素间隔为gap
+                int temp=std::move(vec[i]);
+                int j=i;
+                for(;j&gt;=gap &amp;&amp; temp&lt;vec[j-gap];j-=gap){
+                    vec[j] = std::move(vec[j-gap]);
+                }
+                vec[j]=std::move(temp);
+            }
+        }
+    }
+</code></pre>
+<ul>
+<li>5、堆排序<br />
+&emsp;建立N个元素的二叉堆，花费O(N)时间；然后执行N次deleteMin操作，最小的元素离开堆(实际上是移动到存储堆的数组最后的位置)，则N次删除后，数组中元素按递减的顺序存储，每次删除耗时O(log N), 则算法耗时为O(N+Nlog N)=O(Nlog N).<br />
+&emsp;如果构建的堆是最大堆，则最后得到的数组元素正好按增序存储。  </li>
+</ul>
+<pre><code class="language-C++">    # define leftchild(i) (2*i+1)   //i位置的节点的左儿子下标，因为数组是从0开始存储的
+    template&lt;typename comparable&gt;   // i:下滤位置，n: 堆的逻辑大小
+    void percDown(std::vector&lt;comparable&gt;&amp; vec, int i, int n){
+        int child;
+        comparable tmp;
+        for(tmp=std::move(vec[i]); leftchild(i)&lt;n;i=child){
+            child = leftchild(i);
+            if(child!=n-1 &amp;&amp; vec[child]&lt;vec[child+1])
+                child++;
+            if(tmp&lt;vec[child])
+                vec[i]=std::move(vec[child]);  //空穴下滤
+            else 
+                break;
+        }
+        vec[i]=std::move(tmp);    
+    }
+    void heap_sort(std::vector&lt;int&gt;&amp; vec){
+        //构建最大堆
+        for(int i=vec.size()/2 - 1; i&gt;=0; i--)// i&lt;=len/2-1, 则其左孩子下标&lt;=len-1, 等于说明i节点没有右孩子
+            percDown(vec, i, vec.size());
+
+        // 删除
+        for(int j=vec.size()-1;j&gt;0;--j){
+            std::swap(vec[0], vec[j]);
+            percDown(vec, 0, j);
+        }
+    }
+</code></pre>
+<ul>
+<li>6、归并排序, 时间复杂度为O(Nlog N)<br />
+&emsp;归并排序的比较次数是最少的，但其需要额外的内存来存储临时数组，并且耗费线性时间，在两者之间复制元素。  </li>
+</ul>
+<pre><code class="language-C">    void merge(std::vector&lt;int&gt;&amp; a, std::vector&lt;int&gt;&amp; tmpArr, int leftPos, int rightPos, int rightEnd){
+        int leftEnd = rightPos-1;
+        int tmpPos=leftPos;
+        int numElements = rightEnd-leftPos+1;
+
+        while(leftPos&lt;=leftEnd &amp;&amp; rightPos&lt;=rightEnd){
+            if(a[leftPos]&lt;=a[rightPos])
+                tmpArr[tmpPos++]=std::move(a[leftPos++]);
+            else
+                tmpArr[tmpPos++] = std::move(a[rightPos++]);
+        }
+
+        while(leftPos&lt;=leftEnd)
+            tmpArr[tmpPos++]=std::move(a[leftPos++]);
+        while(rightPos&lt;=rightEnd)
+            tmpArr[tmpPos++]=std::move(a[rightPos++]);
+
+        //将排序后的临时数组复制回原数组
+        for(int i=0;i&lt;numElements;++i, --rightEnd){
+            a[rightEnd] = std::move(tmpArr[rightEnd]);
+        }
+    }
+    void mergeSort(std::vector&lt;int&gt;&amp; a, std::vector&lt;int&gt;&amp; tmpArr, int left, int right){
+        if(left&lt;right){
+                int mid=(left+right)/2;
+                mergeSort(a, tmpArr, left, mid);
+                mergeSort(a, tmpArr, mid+1, right);
+                merge(a, tmpArr, left, mid+1, right);
+        }    
+    }
+    //简洁写法，推荐
+    void mergeSort2(vector&lt;int&gt;&amp; nums, vector&lt;int&gt;&amp; tmpArr, int left, int right){
+        if(left&gt;=right)return;
+        int mid=(left+right)/2;
+        mergeSort(nums, tmpArr, left, mid);
+        mergeSort(nums, tmpArr, mid+1, right);
+
+        for(int p=left;p&lt;=right;p++){
+            tmpArr[p]=nums[p];
+        }
+        int i=left, j=mid+1; //i,j分别是左右数组首元素的下标
+        for(int k=left; k&lt;=right;k++){
+            if(j==right+1 || tmpArr[i]&lt;=tmpArr[j]) nums[k]=std::move(tmpArr[i++]);
+            else nums[k]=std::move(tmpArr[j++]);    // i==mid+1 || tmpArr[j]&lt;tmpArr[i]
+        }
+    }
+    void merge_sort(std::vector&lt;int&gt;&amp; a){
+        std::vector&lt;int&gt; tmpArr(a.size());
+        mergeSort(a, tmpArr, 0, a.size()-1);
+    }
+</code></pre>
+<ul>
+<li>7、快速排序, 时间复杂度O(Nlog N)<br />
+&emsp;针对可能出现的预排序的数据或包含一大段排序数据，固定第一个或中间元素作为枢纽元可能会对排序时间造成严重伤害，因为此时枢纽元无法很好的将数组分割成均匀的两部分;随机选取则需要借助随机数发生器，带来额外开销；这里采用三元中值法选取枢纽，即开始、中间、末尾三个元素的中值作为枢纽元。  </li>
+</ul>
+<pre><code class="language-C">    //快速排序 简易版
+    void simple_quick_sort(std::vector&lt;int&gt;&amp; vec){
+        if(vec.size()&gt;1){
+            std::vector&lt;int&gt; smaller, same, larger;
+            auto pivot = vec[vec.size()/2];
+            for(auto &amp;v:vec){
+                if(v&lt;pivot)smaller.push_back(v);
+                else if(v&gt;pivot) larger.push_back(v);
+                else same.push_back(v);
+            }
+            simple_quick_sort(smaller);
+            simple_quick_sort(larger);
+            std::move(begin(smaller), end(smaller), begin(vec));
+            std::move(begin(same), end(same), begin(vec)+smaller.size());
+            std::move(begin(larger), end(larger), end(vec)-larger.size());
+        }
+    }
+    // 快速排序
+    void median3(std::vector&lt;int&gt;&amp; a, int left, int right){
+        /*三数中值分割：消除输入数据预先排序的坏情形*/
+        int center = (left+right)/2;
+        //下面的顺序是固定的，不能随意调换顺序，先确保left位置上元素最小，再确保中间位置元素次小
+        if(a[center]&lt;a[left])
+            std::swap(a[center], a[left]);
+        if(a[right] &lt; a[left])
+            std::swap(a[right], a[left]);
+        if(a[right]&lt;a[center])
+            std::swap(a[center], a[right]);
+        //将pivot置于right-1处
+        std::swap(a[center], a[right-1]);
+    }
+
+    //采用median3确定pivot
+    void _partition1(std::vector&lt;int&gt;&amp; a, int left, int right){
+        if(left+2&lt;=right){
+            median3(a, left, right);
+            const int pivot= a[right-1];    //经过三数中值分割后，选择倒数第二个数为pivot
+            //开始分割
+            int i=left, j=right-1;
+            for(;;){
+                while(a[++i]&lt;pivot);
+                while(a[--j]&gt;pivot);
+                if(i&lt;j){
+                    std::swap(a[i], a[j]);  //此时i依旧在j左侧，a[i]&gt;=pivot, a[j]&lt;=pivot, 交换两者
+                }else break;    // i已经移动到j右侧，跳出循环
+            }
+            //此时 pos&lt;i的元素均小于等于pivot, pos&gt;j的元素均大于等于pivot，
+            //i两侧的元素并非一定有序的，只是均小于等于或大于等于pivot
+            //再将pivot从位置right-1换到i, 再对i两侧的元素做递归调用
+            std::swap(a[i], a[right-1]);
+            _partition1(a, left, i-1);
+            _partition1(a, i+1, right);
+        }else{  
+            //数组元素小于5， 采用插入排序
+            // inside_insertion_sort(a, left, right);
+
+            //数组元素等于2，直接判断两者
+            if(a[left]&gt;a[right])
+                std::swap(a[left], a[right]);
+        }
+    }
+
+    //固定right位置上的元素为pivot
+    void _partition2(std::vector&lt;int&gt;&amp; vec, int left, int right){
+        if(left&gt;=right)return;
+        int pivot=vec[right];
+        int i=left, j=right;
+        while(i&lt;j){
+            while(i&lt;j &amp;&amp; vec[i]&lt;=pivot)i++;
+            while(i&lt;j &amp;&amp; vec[j]&gt;=pivot)j--;
+            if(i&lt;j){
+                swap(vec[i], vec[j]);
+            }
+        }
+        swap(vec[i], vec[right]);
+        _partition2(vec, left, i-1);
+        _partition2(vec, i+1, right);
+    }
+    void quick_sort(std::vector&lt;int&gt;&amp; vec){
+        std::cout&lt;&lt;&quot;median3:\n&quot;;
+        _partition1(vec, 0, vec.size()-1);
+        // std::cout&lt;&lt;&quot;fix right:&quot;
+        // _partition2(vec, 0, vec.size()-1);
+
+    }
+</code></pre>
+<h2 id="_4">线性时间排序</h2>
+<ul>
+<li>
+<p>8、桶排序， 当需要排序的数范围过大时，将需要非常大的额外空间开销<br />
+<img alt="avatar" src="../../images/DataStruct/13.png" />  </p>
+</li>
+<li>
+<p>基数排序<br />
+&emsp;对数字型或字符型的单关键字，可以看作由多个数位或多个字符构成的多关键，其中每个数字或字符可能的取值个数称为基数。例如0~999的数字，共有3位，每位上有10种可能。在按第k位排序时，落在同一个桶中的元素，是按照第k-1位排序的。<br />
+&emsp;<strong>时间复杂度O(d*N)</strong>, d代表最大元素的位数。
+<img alt="avatat" src="../../images/DataStruct/12.png" />  </p>
+</li>
+</ul>
+<p>&emsp;针对正负混合的数据，需要分离成两个数组分别排序; 而且不适用浮点数排序，一般用作整数或者字符串排序(采用每个字符对应的ascii码)  </p>
+<pre><code class="language-C">    //num代表vec中所有数字最大有几位
+    void inside_radix_sort(std::vector&lt;int&gt;&amp; vec, int num){
+        std::vector&lt;int&gt;* buckets= new std::vector&lt;int&gt;[10];
+        for(int i=0;i&lt;num;i++){
+            for(auto &amp;v:vec){
+                int j=i;
+                auto copy=v;
+                int tmp;
+                while(j-- &gt;= 0){
+                    tmp=copy%10;
+                    copy = (copy-tmp)/10;
+                }
+                tmp = tmp&lt;0?-1*tmp:tmp; //第k位数， tmp取值范围0到9
+                buckets[tmp].push_back(v);
+            }
+            int k=0;
+            for(int p=0;p&lt;10;p++){
+                for(auto&amp; v:buckets[p]){
+                    vec[k++]=v;
+                }
+                buckets[p].clear();
+            }
+        }
+        delete[] buckets;
+    }
+    void inside_radix_sort2(std::vector&lt;int&gt;&amp; vec){
+        std::vector&lt;int&gt; odd;   //奇数
+        std::vector&lt;int&gt;  even; //偶数
+        for(int i=0;i&lt;32;i++){  //将整数看成32位的二进制
+            for(auto &amp;v:vec){
+                if((v&gt;&gt;i &amp; 1)==0)
+                    even.push_back(v);
+                else
+                    odd.push_back(v);
+            }
+            int j=0;
+            for(auto&amp; v:even)
+                vec[j++]=v;
+            for(auto&amp; v:odd)
+                vec[j++]=v;
+            even.clear();
+            odd.clear();
+        }
+    }
+    /*binary:true, 代表将每个整数看成32位的二进制位，这样就无需计算最大元素的位数了;
+        radix_sort是主函数，将数组中的正负数分离
+    */
+    void radix_sort(std::vector&lt;int&gt;&amp; vec, bool binary=false){
+        std::vector&lt;int&gt; negative, positive;
+        int minNeg=0, maxPos=0;
+        for(auto&amp; v:vec){
+            if(v&lt;0){
+                minNeg=v&lt;minNeg?v:minNeg;
+                negative.push_back(v);
+            }else{
+                maxPos=v&gt;maxPos?v:maxPos;
+                positive.push_back(v);
+            }
+        }
+        int k=0;
+        if(!binary){
+            minNeg*=-1;
+            int numNeg=0, numPos=0;
+            while(minNeg){
+                minNeg/=10;
+                numNeg++;
+            }
+            while(maxPos){
+                maxPos/=10;
+                numPos++;
+            }
+            inside_radix_sort(negative, numNeg);
+            inside_radix_sort(positive, numPos); 
+            for(int i=negative.size()-1;  i&gt;=0;i--){
+                vec[k++]=negative[i];
+            }
+        }else{
+            inside_radix_sort2(negative);
+            inside_radix_sort2(positive);
+            for(auto&amp; v:negative)
+                vec[k++]=v;
+        }
+
+        for(auto&amp; v:positive)
+            vec[k++]=v;
+    }
+</code></pre>
+<ul>
+<li>计数基数排序<br />
+&emsp;基数排序的另一种实现，避免了使用额外的vector&lt; vector&lt; int &gt; &gt;来表示桶, 仅需要表示每个基数数量的count数组，和桶中元素在中间过程排序数组中的位置offset, 进一步优化，还可以同时用count来计算得到offset。  </li>
+</ul>
+<pre><code class="language-C">    void inside_counting_radix_sort(std::vector&lt;int&gt;&amp; vec, int num){
+        for(int i=0;i&lt;num;i++){
+            int mod = 1, j=i;
+            while(j--&gt;0)mod*=10;
+
+            // std::vector&lt;int&gt; count(10, 0), offset(10, 0);
+            // for(int k=0;k&lt;vec.size();k++){
+            //     int tmp=(vec[k]/mod)%10;
+            //     tmp = tmp&gt;=0?tmp:-1*tmp;    //求第i位上数字为多少
+            //     count[tmp]++;
+            // }
+            /*offset[k]代表第一个位数为k的元素在新数组中的位置pos，每次安排桶中一个元素后，让pos值自增，
+            这样桶中下一个元素的位置就会递增到下一位*/
+            // for(int m=1;m&lt;10;m++)
+            //     offset[m]=offset[m-1]+count[m-1];
+
+            // std::vector&lt;int&gt; copyVec=vec;
+            // for(int n=0;n&lt;copyVec.size();n++){
+            //     int bit = (copyVec[n]/mod)%10;
+            //     bit=bit&lt;0?-1*bit:bit;
+            //     vec[offset[bit]++]=copyVec[n];  //offset[bit]++ 表示桶中下一个元素的位置向后移动一位
+            // }
+
+            /*通过复用count来避免offset, count[k+1]表示位数为k的个数， 
+            从小到大扫描，coutn[k]+=count[k-1]， 得到的count前10位正好就是之前的offset*/
+            std::vector&lt;int&gt; count(11, 0);
+            for(int k=0;k&lt;vec.size();k++){
+                int tmp=(vec[k]/mod)%10;
+                tmp = tmp&gt;=0?tmp:-1*tmp;    //求第i位上数字为多少
+                count[tmp+1]++;
+            }
+            for(int m=1;m&lt;11;m++)
+                count[m]+=count[m-1];
+
+            std::vector&lt;int&gt; copyVec=vec;
+            for(int n=0;n&lt;copyVec.size();n++){
+                int bit = (copyVec[n]/mod)%10;
+                bit=bit&lt;0?-1*bit:bit;
+                vec[count[bit]++]=copyVec[n];
+            }
+        }
+    }
+
+    void count_radix_sort(std::vector&lt;int&gt;&amp; vec){
+        std::vector&lt;int&gt; negative, positive;
+        int minNeg=0, maxPos=0;
+        for(auto&amp; v:vec){
+            if(v&lt;0){
+                minNeg=v&lt;minNeg?v:minNeg;
+                negative.push_back(v);
+            }else{
+                maxPos=v&gt;maxPos?v:maxPos;
+                positive.push_back(v);
+            }
+        }
+        minNeg*=-1;
+        int numNeg=0, numPos=0;
+        while(minNeg){
+            minNeg/=10;
+            numNeg++;
+        }
+        while(maxPos){
+            maxPos/=10;
+            numPos++;
+        }
+        inside_counting_radix_sort(negative, numNeg);
+        inside_counting_radix_sort(positive, numPos); 
+
+        int k=0;
+        for(int i=negative.size()-1;  i&gt;=0;i--){
+            vec[k++]=negative[i];
+        }
+        for(auto&amp; v:positive)
+            vec[k++]=v;
+    }
+</code></pre>
+<p><img alt="avatar" src="../../images/DataStruct/14.png" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Graph - Note</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Note</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">C++ Base <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../c_base/callable/" class="dropdown-item">callable</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/class/" class="dropdown-item">class</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/Complementary/" class="dropdown-item">complementary</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/const/" class="dropdown-item">const</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/constructor_destructor/" class="dropdown-item">constructor_destructor</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/container/" class="dropdown-item">container</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/exception/" class="dropdown-item">exception</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/function/" class="dropdown-item">function</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/friend_template/" class="dropdown-item">friend_template</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/initialization/" class="dropdown-item">initialization</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inline/" class="dropdown-item">inline</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inherit/" class="dropdown-item">inherit</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/iterator/" class="dropdown-item">iterator</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/memory/" class="dropdown-item">memory</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/new_delete/" class="dropdown-item">new_delete</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/pointer_reference/" class="dropdown-item">pointer_reference</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/static/" class="dropdown-item">static</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/virtual/" class="dropdown-item">virtual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EffectiveCPP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../EffectiveCPP/rule/" class="dropdown-item">RULES</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Linux os <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../os/0_index/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../os/1_introduction/" class="dropdown-item">1_开始</a>
+</li>
+                                    
+<li>
+    <a href="../../os/2_as86/" class="dropdown-item">2_汇编语法</a>
+</li>
+                                    
+<li>
+    <a href="../../os/3_80x86_protect_mode/" class="dropdown-item">3_保护模式</a>
+</li>
+                                    
+<li>
+    <a href="../../os/4_kernel_struct/" class="dropdown-item">4_内核体系结构</a>
+</li>
+                                    
+<li>
+    <a href="../../os/5_os/" class="dropdown-item">5_现代操作系统</a>
+</li>
+                                    
+<li>
+    <a href="../../os/7_simple_os/" class="dropdown-item">7_simple_os</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MySQL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../MySQL/0_start/" class="dropdown-item">home</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DataStruct <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Tree/" class="dropdown-item">Tree</a>
+</li>
+                                    
+<li>
+    <a href="../Sort/" class="dropdown-item">Sort</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Graph</a>
+</li>
+                                    
+<li>
+    <a href="../OtherStruct/" class="dropdown-item">Others</a>
+</li>
+                                    
+<li>
+    <a href="../Algorithm/" class="dropdown-item">Algorithm</a>
+</li>
+                                    
+<li>
+    <a href="../API/" class="dropdown-item">API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Network <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Network/home/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/1_application/" class="dropdown-item">application</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/2_transport/" class="dropdown-item">transport</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/3_network/" class="dropdown-item">network</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/4_link/" class="dropdown-item">link</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/5_netsafe/" class="dropdown-item">safe</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">interview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interview/" class="dropdown-item">面试</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../Sort/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../OtherStruct/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">图论算法</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">关于图</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#bfs-dfs" class="nav-link">BFS &amp;&amp; DFS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">拓扑排序</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">最短路径</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">最小生成树</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">图论算法</h1>
+<h2 id="_2">关于图</h2>
+<p><img alt="avatar" src="../../images/DataStruct/15.png" />  </p>
+<pre>
+1、n个顶点的无向完全图有n(n-1)/2条边。
+&emsp;
+2、对于无向图G(V,E)，如果边（v,v'）∈E，则称顶点v和v’互为邻接点（Adjacent）,即v和v'相关联。
+边(v,v')依附 (incident) 于顶点v和 v', 或者说（vv'）与顶点v和 v'相关联。
+顶点v的度(Degree)是和v关联的边的数目，记为TD(v)。<b>在无向完全图中，各顶点的度和等于边数的2倍</b>。
+&emsp;
+3、在有向图中，如果任意两个顶点之间都存在方向相反的两条弧，则称该图为有向完全图。
+n个顶点的有向完全图有n(n-1)条边。
+以顶点v为终点的边的数量称为v的入度（InDegree）,ID(v);
+以顶点v为起点的边的数量称为v的出度（OutDegree）,OD(v);
+顶点v的度 TD(v) = ID(v) + OD(v)。
+在有向完全图中，各顶点的入度和等于出度和，等于弧的数目。
+</pre>
+
+<h2 id="bfs-dfs">BFS &amp;&amp; DFS</h2>
+<pre><code class="language-C">    struct Vertex{
+        Vertex(std::string str): name(str){}
+        std::list&lt;std::pair&lt;Vertex*, int&gt;&gt;  adj;    //邻接表, int型参数代表边上权值
+        std::string name;
+        bool known=false;
+
+        //在dijkrstra和prim算法中有用
+        int dist=INT32_MAX;
+        Vertex* prev=nullptr;   
+    };
+
+    void dfs(Vertex&amp; ver){
+        std::cout&lt;&lt;ver.name&lt;&lt;&quot; &quot;;
+        ver.known=true;
+        for(std::pair&lt;Vertex*, int&gt;&amp; p:ver.adj){
+            Vertex&amp; v= *(p.first);
+            if(!v.known)//节点尚未访问
+                dfs(v);
+        }
+    }
+
+    void bfs(Vertex* ver){
+        std::queue&lt;Vertex*&gt; q;
+        ver-&gt;known=true;
+        q.push(ver);
+        while(!q.empty()){
+            Vertex* head=q.front();
+            std::cout&lt;&lt;head-&gt;name&lt;&lt;&quot; &quot;;
+            q.pop();
+            for(auto&amp; p: head-&gt;adj){
+                if(!p.first-&gt;known){
+                    p.first-&gt;known=true;
+                    q.push(p.first);
+                }            
+            }
+        }
+    }
+</code></pre>
+<h2 id="_3">拓扑排序</h2>
+<p>&emsp;在一个表示工程的有向图中，用顶点表示活动，用弧表示活动之间的优先关系，这样的有向图为顶点表示活动的网，我们称为 AOV 网(Activity on Vertex Network)。<br />
+<img alt="avatar" src="../../images/DataStruct/16.png" />
+&emsp;若一个由图中所有点构成的序列A满足：对于图中的每条边(x, y)，x在A中都出现在y之前，则称A是该图的一个拓扑序列。
+AOV网描述了活动之间的制约关系。<br />
+&emsp;拓扑排序，其实就是对一个有向图构造拓扑序列的过程。构造时会有两个结果，如果此网的全部顶点都被输出，则说明它是不存在环(回路)的 AOV； 如果输出顶点数少了，说明这个网存在环(回路)，不是 AOV网。
+<img alt="avatar" src="../../images/DataStruct/17.png" />  </p>
+<pre><code class="language-C">    /* 输入: numCourses=4, prerequisites=[[1,0],[2,0],[3,1],[3,2]]*/
+    // 基于DFS
+    class Solution {
+    private:
+        vector&lt;vector&lt;int&gt; &gt; edges;
+        vector&lt;int&gt; ans_stack;
+        vector&lt;int&gt; visited;
+        bool valid=true;
+        void dfs(int u) {
+            visited[u] = 1;//标记已经访问
+            for (int v: edges[u]) {
+                if (visited[v] == 0) {
+                    dfs(v);
+                    if (!valid) {
+                        return;
+                    }
+                }
+                else if (visited[v] == 1) { //遇到已经访问的节点，说明存在环
+                    valid = false;
+                    return;
+                }
+            }
+            visited[u] = 2; //该节点正常
+            ans_stack.push_back(u);
+        }
+    public:
+        vector&lt;int&gt; findOrder(int numCourses, vector&lt;vector&lt;int&gt;&gt;&amp; prerequisites) {
+        edges.resize(numCourses);
+            visited.resize(numCourses);
+            for (const auto&amp; info: prerequisites) {
+                edges[info[1]].push_back(info[0]);
+            }
+            for (int i = 0; i &lt; numCourses &amp;&amp; valid; ++i) {
+                if (!visited[i]) {//i节点尚未访问，进入dfs
+                    dfs(i);
+                }
+            }
+
+            if(ans_stack.size() != numCourses) return {};
+            reverse(ans_stack.begin(), ans_stack.end());
+            return ans_stack;
+        }
+    };
+
+
+    //基于BFS
+    class Solution {
+    public:
+        vector&lt;int&gt; findOrder(int numCourses, vector&lt;vector&lt;int&gt;&gt;&amp; prerequisites) {
+            vector&lt;vector&lt;int&gt; &gt; edges(numCourses);
+            vector&lt;int&gt; indegrees(numCourses, 0);
+            for(auto&amp; v:prerequisites){
+                edges[v[1]].push_back(v[0]);
+                ++indegrees[v[0]];
+            }
+            queue&lt;int&gt; q;
+            for(int i=0;i&lt;numCourses;i++){
+                if(indegrees[i]==0) q.push(i);
+            }
+            vector&lt;int&gt; ans;
+            while(!q.empty()){
+                int node = q.front();
+                q.pop();
+                ans.push_back(node);
+                for(auto&amp; adj:edges[node]){
+                    --indegrees[adj];
+                    if(indegrees[adj]==0)q.push(adj);
+                }
+            }
+            if(ans.size()&lt;numCourses)return{};//存在环
+            return ans;
+        }
+    };
+
+</code></pre>
+<h2 id="_4">最短路径</h2>
+<p><img alt="avatar" src="../../images/DataStruct/18.png" /><br />
+<strong>目前，还不存在找出顶点v到任意一个顶点路径要比找出顶点v到所有顶点路径更快的算法</strong><br />
+<img alt="avatar" src="../../images/DataStruct/19.png" /></p>
+<ul>
+<li>Dijkstra算法<br />
+对于赋权图，采用Djkstra算法(贪婪算法的一个范例)更优，时间复杂度为O(E+V^2)=O(V^2);不适用权值为负；<br />
+若使用最小堆来寻找最近节点，则复杂度为O(Elog V + Vlog V)=O(Elog V).  </li>
+</ul>
+<pre><code class="language-C">    void printPath(Vertex v){
+        if(v.prev){
+            printPath((*v.prev));
+            std::cout&lt;&lt;&quot; to &quot;;
+        }
+        std::cout&lt;&lt;v.name;
+    }
+    void dijkrsta(std::vector&lt;Vertex*&gt;&amp; vertexs, Vertex* start, Vertex* target){
+        start-&gt;dist=0;
+        bool visitedAll = true;
+        while(true){
+            //寻找未被标记过的距离start最近的节点, 可以通过构建最小堆来进行优化
+            //第一次找到的即是start本身
+            int minDist = INT32_MAX, minIndex=0;
+            for(int i=0;i&lt;vertexs.size();i++){
+                if(!vertexs[i]-&gt;known &amp;&amp; vertexs[i]-&gt;dist&lt;minDist){
+                    minDist=vertexs[i]-&gt;dist;
+                    minIndex=i;
+                    visitedAll=false;
+                }
+            }
+            //全部标记过，跳出
+            if(visitedAll) break;
+
+            Vertex* front=vertexs[minIndex];
+            front-&gt;known=true; //标记节点已被访问
+            for(auto&amp; pp:front-&gt;adj){//遍历front的未被访问的邻居节点pp
+                if(!pp.first-&gt;known){
+                    int neighbor_cost=pp.second;    //front到相邻节点的距离
+                    if(front-&gt;dist+neighbor_cost&lt;pp.first-&gt;dist){   //pp.first-&gt;dist代表之前由start直接到pp的距离
+                        //说明经由front到达pp距离更小
+                        //更新start到pp所需的距离
+                        pp.first-&gt;dist=front-&gt;dist+neighbor_cost;
+                        pp.first-&gt;prev=front;
+                    }
+                }
+            }
+            visitedAll=true;
+        }
+        printPath(*target);
+    }
+</code></pre>
+<ul>
+<li>Floyd算法
+计算任意两个顶点之间的最短距离，即使权值为负也可。适合稠密图  </li>
+</ul>
+<pre><code class="language-C">    void floyd(std::vector&lt;std::vector&lt;std::pair&lt;int, int&gt;&gt; &gt;&amp;adjacents){
+        //adjacents存储所有节点的相邻节点，若没有，则adjacent[i]={};
+        //pair&lt;相邻节点，边的权值&gt;
+        int numVertexs = adjacents.size();
+        std::vector&lt;std::vector&lt;int&gt; &gt; edges(numVertexs, std::vector&lt;int&gt;(numVertexs, INT32_MAX/2));
+        for(int i=0;i&lt;numVertexs;i++){
+            edges[i][i] = 0;
+            for(auto&amp; p:adjacents[i]){
+                edges[i][p.first] = p.second;
+            }
+        }
+        for(int k=0;k&lt;numVertexs;k++){
+            for(int i=0;i&lt;numVertexs;i++){
+                for(int j=0;j&lt;numVertexs;j++){
+                    edges[i][j] = std::min(edges[i][j], edges[i][k]+edges[k][j]);
+                }
+            }
+        }
+        //edge存储了任意两个顶点间的最小加权路径长度
+    }
+</code></pre>
+<h2 id="_5">最小生成树</h2>
+<p>&emsp;连通图的生成树：是一个极小连通子图，它含有图中全部的n个顶点，但只有足以构成一棵树的n-1条边。
+此外把构成连通网的最小代价生成树称为最小生成树，即各边权值和最小。<br />
+&emsp;一般通过Prim和Kruskal算法构建Minimum Spanning Tree.   </p>
+<ul>
+<li>Prim  </li>
+</ul>
+<pre><code class="language-C">    //Prim与Dijkstra过程基本相同，只不过修改了更新dist的规则
+    //Prim是在无向图上运行的，所以每一条边都存在于两个链表中
+    void Prim(std::vector&lt;Vertex*&gt;&amp; vertexs, Vertex* start){
+        start-&gt;dist=0;
+        bool visitedAll=false;
+        /*
+            此时Vertex中的dist代表由所有konwn=true的顶点到该节点中的最小距离，
+            具有最小距离的那个节点就是prev
+        */
+        while(true){
+            //寻找未被标记过的距离start最近的节点
+            int minDist = INT32_MAX, minIndex=0;
+            for(int i=0;i&lt;vertexs.size();i++){
+                if(!vertexs[i]-&gt;known &amp;&amp; vertexs[i]-&gt;dist&lt;minDist){
+                    minDist=vertexs[i]-&gt;dist;
+                    minIndex=i;
+                    visitedAll=false;
+                }
+            }
+            //全部标记过，跳出
+            if(visitedAll) break;
+            Vertex* front=vertexs[minIndex];
+            front-&gt;known=true;
+            for(auto&amp; pp:front-&gt;adj){
+                if(!pp.first-&gt;known){
+                    int neighbor_cost=pp.second;    
+                    if(neighbor_cost&lt;pp.first-&gt;dist){   //这里与Dijkstra不同
+                        pp.first-&gt;dist=front-&gt;dist+neighbor_cost;
+                        pp.first-&gt;prev=front;
+                    }
+                }
+            }
+            visitedAll=true;
+        }
+        std::cout&lt;&lt;&quot;Minimum Spanning Tree:&quot;&lt;&lt;std::endl;
+        for(auto&amp; v:vertexs){
+            if(v-&gt;prev)
+                std::cout&lt;&lt;&quot;(&quot;&lt;&lt;v-&gt;prev-&gt;name&lt;&lt;&quot;,&quot;&lt;&lt;v-&gt;name&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+        }
+    }
+
+
+</code></pre>
+<ul>
+<li>Kruskal<br />
+<img alt="avatar" src="../../images/DataStruct/20.png" /></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

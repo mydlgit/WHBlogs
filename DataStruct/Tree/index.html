@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Tree - Note</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Note</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">C++ Base <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../c_base/callable/" class="dropdown-item">callable</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/class/" class="dropdown-item">class</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/Complementary/" class="dropdown-item">complementary</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/const/" class="dropdown-item">const</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/constructor_destructor/" class="dropdown-item">constructor_destructor</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/container/" class="dropdown-item">container</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/exception/" class="dropdown-item">exception</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/function/" class="dropdown-item">function</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/friend_template/" class="dropdown-item">friend_template</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/initialization/" class="dropdown-item">initialization</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inline/" class="dropdown-item">inline</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inherit/" class="dropdown-item">inherit</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/iterator/" class="dropdown-item">iterator</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/memory/" class="dropdown-item">memory</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/new_delete/" class="dropdown-item">new_delete</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/pointer_reference/" class="dropdown-item">pointer_reference</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/static/" class="dropdown-item">static</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/virtual/" class="dropdown-item">virtual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EffectiveCPP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../EffectiveCPP/rule/" class="dropdown-item">RULES</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Linux os <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../os/0_index/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../os/1_introduction/" class="dropdown-item">1_开始</a>
+</li>
+                                    
+<li>
+    <a href="../../os/2_as86/" class="dropdown-item">2_汇编语法</a>
+</li>
+                                    
+<li>
+    <a href="../../os/3_80x86_protect_mode/" class="dropdown-item">3_保护模式</a>
+</li>
+                                    
+<li>
+    <a href="../../os/4_kernel_struct/" class="dropdown-item">4_内核体系结构</a>
+</li>
+                                    
+<li>
+    <a href="../../os/5_os/" class="dropdown-item">5_现代操作系统</a>
+</li>
+                                    
+<li>
+    <a href="../../os/7_simple_os/" class="dropdown-item">7_simple_os</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MySQL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../MySQL/0_start/" class="dropdown-item">home</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DataStruct <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Tree</a>
+</li>
+                                    
+<li>
+    <a href="../Sort/" class="dropdown-item">Sort</a>
+</li>
+                                    
+<li>
+    <a href="../Graph/" class="dropdown-item">Graph</a>
+</li>
+                                    
+<li>
+    <a href="../OtherStruct/" class="dropdown-item">Others</a>
+</li>
+                                    
+<li>
+    <a href="../Algorithm/" class="dropdown-item">Algorithm</a>
+</li>
+                                    
+<li>
+    <a href="../API/" class="dropdown-item">API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Network <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Network/home/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/1_application/" class="dropdown-item">application</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/2_transport/" class="dropdown-item">transport</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/3_network/" class="dropdown-item">network</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/4_link/" class="dropdown-item">link</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/5_netsafe/" class="dropdown-item">safe</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">interview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interview/" class="dropdown-item">面试</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../MySQL/0_start/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../Sort/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">数据结构</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#-" class="nav-link">树-基本概念</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#avl" class="nav-link">AVL树</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#bb-tree" class="nav-link">B树(B-Tree)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">红黑树</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#trie" class="nav-link">Trie(字典树/前缀树)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">数据结构</h1>
+<h2 id="-">树-基本概念</h2>
+<ul>
+<li>节点深度: 从根节点到该节点的唯一路径的长度  </li>
+<li>节点高：该节点到一个叶节点的最长路径的长度</li>
+<li>树的深度等于树的高度，是根节点到其最深树叶的长度  </li>
+<li>满二叉树：除最后一层无任何子节点外，每一层上的所有结点都有两个子结点的二叉树。高度为h,则节点数N=2<sup>h+1</sup>-1;  h=O(log N)  </li>
+<li>完全二叉树：一棵深度为k的有n个结点的二叉树，对树中的结点按从上至下、从左到右的顺序进行编号，如果编号为i（1≤i≤n）的结点与满二叉树中编号为i的结点在二叉树中的位置相同，则这棵二叉树称为完全二叉树。
+&emsp;高度h的完全二叉树，节点数2<sup>h</sup>&lt;=N&lt;=2<sup>h+1</sup>-1。  </li>
+<li>二叉查找树: 任何节点的左子节点的key值都小于当前节点的key，而右子节点的key都大于当前节点的key(这里key即是索引)；二叉查找树的平均高度为O(log N), N为节点个数；但如果对向一棵树输入预先排序的数据，此时二叉查找树会退化成单向链表，查找时间复杂度将变成O(N)。故引出平衡二叉树。   </li>
+<li>二叉树的前、中、后序遍历都可以通过栈来实现，时间复杂度O(N), 空间复杂度O(N); 若采用递归调用，额外的需要函数栈空间O(N);<strong>采用Morris遍历，可以将空间复杂度降到O(1)</strong>。<br />
+    <pre>
+0、 记作当前节点为cur。
+1、 
+    1_1. 如果cur无左孩子，cur=cur.right, 直接到第3步
+    1_2. 如果cur有左孩子，找到cur左子树上最右的节点，记为mostright
+2、
+    2_1. if(mostright.right==NULL), then mostright.right=cur, cur=cur.left
+    2_2. if(mostright.right==cur), then mostright.right=NULL, cur=cur.right
+&emsp;
+3、 重复1、2直至cur为空
+4、 返回结果
+&emsp;
+前序遍历:在1_1步,把cur加入到结果后，cur=cur.right; 以及在2_1步, 先把cur加入到结果中, then cur=cur.left
+中序遍历:在1_1步,把cur加入到结果后，cur=cur.right; 以及在2_2步, 先把cur加入到结果中, then cur=cur.right
+后序遍历:在2_2这一步,将从cur的左节点到mostright节点路径上的所有节点倒序添加的结果中(通过下面的addPaths函数); 
+        在4步, 结束循环后，此时只剩下最右侧一条路径上的所有节点(包括根节点)尚未添加到结果中。<br />
+总结: 可以看出三种遍历，在morris算法下，有相同的结构，
+区别在于添加结果的位置，以及后序遍历使需要额外的函数来倒序添加结果
+</pre>
+而层序遍历需要通过队列实现。</li>
+</ul>
+<pre><code class="language-C">    #include&lt;vector&gt;
+    #include&lt;stack&gt;
+    #include&lt;queue&gt;
+    struct TreeNode {
+        int val;
+        TreeNode* left;
+        TreeNode* right;
+        TreeNode() : val(0), left(nullptr), right(nullptr) {}
+        TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+        TreeNode(int x, TreeNode* left, TreeNode* right) : val(x), left(left), right(right) {}
+    };
+    class solution{
+        public:
+            //前序遍历
+            std::vector&lt;int&gt; preorderTraversal(TreeNode* root){
+                if(!root)return {};
+                std::vector&lt;int&gt; ans;
+                std::stack&lt;TreeNode*&gt; st;
+
+                while(root || !st.empty()){
+                    while(root){
+                        ans.push_back(root-&gt;val);
+                        st.push(root);
+                        root=root-&gt;left;
+                    }
+                    root = st.top()-&gt;right;
+                    st.pop();
+                }
+                return ans;
+            }
+            //中序遍历
+            std::vector&lt;int&gt; inorderTraversal(TreeNode* root){
+                if(!root)return {};
+                std::vector&lt;int&gt; ans;
+                std::stack&lt;TreeNode*&gt; st;
+                while(root || !st.empty()){
+                    while(root){
+                        st.push(root);
+                        root=root-&gt;left;
+                    }
+                    root=st.top();
+                    st.pop();
+                    ans.push_back(root-&gt;val);
+                    root=root-&gt;right;
+                }
+                return ans;
+            }
+            //后序遍历, 除去递归，提供了4种方法，前三种都需要O(N)的空间复杂度, morris只需O(1)空间复杂度
+            std::vector&lt;int&gt; postorderTraversal(TreeNode* root){
+                if(!root)return {};
+                std::vector&lt;int&gt; ans;
+                std::stack&lt;TreeNode*&gt; st;
+                st.push(root);
+                TreeNode* cur;
+                while(!st.empty()){
+                    cur=st.top();st.pop();
+                    if(cur){
+                        st.push(cur-&gt;left);
+                        st.push(cur-&gt;right);
+                        ans.push_back(cur-&gt;val); //访问顺序: 根、右、左，对结果逆序
+                    }
+                }
+                std::reverse(ans.begin(), ans.end());
+                return ans;
+            }
+            std::vector&lt;int&gt; postorderTraversal2(TreeNode* root){
+                if(!root)return {};
+                std::vector&lt;int&gt; ans;
+                std::stack&lt;std::pair&lt;TreeNode*, bool&gt;&gt; st;
+                st.push(std::make_pair(root, false));
+                std::pair&lt;TreeNode*, bool&gt;* cur; 
+                while (!st.empty())
+                {
+                    cur = &amp;st.top();
+                    if(cur-&gt;second){//bool=true, 说明是子节点已经访问了
+                        ans.push_back(cur-&gt;first-&gt;val);
+                        st.pop();
+                    }else{ //bool=false, 说明当前节点的子节点尚未访问，将右孩子和左孩子先后入栈
+                        cur-&gt;second=true;
+                        if(cur-&gt;first-&gt;right) st.push(std::make_pair(cur-&gt;first-&gt;right, false));
+                        if(cur-&gt;first-&gt;left) st.push(std::make_pair(cur-&gt;first-&gt;left, false));
+                    }
+                }
+                return ans;
+            }
+            std::vector&lt;int&gt; postorderTraversal3(TreeNode* root){
+                if(!root)return {};
+                std::vector&lt;int&gt; ans;
+                std::stack&lt;TreeNode*&gt; st;
+                TreeNode* prev;
+                while(root || !st.empty()){
+                    while(root){
+                        st.push(root);
+                        root=root-&gt;left;
+                    }
+                    root = st.top();
+                    if(!root-&gt;right || root-&gt;right==prev){
+                        ans.push_back(root-&gt;val);
+                        prev=root;
+                        st.pop();
+                        root=nullptr;
+                    }else
+                        root=root-&gt;right;
+                }
+                return ans;
+            }
+
+
+            //morros前序遍历
+            std::vector&lt;int&gt; preorderTraversal2(TreeNode* root){
+                if(!root)return {};
+                std::vector&lt;int&gt; ans;
+                TreeNode* cur=root, *next=nullptr;
+                while (cur)
+                {
+                    next=cur-&gt;left;
+                    if(next){
+                        while(next-&gt;right &amp;&amp; next-&gt;right!=cur)
+                            next=next-&gt;right;
+                        if(!next-&gt;right){
+                            next-&gt;right=cur;
+                            ans.push_back(cur-&gt;val);
+                            cur=cur-&gt;left;
+                        }else{
+                            next-&gt;right=nullptr;
+                            cur=cur-&gt;right;
+                        }
+                    }else
+                        {
+                            ans.push_back(cur-&gt;val);
+                            cur=cur-&gt;right;
+                        }
+                }
+                return ans;
+            }
+             //moris中序遍历
+            std::vector&lt;int&gt; inorderTranversal2(TreeNode* root){
+                if(!root)return {};
+                std::vector&lt;int&gt; ans;
+                TreeNode *cur=root, *next=nullptr;
+                while(cur){
+                    next=cur-&gt;left;
+                    if(next){
+                        while (next-&gt;right &amp;&amp; next-&gt;right!=cur)
+                            next=next-&gt;right;
+                        if(!next-&gt;right){
+                            next-&gt;right=cur;
+                            cur=cur-&gt;left;
+                        }else{
+                            next-&gt;right=nullptr;
+                            ans.push_back(cur-&gt;val);
+                            cur=cur-&gt;right;
+                        }
+                    }else{
+                        ans.push_back(cur-&gt;val);
+                        cur=cur-&gt;right;
+                    }    
+                }
+                return ans;
+            }
+            //morris后序遍历
+            void addPath(vector&lt;int&gt; &amp;vec, TreeNode *node) {
+                int count = 0;
+                while (node != nullptr) {
+                    ++count;
+                    vec.emplace_back(node-&gt;val);
+                    node = node-&gt;right;
+                }
+                reverse(vec.end() - count, vec.end());
+            }
+            std::vector&lt;int&gt; postorderTraversal4(TreeNode* root){
+                if(!root)return {};
+                std::vector&lt;int&gt; ans;
+                TreeNode *cur=root, *next=nullptr;
+                while(cur){
+                    next=cur-&gt;left;
+                    if(next){
+                        while (next-&gt;right &amp;&amp; next-&gt;right!=cur)
+                            next=next-&gt;right;
+                        if(!next-&gt;right){
+                            next-&gt;right=cur;
+                            cur=cur-&gt;left;
+                        }else{
+                            next-&gt;right=nullptr;
+                            addPath(ans, cur-&gt;left);
+                            cur=cur-&gt;right;
+                        }
+                    }else
+                        cur=cur-&gt;right;
+                }
+                addPath(ans, root);
+                return ans;
+            }
+
+            //层序遍历
+            std::vector&lt;int&gt; LayerTraversal(TreeNode* root){
+                if(!root)return {};
+                std::vector&lt;int&gt; ans;
+                std::queue&lt;TreeNode*&gt; qu;
+                qu.push(root);
+                while(!qu.empty()){
+                    root=qu.front(); qu.pop();
+                    ans.push_back(root-&gt;val);
+                    if(root-&gt;left)qu.push(root-&gt;left);
+                    if(root-&gt;right)qu.push(root-&gt;right);
+                }
+                return ans;
+            }
+            //第二种形式的层序遍历，只是返回形式不同
+            std::vector&lt;std::vector&lt;int&gt;&gt; MulLayerTraversal(TreeNode* root){
+                if(!root)return {};
+                std::vector&lt;std::vector&lt;int&gt;&gt; ans;
+                std::queue&lt;TreeNode*&gt; qu;
+                qu.push(root);
+                while(!qu.empty()){
+                    int len=qu.size();
+                    std::vector&lt;int&gt; tmp(len);
+                    for(int i=0;i&lt;len;i++){
+                        root=qu.front(); qu.pop();
+                        tmp[i]=root-&gt;val;
+                        if(root-&gt;left)qu.push(root-&gt;left);
+                        if(root-&gt;right)qu.push(root-&gt;right);
+                    }
+                    ans.push_back(tmp);
+                }
+                return ans;
+            }
+    };
+</code></pre>
+<h2 id="avl">AVL树</h2>
+<p>&emsp;<strong>平衡二叉树</strong>，具有二叉查找树全部特性，但<strong>每个节点的左子树和右子树的高度最多差1的二叉查找树</strong>(<font size=2><strong>空树高度定义为-1</strong></font>)。  <br />
+&emsp;在高度为h的AVL树中，最少节点数S(h)=S(h-1)+S(h-2)+1得到。(S(0)=1, S(1)=2)<br />
+&emsp;对于N个节点的AVL树，最坏查找时间复杂度也为O(log N), 但由于插入或删除节点会破坏平衡性，因此需要通过<strong>旋转</strong>来恢复树的平衡性。在频繁插入和删除场景下，旋转是十分耗时的，因此又引出<strong>红黑树</strong>。<br />
+    <pre>
+旋转：
+在一次插入之和，只有那些从插入点到根节点的路径上的节点的平衡可能会被改变，因为只有这些节点的子树可能发生变化。
+<strong>沿插入节点上行，将每一个必须重新平衡的节点</strong>叫做α，由于任意节点最多有两个儿子，可知其两颗子树的高度一定相差2。
+不平衡可能有4种情况：
+\1. 对α的左儿子的左子树进行一次插入(左-左)；
+\2. 对α的左儿子的右子树进行一次插入(左-右)；
+\3. 对α的右儿子的左子树进行一次插入(右-左)；
+\4. 对α的右儿子的右子树进行一次插入(右-右)；
+情况1和4，2和3各自成镜像
+左-左和右-右可以通过单旋转来完成调整，左-右和右-左则需通过双旋转来调整。
+1、左-左型：做右旋。
+2、右-右型：做左旋。
+3、左-右型：先做左旋，后做右旋。
+4、右-左型：先做右旋，再做左旋。
+右旋: 以α的左子节点代替其位置，α成为新位置的的右节点，原左子节点的右子节点成为α的左子节点。
+左旋：以α的右子节点代替其位置，α成为新位置的的左节点，原右子节点的左子节点成为α的右子节点。
+对于左-右型，先对α的左节点做左旋，然后再对α做右旋；
+对于右-左型，现对α的右节点做右旋，然后再对α做左旋
+</pre>
+<img alt="avatar" src="../../images/DataStruct/1.png" /></p>
+<h2 id="bb-tree">B树(B-Tree)</h2>
+<p>&emsp;对于海量数据只能存储在磁盘中，而读取磁盘速度远小于读取内存速度，且从磁盘中读取数据时，是按照块进行读取，而非一条一条读取。如果采用树这种结构作为数据索引的数据结构，则每次查找数据，即从磁盘中读取一个节点(也即一个磁盘块)；但无论是二叉查找树还是AVL树，其每个节点仅存储一对key-value，因此海量数据会造成非常多的节点数，查找效率也将变得低效。<br />
+&emsp;而阶数为M的B树是一棵M叉树， 每个节点可以存储更多对key-value，且每个节点也将有更多的子节点，整棵树的高度将变得很低(<strong>最小高度为O(log<sub>M</sub>N), N为节点个数</strong>)，查找节点(读取磁盘)的次数也将减少。<br />
+B树的具体定义为:
+    <pre>
+1、每个节点都存有索引和数据，也就是对应的key和value。
+2、根节点关键字个数为[1, M-1], 则其子节点个数为[2, M]。
+3、非根节点关键字个数[M/2, M-1]，。
+4、每个节点中的关键字都按照从小到大的顺序排列，每个关键字的左子树中的所有关键字都小于它，
+而右子树中的所有关键字都大于它。
+5、所有叶子节点都位于同一层，或者说根节点到每个叶子节点的长度都相同。
+</pre></p>
+<p><strong>B树插入</strong>：判断当前结点key的个数是否小于等于M-1，如果满足，直接插入即可，如果不满足，节点的中间的key将这个节点分为左右两部分，中间的节点放到父节点中即可</p>
+<p><strong>B+树</strong>： 其与B树的主要区别为：  </p>
+<ul>
+<li>B+树有两种类型的节点：内部结点（也称索引结点）和叶子结点。内部节点就是非叶子节点，内部节点不存储数据，只存储索引，数据都存储在叶子节点。B树的叶子节点不仅存储key，也存储value；B+树这样做的原因是，数据库中页的大小是固定的，如果不存储数据，内部非叶子节点就可以存储更多的key，则整棵树的阶数就会更大，而树的高度就会减少，读取磁盘的次数也就减少，查找效率就提高了。  </li>
+<li>内部结点中的key都按照从小到大的顺序排列，对于内部结点中的一个key，左树中的所有key都小于它，右子树中的key都大于等于它。叶子结点中的记录也按照key的大小排列。  </li>
+<li>叶子结点(磁盘页)之间通过双向链表连接,而叶子节点中的数据依据key值大小,通过单向链表从小到大顺序连接。    </li>
+<li>父节点存有右孩子的第一个元素的索引。  </li>
+</ul>
+<p><img alt="avatar" src="../../images/DataStruct/3.png" />
+<img alt="avatar" src="../../images/DataStruct/4.png" /></p>
+<h2 id="_2">红黑树</h2>
+<p>&emsp;红黑树是一种自平衡或者半平衡二叉查找树，它放弃了平衡二叉树的绝对平衡，换来了较为简单的可维护性，使得二叉搜索树插入新数据，以及搜索数据时，都具有不错的搜索性能。  <br />
+    <pre>
+具体属性如下:
+0<em> 所有节点要么是红色，要么是黑色
+1</em> 根节点必须是黑色
+2<em> 叶子节点都是黑色的(<font size=2>这里的叶子节点指的是null节点，例如节点a没有左孩子，则其左孩子可以视为Null Leaf Node, 为黑色</font>)
+3 叶子节点不包含数据
+4 所有非叶子节点都有两个子节点
+5</em> 红色节点的两个子节点必须是黑色（不能有连续的红色节点）
+6* 一个节点到其所有叶子节点的路径都包含同样数目的黑色节点
+</pre></p>
+<p>&emsp;由属性5、6知，树中最长路径是红黑节点交替路径，最短路径是具有相同数目黑色节点的——只包含黑色节点的路径，因此<strong>根节点到叶子节点的最长路径不会超过最短路径的2倍。</strong><br />
+&emsp;并且由数学归纳法可证明<strong>高度为h的红黑树，节点个数至少为2<sup>h/2</sup>-1个</strong>。  </p>
+<h2 id="trie">Trie(字典树/前缀树)</h2>
+<p>&emsp;用于统计和排序大量的字符串（但不仅限于字符串），所以经常被搜索引擎系统用于文本词频统计。它的优点是：最大限度地减少无谓的字符串比较。<br />
+&emsp;Trie的核心思想是空间换时间。利用字符串的公共前缀来降低查询时间的开销以达到提高效率的目的。<br />
+&emsp;前缀树的3个基本性质：根节点不包含字符，除根节点外每一个节点都只包含一个字符; 从根节点到某一节点，路径上经过的字符连接起来，为该节点对应的字符串; 每个节点的所有子节点包含的字符都不相同。<br />
+&emsp;<strong>字典树的查询时间复杂度是O(logL)，L是字符串的长度</strong><br />
+&emsp;支持动态查询，即不需要等待字符串输入完毕即可进行匹配，可用于关键字联想</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

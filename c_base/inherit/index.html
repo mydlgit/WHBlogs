@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>inherit - Note</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Note</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">C++ Base <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../callable/" class="dropdown-item">callable</a>
+</li>
+                                    
+<li>
+    <a href="../class/" class="dropdown-item">class</a>
+</li>
+                                    
+<li>
+    <a href="../Complementary/" class="dropdown-item">complementary</a>
+</li>
+                                    
+<li>
+    <a href="../const/" class="dropdown-item">const</a>
+</li>
+                                    
+<li>
+    <a href="../constructor_destructor/" class="dropdown-item">constructor_destructor</a>
+</li>
+                                    
+<li>
+    <a href="../container/" class="dropdown-item">container</a>
+</li>
+                                    
+<li>
+    <a href="../exception/" class="dropdown-item">exception</a>
+</li>
+                                    
+<li>
+    <a href="../function/" class="dropdown-item">function</a>
+</li>
+                                    
+<li>
+    <a href="../friend_template/" class="dropdown-item">friend_template</a>
+</li>
+                                    
+<li>
+    <a href="../initialization/" class="dropdown-item">initialization</a>
+</li>
+                                    
+<li>
+    <a href="../inline/" class="dropdown-item">inline</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">inherit</a>
+</li>
+                                    
+<li>
+    <a href="../iterator/" class="dropdown-item">iterator</a>
+</li>
+                                    
+<li>
+    <a href="../memory/" class="dropdown-item">memory</a>
+</li>
+                                    
+<li>
+    <a href="../new_delete/" class="dropdown-item">new_delete</a>
+</li>
+                                    
+<li>
+    <a href="../pointer_reference/" class="dropdown-item">pointer_reference</a>
+</li>
+                                    
+<li>
+    <a href="../static/" class="dropdown-item">static</a>
+</li>
+                                    
+<li>
+    <a href="../virtual/" class="dropdown-item">virtual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EffectiveCPP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../EffectiveCPP/rule/" class="dropdown-item">RULES</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Linux os <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../os/0_index/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../os/1_introduction/" class="dropdown-item">1_开始</a>
+</li>
+                                    
+<li>
+    <a href="../../os/2_as86/" class="dropdown-item">2_汇编语法</a>
+</li>
+                                    
+<li>
+    <a href="../../os/3_80x86_protect_mode/" class="dropdown-item">3_保护模式</a>
+</li>
+                                    
+<li>
+    <a href="../../os/4_kernel_struct/" class="dropdown-item">4_内核体系结构</a>
+</li>
+                                    
+<li>
+    <a href="../../os/5_os/" class="dropdown-item">5_现代操作系统</a>
+</li>
+                                    
+<li>
+    <a href="../../os/7_simple_os/" class="dropdown-item">7_simple_os</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MySQL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../MySQL/0_start/" class="dropdown-item">home</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DataStruct <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../DataStruct/Tree/" class="dropdown-item">Tree</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Sort/" class="dropdown-item">Sort</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Graph/" class="dropdown-item">Graph</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/OtherStruct/" class="dropdown-item">Others</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Algorithm/" class="dropdown-item">Algorithm</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/API/" class="dropdown-item">API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Network <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Network/home/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/1_application/" class="dropdown-item">application</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/2_transport/" class="dropdown-item">transport</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/3_network/" class="dropdown-item">network</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/4_link/" class="dropdown-item">link</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/5_netsafe/" class="dropdown-item">safe</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">interview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interview/" class="dropdown-item">面试</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../inline/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../iterator/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">关于继承</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#1-protected" class="nav-link">1. protected</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2" class="nav-link">2. 继承关系</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3" class="nav-link">3.多重继承</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">关于继承</h1>
+<h2 id="1-protected">1. protected</h2>
+<p>&emsp;<strong>基类中被声明为protected的成员，对于类的用户是不可访问的</strong>；但对于派生类的成员和友元是可访问的; 需注意的是，派生类的成员函数只能访问所作用的那个对象（即this指针指向的对象）的基类保护成员，不能访问其他基类对象的基类保护成员。在派生类的成员函数外部，不能访问基类的私有成员和保护成员。  </p>
+<pre><code class="language-C">#include&lt;iostream&gt;
+using namespace std;
+
+class A{
+public:
+  int a;
+  A(){
+    a1 = 1;a2 = 2;a3 = 3;a = 4;
+  }
+public:
+  int a1;
+protected:
+  int a2;
+private:
+  int a3;
+};
+class B : protected A{
+public:
+  int a;
+  B(int i){
+    A();
+    a = i;
+  }
+  void fun(){
+    cout &lt;&lt; a &lt;&lt; endl;        //正确，public成员，输出i。
+    cout &lt;&lt; a1 &lt;&lt; endl;       //正确，基类的public成员，在派生类中变成了protected，可以被派生类访问。
+    cout &lt;&lt; a2 &lt;&lt; endl;       //正确，基类的protected成员，在派生类中还是protected，可以被派生类访问。
+    cout &lt;&lt; a3 &lt;&lt; endl;       //错误，基类的private成员不能被派生类访问。
+  }
+};
+int main(){
+  B b(10);
+  cout &lt;&lt; b.a &lt;&lt; endl;       //正确。public成员
+  cout &lt;&lt; b.a1 &lt;&lt; endl;      //错误，protected成员不能在类外访问。
+  cout &lt;&lt; b.a2 &lt;&lt; endl;      //错误，protected成员不能在类外访问。
+  cout &lt;&lt; b.a3 &lt;&lt; endl;      //错误，private成员不能在类外访问。
+  return 0;
+}
+
+
+</code></pre>
+<h2 id="2">2. 继承关系</h2>
+<p>&emsp;派生类在继承基类时，可以指定public、protected、private三种继承方式：  </p>
+<ul>
+<li>public继承：基类public成员，protected成员，private成员的访问属性在派生类中分别变成：public, protected, private</li>
+<li>protected继承：基类public成员，protected成员，private成员的访问属性在派生类中分别变成：protected, protected, private  </li>
+<li>private继承：基类public成员，protected成员，private成员的访问属性在派生类中分别变成：private, private, private  </li>
+</ul>
+<p>&emsp;但无论哪种继承方式，基类中的private成员只能被本类成员（类内）和友元访问，不能被派生类访问；以及protected成员可以被派生类访问。<br />
+&emsp;继承关系改变的是派生类的派生类对于基类成员的访问权限，以private继承为例，基类的public成员对于派生类的派生类对象也是不可访问的。</p>
+<ul>
+<li>重点说明<br />
+&emsp;以public 形式继承，编译器会在必要时刻，将派生类对象转换成基类对象；而以private形式继承，则不会发生这种行为。<br />
+&emsp;<strong>private 继承意味着implemented-in-terms-of(根据某物实现出)，即派生类与基类并不存在is-a的关系。</strong><br />
+&emsp;当你面对并不存在is-a关系的两个classes，其中一个类需要访问另一个类protected成员，或者需要重新定义其一或多个virtual函数，可以考虑private继承。  </li>
+</ul>
+<h2 id="3">3.多重继承</h2>
+<p>&emsp;允许派生类从它的一个或多个基类中继承构造函数，此外如果从多个基类中继承了相同的构造函数（即形参列表相同），则派生类必须定义专属版本的构造函数，与基类的形参列表不同。<br />
+&emsp;基类或派生类的合成拷贝控制成语、合成构造函数、赋值运算符或析构函数，它们对本身的成员依次进行初始化、赋值或销毁操作，此外还负责使用直接基类中对应的操作对一个对象的直接基类部分进行初始化、赋值或销毁直至继承链顶端。<br />
+&emsp;尽管在派生列表中同一个基类只能出现在一次，但派生类可以多次继承同一个类。派生类可以通过其多个基类分别继承同一个间接基类，也可以直接继承某个基类，然后通过另一个基类再一次间接继承该类。
+在默认情况下，派生类中含有继承链上每个类对应的子部分，<strong>如果某个类在派生过程中出现了多次，则派生类中将包含该类的多个子对象。</strong><br />
+&emsp;<strong>虚继承</strong>：令某个类做出声明，承诺愿意共享它的基类。其中共享的基类子对象称为虚基类。在这种机制下，不论虚基类在继承体系中出现了多少次，在派生类中都只包含唯一一个共享的虚基类子对象。</p>
+<pre><code class="language-C">  class Bear: virtual public ZooAnimal{}
+  //virtual和public顺序随意， virtual说明了一种意愿，即在后续的派生类当中共享虚基类的同一份实例
+</code></pre>
+<p>虚派生只影响从指定了虚基类的派生进一步派生出的类，不会影响派生类本身。（eg.即影响的是Bear的派生类）
+影响包括: 虚基类是由最底层的派生类初始化的；<br />
+<strong>虚基类成员的可见性</strong>:<br />
+假定B定义了一个名为x的成员，D1和D2都是从B虚继承得到的，D继承了D1和D2，则在D的作用域中，x通过D的俩个基类都是可见的，如果我们通过D的对象使用x，有三种可能性：<br />
+&emsp;1.如果在D1和D2中都没有x的定义，则x将被解析为B的成员，此时不存在二义性，一个D的对象只含有x的一个实例；<br />
+&emsp;2.如果x是B的成员，同时是D1和D2中某一个的成员，则同样没有二义性，派生类的x比共享虚基类B的x优先级更高；<br />
+&emsp;3.如果在D1和D2中都有x的定义，则直接访问x将产生二义性问题；与非虚的多重继承体系一样，解决这种二义性问题最好的方法是在派生类中为成员自定义新的实例。  </p>
+<p>含有虚基类的对象的构造顺序与一般的顺序区别：首先使用提供给最底层派生类构造函数的初始值初始化该对象的虚基类部分，接下来按照直接基类在派生列表中出现的顺序依次进行初始化；<br />
+析构函数顺序与此相反。</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

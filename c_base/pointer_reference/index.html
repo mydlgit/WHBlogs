@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>pointer_reference - Note</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Note</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">C++ Base <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../callable/" class="dropdown-item">callable</a>
+</li>
+                                    
+<li>
+    <a href="../class/" class="dropdown-item">class</a>
+</li>
+                                    
+<li>
+    <a href="../Complementary/" class="dropdown-item">complementary</a>
+</li>
+                                    
+<li>
+    <a href="../const/" class="dropdown-item">const</a>
+</li>
+                                    
+<li>
+    <a href="../constructor_destructor/" class="dropdown-item">constructor_destructor</a>
+</li>
+                                    
+<li>
+    <a href="../container/" class="dropdown-item">container</a>
+</li>
+                                    
+<li>
+    <a href="../exception/" class="dropdown-item">exception</a>
+</li>
+                                    
+<li>
+    <a href="../function/" class="dropdown-item">function</a>
+</li>
+                                    
+<li>
+    <a href="../friend_template/" class="dropdown-item">friend_template</a>
+</li>
+                                    
+<li>
+    <a href="../initialization/" class="dropdown-item">initialization</a>
+</li>
+                                    
+<li>
+    <a href="../inline/" class="dropdown-item">inline</a>
+</li>
+                                    
+<li>
+    <a href="../inherit/" class="dropdown-item">inherit</a>
+</li>
+                                    
+<li>
+    <a href="../iterator/" class="dropdown-item">iterator</a>
+</li>
+                                    
+<li>
+    <a href="../memory/" class="dropdown-item">memory</a>
+</li>
+                                    
+<li>
+    <a href="../new_delete/" class="dropdown-item">new_delete</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">pointer_reference</a>
+</li>
+                                    
+<li>
+    <a href="../static/" class="dropdown-item">static</a>
+</li>
+                                    
+<li>
+    <a href="../virtual/" class="dropdown-item">virtual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EffectiveCPP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../EffectiveCPP/rule/" class="dropdown-item">RULES</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Linux os <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../os/0_index/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../os/1_introduction/" class="dropdown-item">1_开始</a>
+</li>
+                                    
+<li>
+    <a href="../../os/2_as86/" class="dropdown-item">2_汇编语法</a>
+</li>
+                                    
+<li>
+    <a href="../../os/3_80x86_protect_mode/" class="dropdown-item">3_保护模式</a>
+</li>
+                                    
+<li>
+    <a href="../../os/4_kernel_struct/" class="dropdown-item">4_内核体系结构</a>
+</li>
+                                    
+<li>
+    <a href="../../os/5_os/" class="dropdown-item">5_现代操作系统</a>
+</li>
+                                    
+<li>
+    <a href="../../os/7_simple_os/" class="dropdown-item">7_simple_os</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MySQL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../MySQL/0_start/" class="dropdown-item">home</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DataStruct <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../DataStruct/Tree/" class="dropdown-item">Tree</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Sort/" class="dropdown-item">Sort</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Graph/" class="dropdown-item">Graph</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/OtherStruct/" class="dropdown-item">Others</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Algorithm/" class="dropdown-item">Algorithm</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/API/" class="dropdown-item">API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Network <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Network/home/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/1_application/" class="dropdown-item">application</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/2_transport/" class="dropdown-item">transport</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/3_network/" class="dropdown-item">network</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/4_link/" class="dropdown-item">link</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/5_netsafe/" class="dropdown-item">safe</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">interview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interview/" class="dropdown-item">面试</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../new_delete/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../static/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#and" class="nav-link">指针 and 引用</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">指针</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#about-this-pointer" class="nav-link">About this pointer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">引用</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#c-11" class="nav-link">C++ 11 引用</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">引用限定符</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">指针与引用区别</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="and">指针 and 引用</h1>
+<h2 id="_1">指针</h2>
+<ul>
+<li>
+<p>类型: 内置指针：由new操作返回的指针，绑定的是动态分配对象；普通指针：类似 int *p =1; 智能指针;<br />
+隐式销毁一个内置指针类型的成员不会delete它所指向的对象；当指向一个对象的引用或者指针离开作用域时，析构函数不会执行。（是为了避免存在多个指针指向同一块内存时，误回收）但是指针变量本身所占的内存会被回收。  </p>
+</li>
+<li>
+<p>指针本身属于对象，其允许对指针赋值和拷贝，在定义时无须赋初值；而在块作用域内定义的指针如果没有被初始化，将是一个不确定的值。</p>
+</li>
+<li><pre>空指针：int *p = nullptr; int *p =0; int *p =NULL; 
+不允许将int变量赋值给指针，即使其值是0，即
+<code>int a =0; int * p = a; //错误</code>空指针指向的地址是特殊的，该地址不允许存放数据和不允许程序访问，所以空指针不能操作该地址里的东西，
+可以理解为“指针指向了空，无法操作了”</pre>  </li>
+<li>
+<p><pre>指针有两个属性:指向变量/对象的地址和长度，但是指针只存储地址,长度则取决于指针的类型；
+编译器根据指针的类型从指针指向的地址向后寻址，指针类型不同则寻址范围也不同,
+比如:int*从指定地址向后寻找4字节作为变量的存储单元; double*从指定地址向后寻找8字节作为变量的存储单元。
+而void* 指针则没有类型，其可以存放任意类型对象的地址，但我们不能直接操作void* 指针所指向的对象。
+void指针不能参与指针运算,除非进行转换，(type*) vp++;</pre></p>
+</li>
+<li>
+<p>const指针： int * const a; 记住*放在const之前用以说明指针是一个常量，不变的是指针本身而非指向的对象的值</p>
+</li>
+<li>constexpr指针： constexpr int * p = nullptr; p是一个指向整数的常量指针，因为constexpr把它所定义的对象置为了顶层const。  </li>
+<li><strong>解引用：对指针解引用会得到所指的对象，是一个左值；而迭代器的解引用是重载了*运算符，其返回所指元素的引用。</strong>  </li>
+<li>指针的类型必须和其所指向对象的类型一致，有两种情况例外:<br />
+&emsp;第一种，指向常量的指针没有规定其所指向的对象必须是一个常量，仅仅要求不能通过该指针改变对象的值。  <br />
+&emsp;第二种，指针类型指向基类，但其所指向实际对象是派生类类型。  </li>
+<li>
+<p>int *p: p是指向int型变量的指针变量
+int* *p： p是指向int*型变量的指针变量，即指向指针的指针。  </p>
+</li>
+<li>
+<p>T *p; // p+1 实际为p+sizeof(T)*1;   </p>
+</li>
+</ul>
+<p><strong>智能指针</strong>：自动释放所指向的对象，其是一种模板，在创建智能指针时，需要提供指针可以指向的类型，有三种类型，都定义在memory头文件中。  </p>
+<ul>
+<li>shared_ptr<br />
+&emsp;允许多个指针指向同一个对象; <br />
+&emsp;当用一个shared_ptr初始化另一个shared_ptr或者将它作为参数传递给一个函数以及作为函数的返回值，它所关联的计数器（引用计数）就会递增；若是给其赋予新值，或是shared_ptr被销毁， 它就会自动释放自己所管理的对象。  <br />
+<img alt="avatar" src="../../images/c_base/31.png" />
+&emsp; 用来初始化智能指针的普通指针必须指向动态内存(通过new分配的内存)，因为智能指针默认使用delete
+来释放所关联的对象。如果将智能指针绑定到一个指向其他类型的资源的指针上，必须提供自己的操作来替代delete.<br />
+&emsp; 接受指针参数的智能指针构造函数是explicit, 意味着必须用直接初始化形式来初始化一个智能指针：</li>
+</ul>
+<pre><code class="language-C">    shared_ptr &lt; int &gt; p1(new int(1));
+    shared_ptr &lt; int &gt; p2 = new int(1); //错误
+</code></pre>
+<ul>
+<li>
+<p>unique_ptr<br />
+&emsp;独占所指向的对象, 某一时刻只能有一个unique_ptr指向一个给定的对象，故其不支持拷贝和赋值操作;<br />
+&emsp;通过调用release或者reset可以将指针的所有权从一个非const unique_ptr传给另一个unique_ptr: <br />
+&emsp;<code>unique_ptr<string> p(p1.release()); p2.reset(p3.release());</code><br />
+&emsp;不能拷贝unique_ptr的规则有一个例外：即可以拷贝和赋值一个将要被销毁的unique_ptr, 例如从函数返回一个unique_ptr。<br />
+<img alt="avatar" src="../../images/c_base/32.png" /></p>
+</li>
+<li>
+<p>weak_ptr<br />
+&emsp;属于一种弱引用，指向shared_ptr所管理的对象。<br />
+&emsp;weak_ptr主要用来解决循环引用的问题。
+<img alt="avaatar" src="../../images/c_base/33.png" /></p>
+</li>
+<li>
+<p>智能指针使用规范：<br />
+&emsp;不使用相同的内置指针值初始化或reset多个智能指针；<br />
+&emsp;不delete get()返回的指针；<br />
+&emsp;不使用get()初始化或reset另一个智能指针；<br />
+&emsp;如果使用get()返回的指针，记住当最后一个对应的智能指针销毁后，指针就变为无效了；<br />
+&emsp;当使用智能指针管理的资源不是new分配的内存，记住传递给它一个删除器。<br />
+&emsp;一般情况下，智能指针的默认删除器即可释放保存的指针，但特殊情况下，如：资源不是 new 出来的(一般也意味着不能 delete), 可能是 malloc 出来的或者资源是被第三方库管理的 (第三方提供资源获取和资源释放接口)；资源不是 RAII 的, 意味着析构函数不会把资源完全释放掉.，即单纯 delete 还不够；<br />
+&emsp;<b>如果ptr不是指向个object，而是一个object的数组。那么构造shared_ptr时候就得自己传入删除器</b>,
+例如这里传入一个lambda类型的deletor, <code>shared_ptr(ptr, [](void*){delete [] ptr})</code>  </p>
+</li>
+<li>
+<p><b>智能指针与动态数组</b><br />
+&emsp;可以使用unique_ptr来管理new分配的数组：  </p>
+</li>
+</ul>
+<pre><code class="language-C">    unique_ptr&lt; T [] &gt; up(new T [10]);
+    auto p = up.release(); //up放弃指针的控制权，并返回指针，然后将up置为空
+    delete p;   
+    or up.reset();  // 释放up指向的对象， up.reset(q); up释放原先占有内存，改为指向q所指向的内存  
+    /*此时不能使用点和箭头成员运算符，因为up不是指向单个对象;但可以使用下标运算符访问数组中的元素
+（动态数组本身并非数组类型，是不支持下标运算的）。*/
+</code></pre>
+<p>&emsp;shared_ptr不直接支持管理动态数组，必须提供自己定义的删除器  </p>
+<pre><code class="language-C">    shared_ptr&lt; int &gt; sp(new int[10],  \[](int\* p){delete \[] p;});
+    sp.reset();
+    /* 不过shared_ptr没有定义下标运算符，且所有智能指针类型都不支持指针算术运算，
+因此只能通过get()获取内置指针，用来访问数组元素。*/
+</code></pre>
+<ul>
+<li>
+<p>什么时候使用动态内存？<br />
+&emsp;程序不知道自己需要使用多少对象, 如容器; 程序不知道所需对象的准确类型；程序需要在多个对象间共享数据。  </p>
+</li>
+<li>
+<p>shared_ptr与unique_ptr的另一个差异：允许用户重载默认删除器的方式<br />
+前者只要在创建或reset指针时传递一个可调用对象即可，后者只能在定义时以显式模板实参的形式提供删除器的类型。<br />
+通过在编译时绑定删除器，unique_ptr避免了间接调用删除器的运行时开销；而在运行时绑定删除器，shared_ptr使得用户重载删除器更为方便。<br />
+    <pre>
+shared_ptr<T> p(q, d);
+p.reset(q, d); //无需在定义时指明
+.................................................................................
+unique_ptr(connection, decltype(end_connection)*) p(&amp;c, end_connection);
+//end_connection 与end_connection_2两者返回类型相同，即要求必须在定义时提供删除器的类型。
+p.reset(&amp;c, end_connection_2)
+</pre></p>
+</li>
+</ul>
+<h2 id="about-this-pointer">About this pointer</h2>
+<p>&emsp;
+this指针，在 C++ 中，每一个对象都能通过 this 指针来访问自己的地址。<strong>this 指针是所有成员函数的隐含参数。</strong>
+因此，在成员函数内部，它可以用来指向调用对象。当我们调用成员函数时，实际上是替某个对象调用它。<br />
+&emsp;成员函数通过一个名为 this 的额外隐式参数来访问调用它的那个对象，当我们调用一个成员函数时，用请求该函数的对象地址初始化 this；对于我们来说，this 形参是隐式定义的。实际上，任何自定义名为 this 的参数或变量的行为都是非法的。<br />
+&emsp;一般来说，this类型是一个指向 非常量类 类型的const指针（eg. class_name* const this），因此不能将this绑定到一个常量对象上；所以我们不能调用常量对象的非常量成员函数，因为这会用该常量对象的地址初始化this，但this指向的是非常量类类型，将引发编译器报错。<br />
+&emsp;c++允许的做法是把const关键字放在成员函数的参数列表之后，以此来改变this指针的类型。因此在常量对象调用常量成员函数时，this指针类型为指向 const 对象的 const 指针。  </p>
+<h2 id="_2">引用</h2>
+<p>&emsp;引用并非对象，而是为一个已经存在的对象所起的另外一个名字，因此不存在引用的引用。定义引用时，程序把引用和它的初始值对象绑定在一起，而不是把初始值拷贝给引用。<br />
+&emsp;引用的类型必须与其所引用对象的类型一致，但是有两种例外：</p>
+<blockquote>
+<blockquote>
+<ul>
+<li>第一种：在初始化常量引用时允许用任意表达式作为初始值，只要该表达式的结果能转换成引用的类型即可，尤其，允许为一个常量引用绑定非常量的对象、字面值、甚至一个表达式。此时，通过该常量引用不能修改器绑定的对象的值，但若该绑定的对象本身是非常量，可以自我修改。  </li>
+<li>第二种情况是派生类引用向基类引用的自动类型转换。  </li>
+</ul>
+</blockquote>
+</blockquote>
+<p>&emsp; return by reference: 传递者无需知道接收者是否是以reference形式接收；而returen by pointer要求接收者必须是以pointer形式。</p>
+<h2 id="c-11">C++ 11 引用</h2>
+<ul>
+<li>
+<p>左值引用 and 右值引用<br />
+&emsp;左值引用“&amp;”和右值引用“&amp;&amp;”：C++中所有的值都必然属于左值、右值二者之一。左值是指表达式结束后依然存在的持久化对象，<strong>右值是指表达式结束时就不再存在的临时对象</strong>。所有的具名变量或者对象都是左值，而右值不具名。区分左值和右值的便捷方法：看能不能对表达式取地址，如果能，则为左值，否则为右值。<br />
+<img alt="avatar" src="../../images/c_base/2.png" /><br />
+&emsp;<strong>虽然左值引用不可以绑定右值，但常量左值引用却可以绑定const右值</strong> <br />
+&emsp;<code>const int &amp;a = 1;   //a并不能被修改</code>  </p>
+</li>
+<li>
+<p>规则1. 引用折叠<br />
+如果间接的创建一个引用的引用，则这些引用就会“折叠”。在所有情况下（除了一个例外），引用折叠成一个普通的左值引用类型。一种特殊情况下，引用会折叠成右值引用，即右值引用的右值引用， T&amp;&amp; &amp;&amp;。即<br />
+    <pre>
+X&amp; &amp;、X&amp; &amp;&amp;、X&amp;&amp; &amp;都折叠成X&amp;
+X&amp;&amp; &amp;&amp;折叠为X&amp;&amp;
+</pre></p>
+</li>
+<li>
+<p>规则2. 右值引用特殊类型推断规则<br />
+&emsp;当将一个左值传递给一个参数是右值引用的函数，且此右值引用指向模板类型参数(T&amp;&amp;)时，编译器推断模板参数类型为实参的左值引用，如  </p>
+</li>
+</ul>
+<pre><code class="language-C">    template&lt;typename T&gt; 
+    void f(T&amp;&amp;);
+    int i = 42;
+    f(i)    // 模板参数类型T将推断为int&amp;类型，而非int。
+</code></pre>
+<p>&emsp;如果一个函数形参是一个指向<strong>模板类型</strong>的右值引用，则该参数可以被绑定到一个左值上。  </p>
+<ul>
+<li>
+<p>规则3<br />
+&emsp;虽然不能隐式的将一个左值转换为右值引用，但是可以通过static_cast显示地将一个左值转换为一个右值。</p>
+</li>
+<li>
+<p><strong><em>std::move</em></strong>     <br />
+&emsp;在C++11中，标准库在<utility>中提供了一个有用的函数std::move，std::move并不能移动任何东西，它唯一的功能是将一个左值强制转化为右值引用，继而可以通过右值引用使用该值，以用于移动语义。从实现上讲，std::move自身除了做一些参数的推断之外，返回右值引用本质上还是靠static_cast<T&&>完成的。  </p>
+</li>
+</ul>
+<pre><code class="language-C">    template&lt;typename T&gt;
+    typename remove_reference&lt;T&gt;::type &amp;&amp; move(T&amp;&amp; t)
+    {
+        return static_cast&lt;typename remove_reference&lt;T&gt;::type &amp;&amp;&gt;(t);
+    }
+</code></pre>
+<p>&emsp;&emsp;根据规则1，2可知，move既可以传递一个左值，也可以传递一个右值。</p>
+<p>&emsp;&emsp;<strong>std::move是将对象的状态或者所有权从一个对象转移到另一个对象，只是转移</strong>，没有内存的搬迁或者内存拷贝所以可以提高利用效率,改善性能。<br />
+&emsp;&emsp;<code>eg: int &amp;&amp; rr1 = std::move(rr); //调用move意味着除对rr赋值或销毁它时，我们将不再使用它。</code></p>
+<ul>
+<li>std::forward<br />
+&emsp;完美转发: 完美转发实现了参数在传递过程中保持其值属性的功能，即若是左值，则传递之后仍然是左值，若是右值，则传递之后仍然是右值。<br />
+&emsp;std::forward只有在它的参数绑定到一个右值上的时候，它才转换它的参数到一个右值。</li>
+</ul>
+<pre><code class="language-C">    class Foo
+    {
+    public:
+        std::string member;
+
+        template&lt;typename T&gt;
+        Foo(T&amp;&amp; member): member{std::forward&lt;T&gt;(member)} {}
+    };
+    /*
+    传递一个lvalue或者传递一个const lvaue:
+    传递一个lvalue，模板推导之后 T = std::string&amp;
+    传递一个const lvaue, 模板推导之后T = const std::string&amp;
+    T&amp; &amp;&amp;将折叠为T&amp;，即std::string&amp; &amp;&amp; 折叠为 std::string&amp;
+    最终函数为: Foo(string&amp; member): member{std::forward&lt;string&amp;&gt;(member)} {}
+    std::forward&lt;string&amp;&gt;(member)将返回一个左值，最终调用拷贝构造函数, 传递一个rvalue
+
+    传递一个rvalue:
+    模板推导之后 T = std::string
+    最终函数为: Foo(string&amp;&amp; member): member{std::forward&lt;string&gt;(member)} {}
+    std::forward&lt;string&gt;(member) 将返回一个右值，最终调用移动构造函数；
+    */
+</code></pre>
+<h2 id="_3">引用限定符</h2>
+<p>&emsp;在参数列表后放置&amp; 或者&amp;&amp;, 分别指出this指针指向一个左值或右值；只能作用于非static成员函数，且必须同时出现在函数的声明和定义中；若同时采用const限定，则引用限定符必须放在const后面。且如果定义两个或以上具有相同名字和参数列表的成员函数，必须全部加上引用限定符（不同于const成员函数可以通过是否加const来重载）。</p>
+<h2 id="_4">指针与引用区别</h2></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

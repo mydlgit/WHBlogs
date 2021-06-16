@@ -38,75 +38,75 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../c_base/callable/" class="dropdown-item">callable</a>
+    <a href="../../c_base/callable.md" class="dropdown-item">callable</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/class/" class="dropdown-item">class</a>
+    <a href="../../c_base/class.md" class="dropdown-item">class</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/Complementary/" class="dropdown-item">complementary</a>
+    <a href="../../c_base/Complementary.md" class="dropdown-item">complementary</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/const/" class="dropdown-item">const</a>
+    <a href="../../c_base/const.md" class="dropdown-item">const</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/constructor_destructor/" class="dropdown-item">constructor_destructor</a>
+    <a href="../../c_base/constructor_destructor.md" class="dropdown-item">constructor_destructor</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/container/" class="dropdown-item">container</a>
+    <a href="../../c_base/container.md" class="dropdown-item">container</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/exception/" class="dropdown-item">exception</a>
+    <a href="../../c_base/exception.md" class="dropdown-item">exception</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/function/" class="dropdown-item">function</a>
+    <a href="../../c_base/function.md" class="dropdown-item">function</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/friend_template/" class="dropdown-item">friend_template</a>
+    <a href="../../c_base/friend_template.md" class="dropdown-item">friend_template</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/initialization/" class="dropdown-item">initialization</a>
+    <a href="../../c_base/initialization.md" class="dropdown-item">initialization</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/inline/" class="dropdown-item">inline</a>
+    <a href="../../c_base/inline.md" class="dropdown-item">inline</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/inherit/" class="dropdown-item">inherit</a>
+    <a href="../../c_base/inherit.md" class="dropdown-item">inherit</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/iterator/" class="dropdown-item">iterator</a>
+    <a href="../../c_base/iterator.md" class="dropdown-item">iterator</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/memory/" class="dropdown-item">memory</a>
+    <a href="../../c_base/memory.md" class="dropdown-item">memory</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/new_delete/" class="dropdown-item">new_delete</a>
+    <a href="../../c_base/new_delete.md" class="dropdown-item">new_delete</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/pointer_reference/" class="dropdown-item">pointer_reference</a>
+    <a href="../../c_base/pointer_reference.md" class="dropdown-item">pointer_reference</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/static/" class="dropdown-item">static</a>
+    <a href="../../c_base/static.md" class="dropdown-item">static</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/virtual/" class="dropdown-item">virtual</a>
+    <a href="../../c_base/virtual.md" class="dropdown-item">virtual</a>
 </li>
                                 </ul>
                             </li>
@@ -115,7 +115,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../EffectiveCPP/rule/" class="dropdown-item">RULES</a>
+    <a href="../../EffectiveCPP/rule.md" class="dropdown-item">RULES</a>
 </li>
                                 </ul>
                             </li>
@@ -195,7 +195,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../Network/home/" class="dropdown-item">home</a>
+    <a href="../../Network/home.md" class="dropdown-item">home</a>
 </li>
                                     
 <li>
@@ -322,6 +322,29 @@
 <ul>
 <li>程序链接与装入<br />
 <img alt="avatar" src="../../images/linux_0.1x/85.png" /></li>
+</ul>
+<pre>
+库是一种可执行代码的二进制形式，可以被操作系统载入内存执行。
+库有两种：静态库（.a、.lib）和动态库（.so、.dll）。 windows上对应的是.lib .dll， linux上对应的是.a .so。
+&emsp;
+静态链接：一个项目下的多个源文件可能存在多种依赖关系，如一个源文件可能要调用另一个源文件中定义的函数，
+但是每个源文件都是独立编译的，各自生成一个目标文件；在链接阶段，会将生成的目标文件.o与引用到的库一起链接打包
+到可执行文件中。因此对应的链接方式称为静态链接。
+静态链接缺点:
+一是浪费空间，因为每个可执行程序中对所有需要的目标文件都要有一份副本，所以如果多个程序对同一个目标文件都有依赖，
+如多个程序中都调用了printf()函数，则这多个程序中都含有printf.o，所以同一个目标文件都在内存存在多个副本；
+另一方面就是更新比较困难，因为每当库函数的代码修改了，就需要重新进行编译链接形成可执行程序。
+静态链接的优点就是，在可执行程序中已经具备了所有执行程序所需要的任何东西，在执行的时候运行速度快。
+&emsp;
+动态链接：动态链接的基本思想是把程序按照模块拆分成各个相对独立部分，在程序运行时才将它们链接在一起
+形成一个完整的程序，而不是像静态链接一样把所有程序模块都链接成一个单独的可执行文件。
+动态链接优缺点: 即使需要每个程序都依赖同一个库，但是该库不会像静态链接那样在内存中存在多份副本，
+而是这多个程序在执行时共享同一份副本；另一个优点是，更新也比较方便，更新时只需要替换原来的目标文件，
+而无需将所有的程序再重新链接一遍。当程序下一次运行时，新版本的目标文件会被自动加载到内存并且链接起来，
+程序就完成了升级的目标。
+因为把链接推迟到了程序运行时，所以每次执行程序都需要进行链接，所以性能会有一定损失。
+</pre>
+<ul>
 <li>动态内存分配
 <img alt="avatar" src="../../images/linux_0.1x/88.png" /></li>
 </ul></div>

@@ -38,75 +38,75 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../c_base/callable/" class="dropdown-item">callable</a>
+    <a href="../../c_base/callable.md" class="dropdown-item">callable</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/class/" class="dropdown-item">class</a>
+    <a href="../../c_base/class.md" class="dropdown-item">class</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/Complementary/" class="dropdown-item">complementary</a>
+    <a href="../../c_base/Complementary.md" class="dropdown-item">complementary</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/const/" class="dropdown-item">const</a>
+    <a href="../../c_base/const.md" class="dropdown-item">const</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/constructor_destructor/" class="dropdown-item">constructor_destructor</a>
+    <a href="../../c_base/constructor_destructor.md" class="dropdown-item">constructor_destructor</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/container/" class="dropdown-item">container</a>
+    <a href="../../c_base/container.md" class="dropdown-item">container</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/exception/" class="dropdown-item">exception</a>
+    <a href="../../c_base/exception.md" class="dropdown-item">exception</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/function/" class="dropdown-item">function</a>
+    <a href="../../c_base/function.md" class="dropdown-item">function</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/friend_template/" class="dropdown-item">friend_template</a>
+    <a href="../../c_base/friend_template.md" class="dropdown-item">friend_template</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/initialization/" class="dropdown-item">initialization</a>
+    <a href="../../c_base/initialization.md" class="dropdown-item">initialization</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/inline/" class="dropdown-item">inline</a>
+    <a href="../../c_base/inline.md" class="dropdown-item">inline</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/inherit/" class="dropdown-item">inherit</a>
+    <a href="../../c_base/inherit.md" class="dropdown-item">inherit</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/iterator/" class="dropdown-item">iterator</a>
+    <a href="../../c_base/iterator.md" class="dropdown-item">iterator</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/memory/" class="dropdown-item">memory</a>
+    <a href="../../c_base/memory.md" class="dropdown-item">memory</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/new_delete/" class="dropdown-item">new_delete</a>
+    <a href="../../c_base/new_delete.md" class="dropdown-item">new_delete</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/pointer_reference/" class="dropdown-item">pointer_reference</a>
+    <a href="../../c_base/pointer_reference.md" class="dropdown-item">pointer_reference</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/static/" class="dropdown-item">static</a>
+    <a href="../../c_base/static.md" class="dropdown-item">static</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/virtual/" class="dropdown-item">virtual</a>
+    <a href="../../c_base/virtual.md" class="dropdown-item">virtual</a>
 </li>
                                 </ul>
                             </li>
@@ -115,7 +115,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../EffectiveCPP/rule/" class="dropdown-item">RULES</a>
+    <a href="../../EffectiveCPP/rule.md" class="dropdown-item">RULES</a>
 </li>
                                 </ul>
                             </li>
@@ -195,7 +195,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../Network/home/" class="dropdown-item">home</a>
+    <a href="../../Network/home.md" class="dropdown-item">home</a>
 </li>
                                     
 <li>
@@ -334,7 +334,7 @@
 <ul>
 <li><strong><em>CR3</em></strong>含有存放页目录表页面的物理地址，因此 CR3 也被称为 PDBR。因为页目录表页面是页对齐的，所以该寄存器只有高 20 位是有效的，且CR3 中加载一个新值时低12位必须置0。  </li>
 <li><strong><em>CR2</em></strong>用于出现页异常时报告出错信息。在报告页异常时，处理器会把引起异常的线性地址存放在 CR2中。因此操作系统中的页异常处理程序可以通过检查 CR2 的内容来确定线性地存中读取页表项时，地址空间中哪一个页面引发了异常。  </li>
-<li>使用 MOV 指令加载 CR3 时具有让页高速缓冲无效的副作用。为了减少地址转换所要求的总线周期数量，最近访问的页目录和页表会被存放在处理器的页高速缓冲器件中，该缓冲器件被称为转换查找缓冲区<strong><em>TLB</em></strong>（Translation Lookaside Buffer）。只有当 TLB 中不包含要求的页表项时才会使用额外的总线周期从内存中读取页表项。</li>
+<li>使用 MOV 指令加载 CR3 时具有让页高速缓冲无效的副作用。为了减少地址转换所要求的总线周期数量，最近访问的页目录和页表会被存放在处理器的页高速缓冲器件中(位于Cache中，查找速度高于内存)，该缓冲器件被称为转换查找缓冲区<strong><em>TLB</em></strong>（Translation Lookaside Buffer）。只有当 TLB 中不包含要求的页表项时才会使用额外的总线周期从内存中读取页表项。</li>
 </ul>
 </blockquote>
 </blockquote>
@@ -362,7 +362,8 @@
 <h4 id="322">3.2.2 分页机制</h4>
 <p>&emsp;分页机制为传统需求页、虚拟内存系统提供了实现机制。其中虚拟内存系统用于实现程序代码按要求映射到物理内存中。<br />
 &emsp;使用<strong>虚拟存储</strong>技术。虚拟存储是一种内存管理技术，使用这种技术可让编程人员产生内存空间要比计算机中实际物理内存容量大很多的错觉。在使用虚拟存储的环境中，大容量的线性地址空间需要使用小块的物理内存（RAM 或 ROM）以及某些外部存储空间（例如大容量硬盘）来模拟。当使用分页时，每个段被划分成页面（通常每页为 4KB 大小），页面会被存储于物理内存中或硬盘上。操作系统通过维护一个页目录和一些页表来留意这些页面。当程序（或任务）试图访问线性地址空间中的一个地址位置时，处理器就会使用页目录和页表把线性地址转换成一个物理地址，然后在该内存位置上执行所要求的操作（读或写）。
-如果当前被访问的页面不在物理内存中，处理器就会中断程序的执行（通过产生一个页错误异常）。然后操作系统就可以从硬盘上把该页面读入物理内存中，并继续执行刚才被中断的程序。  </p>
+如果当前被访问的页面不在物理内存中，处理器就会中断程序的执行（通过产生一个页错误异常）。然后操作系统就可以从硬盘上把该页面读入物理内存中，并继续执行刚才被中断的程序。
+&emsp;<strong>虚拟内存好处</strong>: 虚拟内存管理可以控制物理内存的访问权限，访问的虚拟页若没有权限，则触发一个保护异常，终止进程；虚拟内存让每个进程都有独立的地址空间；虚拟地址到物理地址的映射会给分配和释放内存带来方便，物理内存不连续的地址可以由连续的虚拟地址映射得到；内存效率高，使用页面调度，不会造成大量得数据装入内存。  </p>
 <h4 id="322_1">3.2.2 两种机制区别</h4>
 <ul>
 <li><strong>分页使用了固定长度的页面。</strong><br />

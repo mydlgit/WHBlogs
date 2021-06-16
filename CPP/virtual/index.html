@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>About Virtual Function - Note</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Note</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">C++ Base <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../c_base/callable.md" class="dropdown-item">callable</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/class.md" class="dropdown-item">class</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/Complementary.md" class="dropdown-item">complementary</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/const.md" class="dropdown-item">const</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/constructor_destructor.md" class="dropdown-item">constructor_destructor</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/container.md" class="dropdown-item">container</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/exception.md" class="dropdown-item">exception</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/function.md" class="dropdown-item">function</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/friend_template.md" class="dropdown-item">friend_template</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/initialization.md" class="dropdown-item">initialization</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inline.md" class="dropdown-item">inline</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inherit.md" class="dropdown-item">inherit</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/iterator.md" class="dropdown-item">iterator</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/memory.md" class="dropdown-item">memory</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/new_delete.md" class="dropdown-item">new_delete</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/pointer_reference.md" class="dropdown-item">pointer_reference</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/static.md" class="dropdown-item">static</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/virtual.md" class="dropdown-item">virtual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EffectiveCPP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../EffectiveCPP/rule.md" class="dropdown-item">RULES</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Linux os <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../os/0_index/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../os/1_introduction/" class="dropdown-item">1_开始</a>
+</li>
+                                    
+<li>
+    <a href="../../os/2_as86/" class="dropdown-item">2_汇编语法</a>
+</li>
+                                    
+<li>
+    <a href="../../os/3_80x86_protect_mode/" class="dropdown-item">3_保护模式</a>
+</li>
+                                    
+<li>
+    <a href="../../os/4_kernel_struct/" class="dropdown-item">4_内核体系结构</a>
+</li>
+                                    
+<li>
+    <a href="../../os/5_os/" class="dropdown-item">5_现代操作系统</a>
+</li>
+                                    
+<li>
+    <a href="../../os/7_simple_os/" class="dropdown-item">7_simple_os</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MySQL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../MySQL/0_start/" class="dropdown-item">home</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DataStruct <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../DataStruct/Tree/" class="dropdown-item">Tree</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Sort/" class="dropdown-item">Sort</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Graph/" class="dropdown-item">Graph</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/OtherStruct/" class="dropdown-item">Others</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Algorithm/" class="dropdown-item">Algorithm</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/API/" class="dropdown-item">API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Network <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Network/home.md" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/1_application/" class="dropdown-item">application</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/2_transport/" class="dropdown-item">transport</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/3_network/" class="dropdown-item">network</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/4_link/" class="dropdown-item">link</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/5_netsafe/" class="dropdown-item">safe</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">interview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interview/" class="dropdown-item">面试</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#about-virtual-function" class="nav-link">About Virtual Function</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#c" class="nav-link">虚函数实现了C++的多态</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">虚函数的静态决议</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">纯虚函数</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="about-virtual-function">About Virtual Function</h1>
+<h2 id="c">虚函数实现了C++的多态</h2>
+<p>&emsp;在c++中，一个基类的指针或者引用可以指向或者引用派生类的对象。对于基类中的虚函数，其含义是：当通过基类的指针或者引用调用该成员函数时，若派生类覆盖(override)了基类中的虚成员函数，将根据指针实际指向的对象类型确定调用的函数，而非指针的类型。<br />
+&emsp;上述行为也可以称为动态绑定（运行时绑定），即函数的运行版本由实参决定，在运行时选择函数的版本。   </p>
+<pre><code class="language-C">class Base{
+public:
+virtual void test(){ cout &lt;&lt; “基类方法”};
+virtual ~Base(){};
+}
+class Derived:public Base{
+public:
+void test(){ cout &lt;&lt; “派生类方法”};
+}
+</code></pre>
+<ul>
+<li>只需将基类中的成员函数声明为虚函数即可，派生类中重写的virtual函数自动成为虚函数；  </li>
+<li>
+<p><strong>派生类若存在和父类虚函数同名但参数类型不同的函数时，会导致父类中的这个虚函数对于子类对象不可见。此时可通过<code>Derived.Base::fcn()</code>来调用被隐藏的函数</strong>  </p>
+</li>
+<li>
+<p><strong>基类中的析构函数必须为虚函数</strong>，否则会出现对象释放错误。如果基类的析构函数不是虚函数，则删除一个基类的指针的时候，C++不管这个指针指向一个基类对象还是一个派生类的对象，调用的都是基类的析构函数而不是派生类的。如果实际指向的派生类对象依赖于派生类的析构函数的代码来释放资源，这样做就会造成资源泄漏。如果基类的析构函数是虚函数，并且派生类提供自己的析构函数，则删除基类指针时，会调用派生类的析构函数。  </p>
+</li>
+<li>
+<p>虚函数的使用将导致类对象占用更大的内存空间。编译器给每一个包括虚函数的对象添加了一个隐藏成员：指向虚函数表的指针<strong><em>vptr</em></strong>。<br />
+&emsp;<strong>虚函数表是编译器在编译时设置的静态数组，属于类而非某个具体的实例</strong>。虚函数表包含可由类的对象调用的每个虚函数的一个条目。此表中的每个条目是一个函数指针，指向该类可访问的函数。<br />
+&emsp;vptr在创建类实例时自动设置，以便指向该类的虚函数表(与this指针不同，this指针实际上是编译器用来解析自引用的函数参数，vptr是一个真正的指针)。当派生类重新定义虚函数时，则将该函数的地址添加到虚函数表中。无论一个类对象中定义了多少个虚函数，虚函数指针只有一个。相应地，每个对象在内存中的大小要比没有虚函数时大4个字节（32位主机, 64位机器则为8字节)。    </p>
+</li>
+<li>
+<p><strong>构造函数不可以声明为虚函数：尽管虚函数表vtable是在编译阶段就已经建立的，但指向虚函数表的指针vptr是在运行阶段实例化对象时才产生的</strong>。 如果构造函数是虚的，就需要通过虚指针指向的虚函数表来调用，可是此时对象还没有实例化，尚未分配内存，就没有虚指针，所以构造函数不能是虚函数。</p>
+</li>
+<li>
+<p>静态函数不可以声明为虚函数: static成员函数不属于任何类对象或类实例，且虚函数依靠vptr和vtable来处理。vptr是一个指针，在类的构造函数中创建生成，通过this指针来访问它，静态成员函数没有this指针，所以无法访问vptr。    </p>
+</li>
+<li>
+<p>析构函数可以声明为虚函数。如果我们需要删除一个指向派生类的基类指针时，应该把析构函数声明为虚函数。 事实上，只要一个类有可能会被其它类所继承， 就应该声明虚析构函数(哪怕该析构函数不执行任何操作)。  </p>
+</li>
+</ul>
+<pre><code class="language-C">    class A {
+    public:
+        virtual void vfunc1();
+        virtual void vfunc2();
+        void func1();
+        void func2();
+    private:
+        int m_data1, m_data2;
+    };
+
+    class B : public A {
+    public:
+        virtual void vfunc1();
+        void func1();
+    private:
+        int m_data3;
+    };
+
+    class C: public B {
+    public:
+        virtual void vfunc2();
+        void func2();
+    private:
+        int m_data1, m_data4;
+    };
+</code></pre>
+<p><img alt="avatar" src="../../images/c_base/8.png" /></p>
+<ul>
+<li>通过虚函数表调用虚函数  </li>
+</ul>
+<pre><code class="language-C">class CTest {
+public:
+    virtual void Test1(void){cout&lt;&lt; &quot;CTest Test1\n&quot;;}
+    virtual void Test2(void){cout&lt;&lt; &quot;CTest Test2\n&quot;;}
+};
+
+typedef void(*fun)();
+void testT(){
+    CTest cc;
+    typedef long long int64;    // 64位机上，指针大小是8个Byte, 指针+1偏移64位长度
+    int64* Vptr=(int64*)(&amp;cc);  //虚指针值代表的是虚函数表入口地址
+    int64* pVtbl = (int64*)*Vptr;       //虚函数表是一个数组，数组元素是函数指针，pVtbl相当于数组元素首地址
+    int64* pFirstVf = (int64*)(pVtbl[0]);       //pVtbl[0] 等价于 *(pVtbl)
+    int64* pFirstVf2 = (int64*)*pVtbl;
+    int64* pSecondVf = (int64*)(pVtbl[1]);      //pVtbl[1] 等价于 *(pVtbl+1)
+    int64* pSecondVf2 = (int64*)*(pVtbl+1);
+
+    fun pf;
+    pf = (fun)pFirstVf;
+    pf();   // CTest Test1
+    pf = (fun)pFirstVf2;
+    pf();   //CTest Test1
+    pf = (fun)pSecondVf;
+    pf(); //CTest Test2
+    pf = (fun)pSecondVf2;
+    pf();   //CTest Test2
+}
+</code></pre>
+<ul>
+<li>多重继承机制下的虚函数表<br />
+&emsp;子类对象会有多个虚函数指针，指向不同的虚函数表，虚函数指针顺序按照派生顺序；如果子类改写了父类的虚函数，那么就会用子类自己的虚函数覆盖相应的父类虚函数；如果子类有新的虚函数，那么就添加到第一个虚函数表的末尾。  </li>
+</ul>
+<h2 id="_1">虚函数的静态决议</h2>
+<p>&emsp;在下面两种情况下，虚函数不会出现预期行为:</p>
+<blockquote>
+<blockquote>
+<ul>
+<li>在基类的constructor和destructor内，因为当我们构造派生类对象时，会首先调用基类的constructor，若基类中存在虚函数，则调用的是一定是基类自身的，而非派生类的，因为此时派生类的data members尚未初始化；同理，在基类deconstructor中存在虚函数也适用此规则，因为派生类的deconstructor先被调用，其date members已经被释放。   </li>
+<li>当我们使用基类的对象，而非指针或引用时；为了能在单一对象中展现多种型别，多态需要一层间接性，在C++中，<strong>惟有以基类的指针和引用才能支持面向对象编程概念</strong>。当我们为基类声明一个实际对象时，同时也就配置出足以容纳该对象的实际内存空间，如果传入一个派生类对象，那么就不一定有足够的内存放置派生类的各个data members, 那些属于派生类而非基类的成员将被切掉。   </li>
+</ul>
+</blockquote>
+</blockquote>
+<h2 id="_2">纯虚函数</h2>
+<p>在普通的纯虚函数后面加上“=0”， <code>eg. virtual void test() = 0;</code><br />
+&emsp;何时使用纯虚函数:  </p>
+<blockquote>
+<blockquote>
+<ul>
+<li>当想在基类中抽象出一个方法，且该基类只做能被继承（即为抽象基类），而不能被实例化；  </li>
+<li>这个方法必须在派生类(derived class)中被实现；
+如果满足以上两点，可以考虑将该方法申明为pure virtual function; 可以为纯虚函数提供定义，不过函数体必须定义在类的外部。</li>
+</ul>
+</blockquote>
+</blockquote></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

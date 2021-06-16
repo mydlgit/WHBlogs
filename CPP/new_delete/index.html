@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>About new and delete - Note</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Note</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">C++ Base <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../c_base/callable.md" class="dropdown-item">callable</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/class.md" class="dropdown-item">class</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/Complementary.md" class="dropdown-item">complementary</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/const.md" class="dropdown-item">const</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/constructor_destructor.md" class="dropdown-item">constructor_destructor</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/container.md" class="dropdown-item">container</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/exception.md" class="dropdown-item">exception</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/function.md" class="dropdown-item">function</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/friend_template.md" class="dropdown-item">friend_template</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/initialization.md" class="dropdown-item">initialization</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inline.md" class="dropdown-item">inline</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inherit.md" class="dropdown-item">inherit</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/iterator.md" class="dropdown-item">iterator</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/memory.md" class="dropdown-item">memory</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/new_delete.md" class="dropdown-item">new_delete</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/pointer_reference.md" class="dropdown-item">pointer_reference</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/static.md" class="dropdown-item">static</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/virtual.md" class="dropdown-item">virtual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EffectiveCPP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../EffectiveCPP/rule.md" class="dropdown-item">RULES</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Linux os <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../os/0_index/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../os/1_introduction/" class="dropdown-item">1_开始</a>
+</li>
+                                    
+<li>
+    <a href="../../os/2_as86/" class="dropdown-item">2_汇编语法</a>
+</li>
+                                    
+<li>
+    <a href="../../os/3_80x86_protect_mode/" class="dropdown-item">3_保护模式</a>
+</li>
+                                    
+<li>
+    <a href="../../os/4_kernel_struct/" class="dropdown-item">4_内核体系结构</a>
+</li>
+                                    
+<li>
+    <a href="../../os/5_os/" class="dropdown-item">5_现代操作系统</a>
+</li>
+                                    
+<li>
+    <a href="../../os/7_simple_os/" class="dropdown-item">7_simple_os</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MySQL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../MySQL/0_start/" class="dropdown-item">home</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DataStruct <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../DataStruct/Tree/" class="dropdown-item">Tree</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Sort/" class="dropdown-item">Sort</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Graph/" class="dropdown-item">Graph</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/OtherStruct/" class="dropdown-item">Others</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Algorithm/" class="dropdown-item">Algorithm</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/API/" class="dropdown-item">API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Network <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Network/home.md" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/1_application/" class="dropdown-item">application</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/2_transport/" class="dropdown-item">transport</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/3_network/" class="dropdown-item">network</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/4_link/" class="dropdown-item">link</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/5_netsafe/" class="dropdown-item">safe</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">interview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interview/" class="dropdown-item">面试</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#about-new-and-delete" class="nav-link">About new and delete</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#new" class="nav-link">new</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#delete" class="nav-link">delete</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">关于重载</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">总结</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="about-new-and-delete">About new and delete</h1>
+<h2 id="new">new</h2>
+<p>&emsp; 先分配内存，再调用构造函数  </p>
+<pre><code class="language-C">string* ps = new string(&quot;hello&quot;);
+// 编译器会转化为以下形式
+void* mem = operator new(sizeof(string));   // 分配内存
+ps = static_cast&lt;string*&gt;(mem);     //转型
+ps-&gt;string::string(&quot;hello&quot;);        //调用构造函数
+</code></pre>
+<h2 id="delete">delete</h2>
+<p>&emsp; 先调用析构函数，再释放内存  </p>
+<pre><code class="language-C">delete ps;
+// 编译器会转化为以下形式
+string::~string(ps);        // 析构函数
+operator delete(ps);        // 释放内存
+</code></pre>
+<p>&emsp; array new 必须要搭配array delete(即delete []); 对于内置类型，如int、double, 采用delete也可，因为int、double类型没有析构函数，内存会被正常释放；对于类类型，如果该类没有提供析构函数，且该类的成员中不包含类类型，只有内置类型，采用delte也不会有内存泄漏；但如果其中包含类类型成员或指针成员，则delete只会释放数组中第一个元素占用的内存，其余元素内存将会泄漏，此时程序不会报错；<br />
+&emsp;或若如下面情况，Demo中提供了析构函数(即使函数体为空)，无论类成员类型是内置类型，还是类类型、指针类型，由于内存布局中包含了数组长度，采用delete来试图释放内存都会报错。
+<img alt="avatar" src="../../images/c_base/35.png" /></p>
+<ul>
+<li>重复delete<br />
+&emsp;delete一次的指针并非NULL，而是成了空悬指针(dangling pointer)，虽然指针已经无效，但在很多机器上指针仍然保存着(已经释放了的)动态内存的地址。<br />
+&emsp; 重复delete会造成不可知的错误，虽然编译器可能会检测出重复delete的发生，但不要依赖编译器自身的选择。<br />
+&emsp; 对于delete一次的指针，可以显示令其为NULL，清楚指出该指针不指向任何对象，delete一个空指针不会有任何问题</li>
+</ul>
+<pre><code class="language-C">    int\* p = new int(1);
+    delete p;
+    p=NULL;
+    delete p; //删除一个空指针，不会报错
+
+</code></pre>
+<h2 id="_1">关于重载</h2>
+<pre><code class="language-C">    class FF
+    {
+    public:
+        FF() :_id(0) { std::cout &lt;&lt; &quot;default ctor.this=&quot; &lt;&lt; this &lt;&lt; &quot; id=&quot; &lt;&lt; _id &lt;&lt; std::endl; }
+        FF(int i) :_id(i) { std::cout &lt;&lt; &quot;ctor.this=&quot; &lt;&lt; this &lt;&lt; &quot; id=&quot; &lt;&lt; _id &lt;&lt; std::endl; }
+        ~FF() { std::cout &lt;&lt; &quot;dtor.this=&quot; &lt;&lt; this &lt;&lt; &quot; id=&quot; &lt;&lt; _id &lt;&lt; std::endl; }
+        static void* operator new(size_t size);
+        static void operator delete(void* pdead, size_t size);
+        static void* operator new[](size_t size);
+        static void operator delete[](void* pdead, size_t size);
+    private:
+        int _id;
+    };
+
+    void* FF::operator new(size_t size)
+    {
+        FF* p = (FF*)malloc(size);
+        std::cout &lt;&lt; &quot;调用了Foo::operator new&quot; &lt;&lt; std::endl;
+        return p;
+    }
+
+    void FF::operator delete(void* pdead, size_t size)
+    {
+        std::cout &lt;&lt; &quot;调用了Foo::operator delete&quot; &lt;&lt; std::endl;
+        free(pdead);
+    }
+    void* FF::operator new[](size_t size)
+    {
+        FF* p = (FF*)malloc(size);
+        std::cout &lt;&lt; &quot;调用了Foo::operator new[]&quot; &lt;&lt; std::endl;
+        return p;
+    }
+
+    void FF::operator delete[](void* pdead, size_t size)
+    {
+        std::cout &lt;&lt; &quot;调用了Foo::operator delete[]&quot; &lt;&lt; std::endl;
+        free(pdead);
+    }
+
+    // main
+    FF* pf = new FF(7);
+    FF* pf1 = new FF[3];
+    delete pf;
+    delete[] pf1;
+    // 输出
+    // 调用了Foo::operator new
+    // ctor.this=011D62B8 id=7
+    // 调用了Foo::operator new[]
+    // default ctor.this=011E0DCC id
+    // default ctor.this=011E0DD0 id
+    // default ctor.this=011E0DD4 id
+    // dtor.this=011D62B8 id=7
+    // 调用了Foo::operator delete
+    // dtor.this=011E0DD4 id=0
+    // dtor.this=011E0DD0 id=0
+    // dtor.this=011E0DCC id=0
+    // 调用了Foo::operator delete[]
+</code></pre>
+<p>&emsp;通过::new和::delete可以强制使用全局的operator new和operator delete，而非重载版本。<br />
+&emsp;类中的operator new和operatir delete的重载函数必须是static，因为operator new就是在创建对象时被调用，此时尚未有对象存在，如果函数是非静态的，自然是不能被调用的。  </p>
+<h2 id="_2">总结</h2>
+<p><strong>new/delete and operator new/delete and placement new</strong><br />
+new/delete属于操作符，而operator new/operator delete是函数.  </p>
+<blockquote>
+<blockquote>
+<ul>
+<li>new:<br />
+调用operator new分配足够的空间，并调用相关对象的构造函数;<br />
+不可以被重载  </li>
+</ul>
+</blockquote>
+</blockquote>
+<ul>
+<li>operator new  </li>
+</ul>
+<pre>
+    （1）只分配所要求的空间，不调用相关对象的构造函数。当无法满足所要求分配的空间时，则
+        ->如果有new_handler，则调用new_handler，否则
+        ->如果没要求不抛出异常（以nothrow参数表达），则执行bad_alloc异常，否则
+        ->返回0
+    （2）可以被重载
+    （3）重载时，返回类型必须声明为void*
+    （4）重载时，第一个参数类型必须为表达要求分配空间的大小（字节），类型为size_t
+    （5）重载时，可以带其它参数，即所谓的placement new，
+    形如operator new(size_t, string)、operator new(size_t, void*)形式;  
+     (6)placement new对应形式的重载operator delete也可叫做<b>placement delete</b>, 但其正常情况下不会被调用，
+    只有当相应版本的placement new调用构造函数过程中出现异常时，才会被调用(事实上不同编译器对此有不同表现)，
+    用来归还未完全创建成功的object所占用的memory；
+    若缺少对应版本的placement delete,并不会报错，意味着放弃构造函数抛出的异常。
+    如果placement new构造成功后, 调用delete释放内存, 
+    所调用的是正常形式的operator delete(可能是全局的，也可以是自定义的)。
+</pre>
+
+<ul>
+<li>接受第二个指针参数的placement new, 执行时忽略size_t参数，只返还第二个参数，一个<strong>指向已经分配好的某段内存的一个指针</strong>，这段内存可能在栈中或者静态全局区，而delete只能释放分配在堆中的内存，因此通过此种placement new得到的指针不能调用delete，只需调用指向对象的析构函数。 </li>
+</ul>
+<pre><code class="language-C">    new (place_address) type
+    new (place_address) type (initializers)
+    new (place_address) type [size]
+    new (place_address) type [size] { brace initializer list}
+</code></pre>
+<p>&emsp;其中place_address是一个指针， 同时在initializers提供的一个(可为空)以逗号分隔的初始值列表，该初始值列表将用于构造新分配的对象。
+当只传入一个指针类型的实参时，定位new表达式构造对象但是不分配内存。这种重载形式的operator new常被翻译为定位new，C++库中已经提供了该版本。    </p>
+<p>优点:  </p>
+<pre>
+    1.用placement new 解决buffer的问题
+    问题描述:用new分配的数组缓冲时,由于调用了默认构造函数,因此执行效率上不佳。若没有默认构造函数则会发生编译时错误。
+    如果你想在预分配的内存上创建对象，用缺省的new操作符是行不通的。要解决这个问题，
+    你可以用placement new构造。它允许你构造一个新对象到预分配的内存上。
+
+    2.增大时空效率的问题
+    使用new操作符分配内存需要在堆中查找足够大的剩余空间，显然这个操作速度是很慢的，
+    而且有可能出现无法分配内存的异常（空间不够）。
+    placement new就可以解决这个问题。我们构造对象都是在一个预先准备好了的内存缓冲区中进行，不需要查找内存，
+    内存分配的时间是常数；而且不会出现在程序运行中途出现内存不足的异常。
+    所以，placement new非常适合那些对时间要求比较高，长时间运行不希望被打断的应用程序。
+</pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

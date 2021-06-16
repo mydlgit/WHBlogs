@@ -38,75 +38,75 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../c_base/callable/" class="dropdown-item">callable</a>
+    <a href="../../c_base/callable.md" class="dropdown-item">callable</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/class/" class="dropdown-item">class</a>
+    <a href="../../c_base/class.md" class="dropdown-item">class</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/Complementary/" class="dropdown-item">complementary</a>
+    <a href="../../c_base/Complementary.md" class="dropdown-item">complementary</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/const/" class="dropdown-item">const</a>
+    <a href="../../c_base/const.md" class="dropdown-item">const</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/constructor_destructor/" class="dropdown-item">constructor_destructor</a>
+    <a href="../../c_base/constructor_destructor.md" class="dropdown-item">constructor_destructor</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/container/" class="dropdown-item">container</a>
+    <a href="../../c_base/container.md" class="dropdown-item">container</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/exception/" class="dropdown-item">exception</a>
+    <a href="../../c_base/exception.md" class="dropdown-item">exception</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/function/" class="dropdown-item">function</a>
+    <a href="../../c_base/function.md" class="dropdown-item">function</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/friend_template/" class="dropdown-item">friend_template</a>
+    <a href="../../c_base/friend_template.md" class="dropdown-item">friend_template</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/initialization/" class="dropdown-item">initialization</a>
+    <a href="../../c_base/initialization.md" class="dropdown-item">initialization</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/inline/" class="dropdown-item">inline</a>
+    <a href="../../c_base/inline.md" class="dropdown-item">inline</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/inherit/" class="dropdown-item">inherit</a>
+    <a href="../../c_base/inherit.md" class="dropdown-item">inherit</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/iterator/" class="dropdown-item">iterator</a>
+    <a href="../../c_base/iterator.md" class="dropdown-item">iterator</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/memory/" class="dropdown-item">memory</a>
+    <a href="../../c_base/memory.md" class="dropdown-item">memory</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/new_delete/" class="dropdown-item">new_delete</a>
+    <a href="../../c_base/new_delete.md" class="dropdown-item">new_delete</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/pointer_reference/" class="dropdown-item">pointer_reference</a>
+    <a href="../../c_base/pointer_reference.md" class="dropdown-item">pointer_reference</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/static/" class="dropdown-item">static</a>
+    <a href="../../c_base/static.md" class="dropdown-item">static</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/virtual/" class="dropdown-item">virtual</a>
+    <a href="../../c_base/virtual.md" class="dropdown-item">virtual</a>
 </li>
                                 </ul>
                             </li>
@@ -115,7 +115,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../EffectiveCPP/rule/" class="dropdown-item">RULES</a>
+    <a href="../../EffectiveCPP/rule.md" class="dropdown-item">RULES</a>
 </li>
                                 </ul>
                             </li>
@@ -195,7 +195,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../Network/home/" class="dropdown-item">home</a>
+    <a href="../../Network/home.md" class="dropdown-item">home</a>
 </li>
                                     
 <li>
@@ -302,6 +302,30 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#sunday" class="nav-link">SunDay算法</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#-" class="nav-link">组合-树</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">链表排序</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">分数到小数</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#1" class="nav-link">统计二进制中 1 的个数</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">完全二叉树节点个数</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -324,6 +348,7 @@
         }
         return -1;
     }
+
     // 二分查找，寻找左侧边界, 即最左边的target
     int binarySearchLSide(std::vector&lt;int&gt;&amp; vec, int target){
         if(vec.size()==0 || target&lt;vec[0] || target&gt;vec[vec.size()-1])return -1;
@@ -352,6 +377,24 @@
         }
         if(right&lt;0 || vec[right]!=target) return -1;
         else return right;
+    }
+
+    // 二分查找变形
+    // 数组A,将一个有序数组旋转，前面部分移动到后面，所以 A[0:x]是递增的，A[x+1:-1]是递增的，
+    // 即A[x+1]&lt;A[-1]&lt;A[0]&lt;A[x-1];
+    // 数组中每个元素都互不相同; 当然也可以不旋转
+    // 求数组中最小值
+    int findMin(vector&lt;int&gt;&amp; nums) {
+        int left=1, right=nums.size()-1, target=nums[0];
+        // 在比nums[0]小的元素中寻找最左侧
+        while(left&lt;=right){
+            int mid=(left+right)/2;
+            if(nums[mid]&lt;target)right=mid-1;
+            else left=mid+1;
+        }
+        if(left==nums.size())return nums[0];// 说明整个数组有序
+        return min(nums[0], nums[left]);    // 由于前面递增部分有可能只有一个元素，所以需要判断nums[0]和
+                                            // 后面递增部分的第一个元素nums[left]大小
     }
 </code></pre>
 <h2 id="dp">树形DP</h2>
@@ -485,8 +528,7 @@ void Josephus3(int M, int N){
     if(target&lt;0){
         target*=-1;
         neg=true;
-    }
-
+    } 
     do{
         st.push(target%num);
         target /= num;
@@ -497,6 +539,24 @@ void Josephus3(int M, int N){
         st.pop();
     }
 }
+// 转为16进制，对于负数，采用补码形式
+class Solution {
+public:
+    string toHex(int num) {
+        if(num==0)return &quot;0&quot;;
+        string ans=&quot;&quot;;
+        unsigned int x = num;
+        while(x){
+            int c = x%16;
+            if(c&gt;=10) c = (c-10)+'a';
+            else c += '0';
+            ans += c;
+            x &gt;&gt;=  4;
+        }
+        reverse(ans.begin(), ans.end());
+        return ans;
+    }
+};
 </code></pre>
 <h2 id="_3">快速选择法</h2>
 <pre><code class="language-C">// 寻找第K大元素，也可用于计算TOPK，
@@ -639,41 +699,44 @@ public:
 };
 
 // 借用list容器
-typedef list&lt;pair&lt;int,int&gt;&gt;::iterator LPIter;   // key-value
-typedef list&lt;pair&lt;int, int&gt;&gt; LP;
+typedef list&lt;int&gt;::iterator LI;
+struct node{
+    int val;
+    LI store;
+    node(int v, LI x): val(v), store(x){}
+};
 class LRUCache{
 private:
     int cap;
-    unordered_map&lt;int, LPIter&gt; umap;
-    LP cache;
-
+    unordered_map&lt;int, node*&gt; key2node;
+    list&lt;int&gt; cache;
     void makeRecently(int key){
-        LPIter iter = umap[key];
-        int value=iter-&gt;second;
-        cache.erase(iter);
-        cache.push_back(make_pair(key, value));
+        node* x = key2node[key];
+        cache.erase(x-&gt;store);
+        cache.push_back(key);
+        x-&gt;store = --cache.end();
     }
     void removeLeastRecently(){
-        LPIter iter = cache.begin();
-        umap.erase(iter-&gt;first);
+        int key = cache.front();
+        key2node.erase(key);
         cache.pop_front();
     }
 public:
-    LRUCache(int capacity):cap(capacity){}
+    LRUCache(int capacity): cap(capacity){}
     int get(int key){
-        if(umap.count(key)==0)return -1;
+        if(key2node.count(key)==0)return -1;
         makeRecently(key);
-        return (*umap[key]).second;
+        return key2node[key]-&gt;val;
     }
-    void set(int key, int value){
-        if(umap.count(key)!=0){
-            (*umap[key]).second = value;
+    void put(int key, int val){
+        if(cap==0)return;
+        if(key2node.count(key)!=0){
+            key2node[key]-&gt;val = val;
             makeRecently(key);
         }else{
-            if(cache.size() == cap)
-                removeLeastRecently();
-            cache.push_back(make_pair(key, value));
-            umap[key] = --cache.end();
+            if(cache.size()==cap)   removeLeastRecently();
+            cache.push_back(key);
+            key2node[key] = new node(val, --cache.end());
         }
     }
 };
@@ -784,54 +847,60 @@ private:
 
 
 //借助list容器
-typedef list&lt;int&gt;::iterator LI; //key
+typedef list&lt;int&gt;::iterator LI;
+typedef list&lt;int&gt;* LP;
+struct node{
+    int val;
+    int freq;
+    LI store;
+    node(int v, int f): val(v), freq(f){}
+};
 class LFUCache{
 private:
-    int cap, minFreq;
-    unordered_map&lt;int, pair&lt;int, int&gt;&gt; key2VF;
-    unordered_map&lt;int, LI&gt; key2iter;
-    unordered_map&lt;int, list&lt;int&gt; &gt; freq2key;
+    size_t cap;
+    unordered_map&lt;int, node*&gt; key2VFI;
+    unordered_map&lt;int, LP&gt; freq2list;
+    int minFreq;
     void increaseFreq(int key){
-        int  oldFreq = key2VF[key].second++;
-        int newFreq = key2VF[key].second;
-        if(oldFreq!=0){
-            freq2key[oldFreq].erase(key2iter[key]);
-            if(freq2key[oldFreq].size()==0){
-                freq2key.erase(oldFreq);
+        node *cur = key2VFI[key];
+        int oldFreq = (cur-&gt;freq)++;
+        int newFreq = cur-&gt;freq;
+        if(freq2list.count(oldFreq)!=0){
+            freq2list[oldFreq]-&gt;erase(cur-&gt;store);
+            if(freq2list[oldFreq]-&gt;size()==0){
+                freq2list.erase(oldFreq);
                 if(oldFreq==minFreq)minFreq++;
             }
         }
-        if(freq2key.count(newFreq)==0)
-            freq2key[newFreq] = list&lt;int&gt;();
-        freq2key[newFreq].push_back(key);
-        key2iter[key] = --freq2key[newFreq].end();
+        if(freq2list.count(newFreq)==0)
+            freq2list[newFreq] = new list&lt;int&gt;();
+        freq2list[newFreq]-&gt;push_back(key);
+        key2VFI[key]-&gt;store = --(freq2list[newFreq]-&gt;end());
     }
     void removeLeastFreqKey(){
-        int key=freq2key[minFreq].front();
-        key2iter.erase(key);
-        key2VF.erase(key);
-        freq2key[minFreq].pop_front();
-        if(freq2key[minFreq].size()==0)
-            freq2key.erase(minFreq);
+        int key = freq2list[minFreq]-&gt;front();
+        key2VFI.erase(key);
+        freq2list[minFreq]-&gt;pop_front();
+        if(freq2list[minFreq]-&gt;size()==0)
+            freq2list.erase(minFreq);
     }
 public:
-    LFUCache(int capacity): cap(capacity){}
+    LFUCache(int capacity):cap(capacity){}
+    int get(int key){
+        if(key2VFI.count(key)==0)return -1;
+        increaseFreq(key);
+        return key2VFI[key]-&gt;val;
+    }
     void set(int key, int value){
         if(cap==0)return;
-        if(key2VF.count(key)!=0){
-            key2VF[key].first = value;
+        if(key2VFI.count(key)!=0){
+            key2VFI[key]-&gt;val = value;
         }else{
-            if(key2VF.size() == cap)
-                removeLeastFreqKey();
-            key2VF[key] = make_pair(value, 0);
-            minFreq=1;
+            if(key2VFI.size()==cap)removeLeastFreqKey();
+            key2VFI[key] = new node(value, 0);   
+            minFreq = 1;
         }
         increaseFreq(key);
-    }
-    int get(int key){
-        if(key2VF.count(key)==0)return -1;
-        increaseFreq(key);
-        return key2VF[key].first;
     }
 };
 </code></pre>
@@ -839,14 +908,25 @@ public:
 <p>&emsp;递推求解next数组: 已知next[j](子串P[0, j-1]中前缀与后缀的交集中最长元素长度), 求解next[j+1]时，
 若P[next[j]] == P[j]，则next[j+1]=next[j]+1=k+1; 否则需要寻找长度更短的相同前缀后缀, 即让k=next[k]，让新的P[k]与P[j]比较，如果k==-1，则next[j]=0。<br />
 <img alt="avatar" src="../../images/DataStruct/25.png" />  </p>
-<pre><code class="language-C">void getNext(std::vector&lt;int&gt;&amp; next, string&amp; p){
+<pre><code class="language-C">void getPMT(string p, vector&lt;int&gt;&amp; pmt){
+    int n=p.size();
+    int j=1, k=0;
+    while(j&lt;n){
+        if(p[j]==p[k]){
+            pmt[j++] = ++k;
+        }else{
+            if(k)k=pmt[k-1];
+            else j++;
+        }
+    }
+}
+
+void getNext(std::vector&lt;int&gt;&amp; next, string&amp; p){
     next[0] = -1;
     int j=0, k=-1;
     while(j&lt;p.size()-1){
         if(k==-1 || p[j]==p[k]){
-            j++;
-            k++;
-            next[j] = k;
+            next[++j] = ++k;
         }else 
             k = next[k];
     }
@@ -869,7 +949,7 @@ int KMP(string&amp; s, string&amp; p){
     这样j回退到next[j]即可
     */
     getNext(next, p);
-    int i=0, j=-1;
+    int i=0, j=0;
     int sLen = s.size(), pLen = p.size();
     while(i&lt;sLen &amp;&amp; j&lt;pLen){
         if(j==-1 || s[i]==p[j]){
@@ -880,8 +960,358 @@ int KMP(string&amp; s, string&amp; p){
     if(j==pLen)return i-j;
     else return -1;
 }
+
+
+//寻找模板串p在源串s中出现的次数
+class KMPSolution {
+public:
+    int kmp(string p, string s) {
+        if(s.size()&lt;p.size())return 0;
+        int i=0,j=0, slen=s.size(), plen=p.size(), pos=0;
+        vector&lt;int&gt; next(plen);
+        getNext(p, next);
+        int ans=0;
+        for(int i = 0, j = -1; i &lt; slen; ++i)
+        {   /*
+            相当于p在s滑动，匹配成功一次ans++
+            */
+            while(j &gt;= 0 &amp;&amp; s[i] != p[j + 1])j = next[j];
+            if(s[i] == p[j + 1])++j;
+            if(j + 1 == plen)
+            {
+                ++ans;
+                j = next[j];    
+                /*
+                此时s[i+1-plen, i]与p是相同的，下一步i向后移动
+                此时j回退到next[j]位置，因为p[0, next[j]-1]与s[i+1-next[j], i]是相同的
+                */
+            }
+        }
+        return ans;
+    }
+ private:
+    void getNext(const string&amp; p, vector&lt;int&gt;&amp; next){
+        next[0]=-1;
+        int j=0,k=-1;
+        int len=p.size();
+        while(j&lt;len-1){
+            if(k==-1 || p[j]==p[k]){
+                next[++j] = ++k;
+            }else k=next[k];
+        }
+    }
+};
 </code></pre>
-<p><img alt="avatar" src="../../images/DataStruct/26.png" /></p></div>
+<p><img alt="avatar" src="../../images/DataStruct/26.png" /></p>
+<h2 id="sunday">SunDay算法</h2>
+<pre><code class="language-C">int SundayStrMatch(string source, string pattern) {
+    int sSize = source.size(), pSize = pattern.size();
+    if(sSize&lt;pSize || pSize==0)return -1;
+    unordered_map&lt;char, int&gt; shift;
+    for(int i=0;i&lt;pSize;i++)shift[pattern[i]]=pSize-i;
+    int idx=0;
+    while(idx+pSize&lt;=sSize){
+        string sub = source.substr(idx, pSize);
+        if(sub == pattern)return idx;
+        if(idx+pSize&gt;=sSize)return -1;
+        if(shift.find(source[idx+pSize]) == shift.end())idx += pSize;
+        else idx += shift[source[idx+pSize]];
+    }
+    return -1;
+}
+</code></pre>
+<h2 id="-">组合-树</h2>
+<p>将排列组合问题抽象为树形结构</p>
+<ul>
+<li>给定一个可包含重复数字的序列 nums ，按 <strong>任意顺序</strong> 返回所有 <strong>不重复</strong> 的全排列。  </li>
+</ul>
+<pre><code class="language-C">class Solution {
+public:
+    vector&lt;vector&lt;int&gt;&gt; permuteUnique(vector&lt;int&gt;&amp; nums) {
+        bool visited[nums.size()];
+        memset(visited, 0, nums.size());
+        vector&lt;int&gt; track;
+        sort(nums.begin(), nums.end());
+        backtrack(nums, track, visited);
+
+        return ans;
+    }
+private:
+    vector&lt;vector&lt;int&gt;&gt; ans;
+    void backtrack(vector&lt;int&gt;&amp; nums, vector&lt;int&gt;&amp; track, bool* visited){
+        if(track.size()==nums.size()){
+            ans.emplace_back(track);
+            return;
+        }
+        for(int i=0;i&lt;nums.size();i++){
+            /*
+            这是与46题中，不包含重复数字的全排列的重要区别；
+            因为事先需要对数组排序，相同的元素将会在相邻的位置
+            如: 1,1',1'',2; 
+            依次为[1,1',1'',2]、[1,1',2,1''],此时回到令visited[1]=true，然后进入递归的时刻
+            从backtrack出来后，令visited[1]=false,此时visited[2]和visited[3]也为false,
+            循环到i=2时，由于nums[i]==nums[i-1]以及 !visited[i-1]所以跳过
+            结果中的1排序一定是 1,1',1''；
+            如果采用i&gt;0 &amp;&amp; visited[i-1] &amp;&amp; nums[i]==nums[i-1]，结果中的1排序一定是1'',1',1
+            */
+            if(visited[i] || (i&gt;0 &amp;&amp; !visited[i-1] &amp;&amp; nums[i]==nums[i-1]))
+                continue;
+            track.emplace_back(nums[i]);
+            visited[i]=true;
+            backtrack(nums, track, visited);
+            visited[i]=false;
+            track.pop_back();   
+        }
+    }
+};
+</code></pre>
+<p><img alt="avatar" src="../../images/DataStruct/27.png" /></p>
+<ul>
+<li>给定一个整数数组，可能包含重复元素，返回该数组所有可能的子集（幂集）。
+解集不能包含重复的子集。</li>
+</ul>
+<pre><code class="language-C">class Solution {
+public:
+    vector&lt;vector&lt;int&gt;&gt; subsetsWithDup(vector&lt;int&gt;&amp; nums) {
+        sort(nums.begin(), nums.end());
+        vector&lt;int&gt; track;
+        bool visited[nums.size()];
+        memset(visited, 0, nums.size());
+        dfs(nums, track, 0, visited);
+        return ans;
+    }
+private:
+    vector&lt;vector&lt;int&gt;&gt; ans;
+    void dfs(vector&lt;int&gt;&amp; nums, vector&lt;int&gt;&amp; track, int start, bool* visited){
+        ans.push_back(track);
+        for(int i=start;i&lt;nums.size();i++){
+            if(i&gt;start &amp;&amp; !visited[i-1] &amp;&amp; nums[i]==nums[i-1])continue;
+            track.push_back(nums[i]);
+            visited[i] = true;
+            dfs(nums, track, i+1, visited);
+            visited[i] = false;
+            track.pop_back();
+        }
+    }
+};
+
+class Solution {
+public:
+    vector&lt;vector&lt;int&gt;&gt; subsetsWithDup(vector&lt;int&gt;&amp; nums) {
+        sort(nums.begin(), nums.end());
+        vector&lt;int&gt; track;
+        dfs(nums, 0, track);
+        return ans;
+    }
+private:
+    vector&lt;vector&lt;int&gt;&gt; ans;
+    void dfs(vector&lt;int&gt;&amp; nums, int start, vector&lt;int&gt;&amp; track){
+        ans.push_back(track);
+        for(int i=start;i&lt;nums.size();i++){
+            if(i&gt;start &amp;&amp; nums[i]==nums[i-1])continue;
+            track.push_back(nums[i]);
+            dfs(nums, i+1, track);
+            track.pop_back();
+        }
+    }
+};
+</code></pre>
+<p><img alt="avatar" src="../../images/DataStruct/28.png" /></p>
+<h2 id="_4">链表排序</h2>
+<pre><code class="language-C">class Solution {
+public:
+    // 归并排序，自顶向下，time:O(nlog n), space:O(log N), 栈空间
+    ListNode* sortList(ListNode* head) {
+        if(!head || !head-&gt;next)return head;
+        else if(!head-&gt;next-&gt;next){
+            int val1 = head-&gt;val;
+            int val2 = head-&gt;next-&gt;val;
+            if(val1 &gt; val2){
+                head-&gt;val = val2;
+                head-&gt;next-&gt;val = val1;
+            }
+            return head;
+        }
+        ListNode *fast = head, *slow=head;
+        while(fast &amp;&amp; fast-&gt;next){
+            fast = fast-&gt;next-&gt;next;
+            slow = slow-&gt;next;
+        }
+        ListNode *lastHalf=slow-&gt;next;
+        lastHalf = sortList(lastHalf);
+        slow-&gt;next = nullptr;
+
+        ListNode *prevHalf = sortList(head);
+        ListNode *another;
+
+        if(prevHalf-&gt;val &lt;= lastHalf-&gt;val){
+            head = prevHalf;
+            another = lastHalf;
+        }else{
+            head = lastHalf;
+            another = prevHalf;
+        }
+        // merge
+        ListNode *cur = head, *prev;
+        while(cur &amp;&amp; another){
+            if(cur-&gt;val &lt;= another-&gt;val){
+                prev = cur;
+                cur = cur-&gt;next;
+            }else{
+                ListNode *tmp=another-&gt;next;
+                prev-&gt;next=another;
+                another-&gt;next=cur;
+                prev = another;
+                another = tmp;
+            }
+        }
+        if(!cur)prev-&gt;next=another;
+
+        return head;
+    }
+
+    // space:O(1),自底向上
+    ListNode* sortList(ListNode* head) {
+        if (head == nullptr) return head;
+        int length = 0;
+        ListNode* node = head;
+        // 计算链表长度
+        while (node != nullptr) {
+            length++;
+            node = node-&gt;next;
+        }
+
+        ListNode* dummyHead = new ListNode(0, head);    // 伪头节点
+        for (int subLength = 1; subLength &lt; length; subLength &lt;&lt;= 1) {
+            ListNode* prev = dummyHead, *curr = dummyHead-&gt;next;
+            // while循环先两两合并长度为subLength的有序链表，
+            // for循环中，subLength长度每次扩大一倍
+            // 整体模型归并排序时，自顶向下分治的逆过程
+            while (curr != nullptr) {
+                ListNode* head1 = curr;
+                for (int i = 1; i &lt; subLength &amp;&amp; curr-&gt;next != nullptr; i++) {
+                    curr = curr-&gt;next;
+                }
+                ListNode* head2 = curr-&gt;next;
+                curr-&gt;next = nullptr;
+                curr = head2;
+                for (int i = 1; i &lt; subLength &amp;&amp; curr != nullptr &amp;&amp; curr-&gt;next != nullptr; i++) {
+                    curr = curr-&gt;next;
+                }
+                ListNode* next = nullptr;
+                if (curr != nullptr) {
+                    next = curr-&gt;next;
+                    curr-&gt;next = nullptr;
+                }
+                ListNode* merged = merge(head1, head2);
+                prev-&gt;next = merged;
+                while (prev-&gt;next != nullptr) {
+                    prev = prev-&gt;next;
+                }
+                curr = next;
+            }
+        }
+        return dummyHead-&gt;next;
+    }
+
+    ListNode* merge(ListNode* head1, ListNode* head2) {
+        ListNode* dummyHead = new ListNode(0);
+        ListNode* temp = dummyHead, *temp1 = head1, *temp2 = head2;
+        while (temp1 != nullptr &amp;&amp; temp2 != nullptr) {
+            if (temp1-&gt;val &lt;= temp2-&gt;val) {
+                temp-&gt;next = temp1;
+                temp1 = temp1-&gt;next;
+            } else {
+                temp-&gt;next = temp2;
+                temp2 = temp2-&gt;next;
+            }
+            temp = temp-&gt;next;
+        }
+        if (temp1 != nullptr) {
+            temp-&gt;next = temp1;
+        } else if (temp2 != nullptr) {
+            temp-&gt;next = temp2;
+        }
+        return dummyHead-&gt;next;
+    }
+};
+</code></pre>
+<h2 id="_5">分数到小数</h2>
+<p>给定两个整数，分别表示分数的分子 numerator 和分母 denominator，以字符串形式返回小数。
+如果小数部分为循环小数，则将循环的部分括在括号内。</p>
+<pre><code class="language-C">class Solution {
+public:
+    string fractionToDecimal(int numerator, int denominator) {
+        if(numerator==0)return &quot;0&quot;;
+        else if(numerator==denominator)return &quot;1&quot;;
+        unordered_map&lt; int, int&gt; memo;
+        string ans=&quot;&quot;, extra=&quot;&quot;;
+        //if((numerator&gt;0 &amp;&amp; denominator&lt;0) || (numerator&lt;0 &amp;&amp; denominator&gt;0))
+        if((numerator&gt;0)^(denominator&gt;0))
+            ans+='-';
+
+        long num=abs(numerator), denom = abs(denominator);
+
+        extra+=to_string(num/denom);
+        num %= denom;
+        if(num)extra+='.';
+        else return ans+extra;  // 说明余数为0，直接返回
+
+        while(num!=0){
+            memo[num]=extra.size();
+            num*=10;
+            extra+=to_string(num/denom);
+
+            num %= denom;
+            if(memo.count(num)){    // 余数重复出现，说明出现循环
+                int pos=memo[num];  // 第一次出现前，extra的长度，[0, pos]不循环，[pos:-1]循环
+                extra = extra.substr(0, pos)+&quot;(&quot;+extra.substr(pos, extra.size()-pos)+&quot;)&quot;;
+                break;
+            }
+        }
+        return ans+extra;
+    }
+};
+</code></pre>
+<h2 id="1">统计二进制中 1 的个数</h2>
+<pre><code class="language-C">int num1(int num){
+    int bit=0;
+    while(num){
+        bit++;
+        num &amp;= num-1;
+    }
+    return bit;
+}
+</code></pre>
+<h2 id="_6">完全二叉树节点个数</h2>
+<pre><code class="language-java">/*
+时间复杂度为 O(logN * logN)
+首先计算左右子树高复杂度为 logN;
+而一个完全二叉树满足一个特性是两个子树必定一个是满二叉树，另一个是完全二叉树
+则 代码中最后一个return，只有其中一个countNodes会递归下去，另一个会触发 hl==hr, 直接返回结果；
+递归的复杂度为 logN(树的高度)*logN(每一层计算子树高度需要的复杂度)。
+*/
+
+// java
+public int countNodes(TreeNode root){
+    TreenNode left=root, rigth=root;
+    // 计算左右子树高度
+    int hl=0, hr=0;
+
+    while(left!=null){
+        hl++;
+        left = root.left;
+    }
+    while(right!=null){
+        hr++;
+        right = root.right;
+    }
+    if(left==right) // 说明是满二叉树
+        return (int)Math.pow(2, hl) - 1;
+
+    return 1 + countNodes(root.left) + countNodes(root.right);
+}
+</code></pre></div>
             </div>
         </div>
 

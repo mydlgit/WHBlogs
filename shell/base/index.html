@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Shell Script - Note</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Note</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">C++ Base <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../c_base/callable.md" class="dropdown-item">callable</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/class.md" class="dropdown-item">class</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/Complementary.md" class="dropdown-item">complementary</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/const.md" class="dropdown-item">const</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/constructor_destructor.md" class="dropdown-item">constructor_destructor</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/container.md" class="dropdown-item">container</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/exception.md" class="dropdown-item">exception</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/function.md" class="dropdown-item">function</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/friend_template.md" class="dropdown-item">friend_template</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/initialization.md" class="dropdown-item">initialization</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inline.md" class="dropdown-item">inline</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inherit.md" class="dropdown-item">inherit</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/iterator.md" class="dropdown-item">iterator</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/memory.md" class="dropdown-item">memory</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/new_delete.md" class="dropdown-item">new_delete</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/pointer_reference.md" class="dropdown-item">pointer_reference</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/static.md" class="dropdown-item">static</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/virtual.md" class="dropdown-item">virtual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EffectiveCPP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../EffectiveCPP/rule.md" class="dropdown-item">RULES</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Linux os <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../os/0_index/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../os/1_introduction/" class="dropdown-item">1_开始</a>
+</li>
+                                    
+<li>
+    <a href="../../os/2_as86/" class="dropdown-item">2_汇编语法</a>
+</li>
+                                    
+<li>
+    <a href="../../os/3_80x86_protect_mode/" class="dropdown-item">3_保护模式</a>
+</li>
+                                    
+<li>
+    <a href="../../os/4_kernel_struct/" class="dropdown-item">4_内核体系结构</a>
+</li>
+                                    
+<li>
+    <a href="../../os/5_os/" class="dropdown-item">5_现代操作系统</a>
+</li>
+                                    
+<li>
+    <a href="../../os/7_simple_os/" class="dropdown-item">7_simple_os</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MySQL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../MySQL/0_start/" class="dropdown-item">home</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DataStruct <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../DataStruct/Tree/" class="dropdown-item">Tree</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Sort/" class="dropdown-item">Sort</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Graph/" class="dropdown-item">Graph</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/OtherStruct/" class="dropdown-item">Others</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Algorithm/" class="dropdown-item">Algorithm</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/API/" class="dropdown-item">API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Network <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Network/home.md" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/1_application/" class="dropdown-item">application</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/2_transport/" class="dropdown-item">transport</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/3_network/" class="dropdown-item">network</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/4_link/" class="dropdown-item">link</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/5_netsafe/" class="dropdown-item">safe</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">interview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interview/" class="dropdown-item">面试</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#shell-script" class="nav-link">Shell Script</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#shell" class="nav-link">Shell变量和运算符</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#shell_1" class="nav-link">Shell常见命令</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#shell_2" class="nav-link">Shell函数语句</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#shell_3" class="nav-link">shell 补充</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#linux" class="nav-link">linux命令</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="shell-script">Shell Script</h1>
+<ul>
+<li>linux下常用的Shell种类有Bourne Shell（/usr/bin/sh或/bin/sh）和 Bourne Again Shell（/bin/bash），<br />
+Shell脚本中的第一行"#!/bin/bash"告诉系统采用哪一个解释器来执行，即是使用哪一个Shell。  </li>
+</ul>
+<h2 id="shell">Shell变量和运算符</h2>
+<ul>
+<li>
+<p>Shell 变量<br />
+    <pre>
+1、定义变量时，变量名不加美元符号（$）: variable="value", <b>变量名和等号之间不能有空格</b>
+命名只能使用英文字母，数字和下划线，首个字符不能以数字开头。
+中间不能有空格，可以使用下划线（_）。
+不能使用标点符号。
+不能使用bash里的关键字<br />
+2、使用变量，例如: echo $variable或者echo ${variable}， 在终端打印出value.
+readonly variable 将变量设定为只读，不能被修改
+unser variable 删除变量，删除后将不能再使用<br />
+3、变量类型
+运行shell时，会同时存在三种变量：
+1) 局部变量 局部变量在脚本或命令中定义，仅在当前shell实例中有效，其他shell启动的程序不能访问局部变量。
+2) 环境变量 所有的程序，包括shell启动的程序，都能访问环境变量，有些程序需要环境变量来保证其正常运行。
+必要的时候shell脚本也可以定义环境变量。
+3) shell变量 shell变量是由shell程序设置的特殊变量。shell变量中有一部分是环境变量，有一部分是局部变量，
+这些变量保证了shell的正常运行
+</pre></p>
+</li>
+<li>
+<p>Shell 字符串<br />
+&emsp;字符串可以用单引号，也可以用双引号，也可以不用引号。</p>
+</li>
+</ul>
+<pre><code class="language-Shell">    str=&quot;test&quot;
+    echo string $str        # 输出 string test
+    echo &quot;string $str&quot;      # 输出 string test
+    echo &quot;string &quot;$str&quot;&quot;    # 输出 string test
+    echo &quot;string '$str'&quot;    # 输出 string 'test'
+    echo &quot;string \&quot;$str\&quot;&quot;  # 输出 string &quot;test&quot;
+    echo 'string $str'      # 输出 string $str
+    echo 'string '$str''    # 输出 string test
+    echo 'string &quot;$str&quot;'    # 输出 string &quot;$str&quot;
+
+    str2=&quot;wh&quot;
+    echo $str $str2         #拼接字符串，输出 test wh
+
+    echo ${#str} ${#str2}   #获取字符串长度，输出 4 2
+
+    echo ${str:1c:3}         #从字符串第1个字符(字符下标基0)开始，截取3个字符，输出 est
+
+    echo `expr index &quot;$str&quot; es` # 查找字符e或s的位置，哪个在前，输出哪个的位置(从1开始)，这里输出2 ，没有该字符则输出 0
+</code></pre>
+<ul>
+<li>
+<p>Shell 数组<br />
+    <pre>
+1、bash支持一维数组（不支持多维数组），并且没有限定数组的大小。
+类似于 C 语言，数组元素的下标由 0 开始编号。获取数组中的元素要利用下标，下标可以是整数或算术表达式，
+其值应大于或等于 0。
+2、定义数组 array_name=(value0 value1 value2 value3)； 可以单独定义数组的各个分量，且可以不使用连续的下标，
+而且下标的范围没有限制:
+array_name[0]=value0
+array_name[1]=value1
+array_name[5]=value5
+3、valuen=${array_name[n]} # 获取数组元素
+echo  ${array_name[@]}  # 获取数组全部元素
+echo ${#array_name[@]}  或者 echo ${#array_name[*]} #获取数组长度
+</pre></p>
+</li>
+<li>
+<p>shell map<br />
+    <pre>
+一、在使用map时，需要先声明，否则结果可能与预期不同，array可以不声明
+declare -A map<br />
+二、初始化map
+与array类似，可以使用括号直接初始化，也可以通过添加的方式来初始化数据，与array不同的是，
+括号直接初始化时使用的为一个键值对，添加元素时，下标可以不是整数
+map=(["aa"]="11" ["bb"]="22")
+map["name"]="val"
+map["apple"]="pen"<br />
+三、输出所有的key
+若未使用declare声明map，则此处将输出0，与预期输出不符，此处输出语句格式比arry多了一个 ！
+echo ${!map[@]}<br />
+四、输出所有value
+与array输出格式相同, echo ${map[@]}<br />
+五、输出map长度
+与array输出格式相同, echo ${#map[@]} 或 ${#map[*]}<br />
+六、遍历，根据key找到对应的value
+for key in ${!map[*]};do
+    echo ${map[$key]}
+done<br />
+七、遍历所有的key
+for key in ${!map[@]};do
+    echo $key
+done
+判断某个key是否为空
+if [ -z $map[$key] ]<br />
+八、遍历所有的value
+for val in ${map[@]};do
+    echo $val
+done<br />
+</pre></p>
+</li>
+<li>
+<p>Shell注释<br />
+&emsp; 单行注释使用 #<br />
+&emsp; 多行注释使用 :&lt;&lt;EOF ... EOF， 处于其中的内容将被注释，且EOF可以换用其它的符号，如 :&lt;&lt;! ... !  </p>
+</li>
+<li>
+<p>传递参数<br />
+&emsp; 向脚本传递参数，$n代表第几个参数，$0代表文件名<br />
+<pre>
+$#  传递到脚本的参数个数
+$<em>  以一个单字符串显示所有向脚本传递的参数。如"$</em>"用双引号括起来的情况、以"$1 $2 … $n"的形式输出所有参数。
+$$  脚本运行的当前进程ID号
+$!  后台运行的最后一个进程的ID号
+$@  与$*相同，在引号中返回每个参数。如"$@"用双引号，以"$1" "$2" … "$n" 的形式输出所有参数。
+这种形式可以在for循环中获取到每个参数值
+$-  显示Shell使用的当前选项，与set命令功能相同。
+$?  显示最后命令的退出状态。0表示没有错误，其他任何值表明有错误
+</pre></p>
+</li>
+<li>
+<p>Shell运算符<br />
+&emsp;原生bash不支持简单的数学运算，但是可以通过其他命令来实现，例如 awk 和 expr，expr 最常用.<br />
+&emsp;算数运算符(+、-、*、\ 、%、==、=、!=)；<br />
+&emsp;关系运算符(-eq、-ne、-gt、-lt、-ge、-le)；<br />
+&emsp;布尔运算符(!:非运算、-o:或运算、-a:与运算)；<br />
+&emsp;字符串运算符(==、!=、-z:长度是否为0、-n:长度是否不为0、$:字符串是否为空)；<br />
+&emsp;文件测试运算符(-c:是否是字符设备文件，-d:是否是目录，-f:是否是普通文件， -r:是否可读，-w:是否可写，-e:是否存在，存在返回true，-s:是否为空，不空返回true)<br />
+&emsp;双目运算符前后必须有空格, 但不包括 = 赋值运算符，变量名=值；<br />
+&emsp;算术运算也可以使用 [] 或者 let来实现</p>
+</li>
+</ul>
+<pre><code class="language-C">    a=10
+    b=10
+    val=`expr $a \* $b`
+    val2= $[a + b]
+    let val3=a/b
+    echo &quot;$val&quot; # 输出 100
+    echo $val2 $val3
+
+    if [ $a -eq $b ]
+    then
+    echo &quot;$a -eq $b : a 等于 b&quot;
+    else
+    echo &quot;$a -eq $b: a 不等于 b&quot;
+    fi
+
+    if [ $a -lt 100 -a $b -gt 15 ]
+    then
+    echo &quot;$a 小于 100 且 $b 大于 15 : 返回 true&quot;
+    else
+    echo &quot;$a 小于 100 且 $b 大于 15 : 返回 false&quot;
+    fi
+
+    a=&quot;abc&quot;
+    b=&quot;efg&quot;
+    if [ -n &quot;$a&quot; ]
+    then
+        echo &quot;-n $a : 字符串长度不为 0&quot;
+    else
+        echo &quot;-n $a : 字符串长度为 0&quot;
+    fi
+    if [ $a ]
+    then
+        echo &quot;$a : 字符串不为空&quot;
+    else
+        echo &quot;$a : 字符串为空&quot;
+    fi
+</code></pre>
+<h2 id="shell_1">Shell常见命令</h2>
+<ul>
+<li>test<br />
+检查某个条件是否成立，它可以进行数值、字符和文件三个方面的测试  </li>
+</ul>
+<pre><code class="language-C">num1=100
+num2=100
+if test $[num1] -eq $[num2]
+then
+    echo '两个数相等！'
+else
+    echo '两个数不相等！'
+fi
+
+
+num1=&quot;ru1noob&quot;
+num2=&quot;runoob&quot;
+if test $num1 = $num2
+then
+    echo '两个字符串相等!'
+else
+    echo '两个字符串不相等!'
+fi
+
+cd /bin
+if test -e ./bash
+then
+    echo '文件已存在!'
+else
+    echo '文件不存在!'
+fi
+
+cd /bin
+if test -e ./notFile -o -e ./bash
+then
+    echo '至少有一个文件存在!'
+else
+    echo '两个文件都不存在'
+fi
+</code></pre>
+<ul>
+<li>echo  </li>
+</ul>
+<pre><code class="language-C">    echo -e &quot;OK! \n&quot; # -e 开启转义， \n表示换行
+    echo -e &quot;OK! \c&quot; # -e 开启转义 \c 不换行
+    echo &quot;It is a test&quot; &gt; myfile # 显示结果定向至文件
+
+    # 显示命令执行结果
+    echo `date`
+    echo `expr index &quot;$str&quot; es`
+</code></pre>
+<ul>
+<li>printf<br />
+输出格式化结果<br />
+    <pre>
+%s %c %d %f都是格式替代符，％s 输出一个字符串，％d 整型输出，％c 输出一个字符，％f 输出实数，以小数形式输出。
+%-10s 指一个宽度为 10 个字符（- 表示左对齐，没有则表示右对齐），
+任何字符都会被显示在 10 个字符宽的字符内，如果不足则自动以空格填充，超过也会将内容全部显示出来。
+%-4.2f 指格式化为小数，其中 .2 指保留2位小数。
+</pre></li>
+</ul>
+<pre><code class="language-C">    # format-string为双引号
+    printf &quot;%d %s\n&quot; 1 &quot;abc&quot;
+
+    # 单引号与双引号效果一样
+    printf '%d %s\n' 1 &quot;abc&quot;
+
+    # 没有引号也可以输出，仅试用一个格式替代符的情形
+    printf %s abcdef
+    # printf $s $d str 1    不能正确输出结果
+
+    # 格式只指定了一个参数，但多出的参数仍然会按照该格式输出，format-string 被重用
+    printf %s abc def
+    printf &quot;%s\n&quot; abc def
+    printf &quot;%s %s %s\n&quot; a b c d e f g h i j
+
+    # 如果没有 arguments，那么 %s 用空格代替，%d 用 0 代替
+    printf &quot;%s and %d \n&quot;
+</code></pre>
+<h2 id="shell_2">Shell函数语句</h2>
+<ul>
+<li>流程控制  </li>
+</ul>
+<pre><code class="language-C">// if elif else fi
+// 如果某个流程控制为空，则不需要写出该分支
+a=10
+b=20
+if [ $a == $b ]
+then
+   echo &quot;a 等于 b&quot;
+elif [ $a -gt $b ]
+then
+   echo &quot;a 大于 b&quot;
+elif [ $a -lt $b ]
+then
+   echo &quot;a 小于 b&quot;
+else
+   echo &quot;没有符合的条件&quot;
+fi
+
+// for循环
+for var in item1 item2 ... itemN
+do
+    command1
+    command2
+    ...
+    commandN
+done
+
+// while 循环
+while condition
+do
+    command
+done
+
+// until循环
+until condition
+do
+    command
+done
+//在循环过程中，有时候需要在未达到循环结束条件时强制跳出循环，Shell使用两个命令来实现该功能：break和continue。
+
+
+// case...esac
+echo '输入 1 到 4 之间的数字:'
+echo '你输入的数字为:'
+read aNum
+case $aNum in
+    1)  echo '你选择了 1'
+    ;;
+    2)  echo '你选择了 2'
+    ;;
+    3)  echo '你选择了 3'
+    ;;
+    4)  echo '你选择了 4'
+    ;;
+    *)  echo '你没有输入 1 到 4 之间的数字'
+    ;;
+esac
+case 工作方式如上所示，取值后面必须为单词 in，每一模式必须以右括号结束。取值可以为变量或常数，匹配发现取值符合某一模式后，
+其间所有命令开始执行直至 ;; 。
+取值将检测匹配的每一个模式。一旦模式匹配，则执行完匹配模式相应命令后不再继续其他模式。
+如果无一匹配模式，使用星号 * 捕获该值，再执行后面的命令。
+</code></pre>
+<ul>
+<li>shell函数  </li>
+</ul>
+<pre><code class="language-C">[ function ] funname [()]
+
+{
+
+    action;
+
+    [return int;]
+
+}
+/*
+1、可以带function fun() 定义，也可以直接fun() 定义,不带任何参数。
+2、参数返回，可以显示加：return 返回; 如果不加，将以最后一条命令运行结果，作为返回值, return后跟数值n(0-255)
+3、函数返回值在调用该函数后通过 $? 来获得。
+注意：所有函数在使用前必须定义。这意味着必须将函数放在脚本开始部分，直至shell解释器首次发现它时，才可以使用。
+调用函数仅使用其函数名即可。
+*/
+
+funWithReturn(){
+    echo &quot;这个函数会对输入的两个数字进行相加运算...&quot;
+    echo &quot;输入第一个数字: &quot;
+    read aNum
+    echo &quot;输入第二个数字: &quot;
+    read anotherNum
+    echo &quot;两个数字分别为 $aNum 和 $anotherNum !&quot;
+    return $(($aNum+$anotherNum))
+}
+funWithReturn
+echo &quot;输入的两个数字之和为 $? &quot;
+
+// 在Shell中，调用函数时可以向其传递参数。在函数体内部，通过 $n 的形式来获取参数的值
+// 当n&gt;=10时，需要使用${n}来获取参数
+funWithParam(){
+    echo &quot;第一个参数为 $1 !&quot;
+    echo &quot;第二个参数为 $2 !&quot;
+    echo &quot;第三个参数为 $3 !&quot;
+    echo &quot;参数总数有 $# 个!&quot;
+    echo &quot;作为一个字符串输出所有参数 $* !&quot;
+}
+funWithParam 1 2 3
+</code></pre>
+<ul>
+<li>
+<p>输入输出重定向<br />
+大多数 UNIX 系统命令从你的终端接受输入并将所产生的输出发送回​​到您的终端。一个命令通常从一个叫标准输入的地方读取输入，默认情况下，这恰好是你的终端。同样，一个命令通常将其输出写入到标准输出，默认情况下，这也是你的终端。<br />
+重定向命令列表如下：<br />
+命令&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;说明<br />
+command &gt; file&emsp;将输出重定向到 file。<br />
+command &lt; file&emsp;将输入重定向到 file，即从文件中获取输入。<br />
+command &gt;&gt; file&emsp;将输出以追加的方式重定向到 file。<br />
+n&gt;file&emsp;&emsp;&emsp;将文件描述符为 n 的文件重定向到 file。<br />
+n&gt;&gt;file&emsp;&emsp;&emsp;将文件描述符为 n 的文件以追加的方式重定向到 file。<br />
+n&gt;&amp;m&emsp;&emsp;&emsp;将输出文件 m 和 n 合并。<br />
+n&lt;&amp;m&emsp;&emsp;&emsp;将输入文件 m 和 n 合并。<br />
+&lt;&lt; tag&emsp;&emsp;&emsp;将开始标记 tag 和结束标记 tag 之间的内容作为输入，见Here Document。<br />
+需要注意的是文件描述符 0 通常是标准输入（STDIN），1 是标准输出（STDOUT），2 是标准错误输出（STDERR）。  </p>
+</li>
+<li>
+<p>Here Document<br />
+Shell 中的一种特殊的重定向方式，用来将输入重定向到一个交互式 Shell 脚本或程序。<br />
+它的基本的形式如下：<br />
+command &lt;&lt; delimiter<br />
+&emsp;&emsp;document<br />
+delimiter<br />
+它的作用是将两个 delimiter 之间的内容(document) 作为输入传递给 command。<br />
+注意：结尾的delimiter 一定要顶格写，前面不能有任何字符，后面也不能有任何字符，包括空格和 tab 缩进。
+开始的delimiter前后的空格会被忽略掉。  </p>
+</li>
+<li>
+<p>文件包含  </p>
+</li>
+</ul>
+<pre><code class="language-C"># .和文件名之间必须有空格，通过此种方式引入外部脚本，被引入的文件不需要可执行权限，但要执行的当前文件需要可执行权限
+．filename    
+</code></pre>
+<h2 id="shell_3">shell 补充</h2>
+<ul>
+<li>
+<p>shell括号<br />
+    <pre>
+$()和 <code></code>:
+在 bash shell 中，$( ) 与<code></code> (反引号) 都可用做命令替换用。
+<code></code>移植性比较高，$()并不是所有shell都支持
+()本身可以用来产生命令组，括号中的命令将会新开一个子shell顺序执行，所以括号中的变量不能够被脚本余下的部分使用。
+括号中多个命令之间用分号隔开，最后一个命令可以没有分号，各命令和括号之间不必有空格；
+还可以用来初始化数组，array=(a,b,c,d), arr=($line), line是读入的一行，这里默认以空格分隔，
+arr=(${line//,/ }) # 以,分割<br />
+&emsp;
+(()):
+可以在括号内进行整数运算，不支持浮点数和字符串，在其中使用变量不用加 $；可以利用(())实现自增、自减；
+可以在(())内同时计算多个表达式，((a=3+5, b=a+10));ehco $a $b
+可以通过 $(()) 来获取命令结果，c=$((a+b))
+可以在括号内进行逻辑运算, echo $((7 &lt; 8)), 输出 1，表示true
+&emsp;
+[]:
+[ 等价于test命令，然后是表达式，]代表关闭条件判断， test $a -eq $b 等于 [ $a -eq $b ]
+因此表达式前后一定存在空格。其中的逻辑运算符只能使用 -a、-o、!;
+在其中使用 &lt; 或 &gt;，需要转义， if [ $a \&lt; $b ] 等于 if [ $a -lt $b ];
+还可用作正则表达式的一部分，描述一个字符的匹配范围, [0-9]表示匹配0~9中的某个字符
+在一个array 结构的上下文中，中括号用来引用数组中每个元素的编号
+&emsp;
+[[]]:
+bash 把[[]]中的表达式看作一个单独的元素, 这样可以在其中使用 &amp;&amp;、||；
+可以直接使用if [[ $a != 1 &amp;&amp; $a != 2 ]], 如果不使用[[]], 则为if [ $a -ne 1] &amp;&amp; [ $a != 2 ]
+或者if [ $a -ne 1 -a $a != 2 ];
+在其中使用 &lt; 或 &gt;，不需要进行转义
+</pre></p>
+</li>
+<li>
+<p>变量替换<br />
+    <pre>
+①${var:-string}和${var:=string}:若变量var为空，则用在命令行中用string来替换${var:-string}，
+否则变量var不为空时，则用变量var的值来替换${var:-string}；
+对于${var:=string}的替换规则和${var:-string}是一样的，所不同之处是${var:=string}若var为空时，
+用string替换${var:=string}的同时，把string赋给变量var，即会修改var；
+${var:=string}很常用的一种用法是，判断某个变量是否赋值，没有的话则给它赋上一个默认值。
+② ${var:+string}的替换规则和上面的相反，即只有当var不是空的时候才替换成string，
+若var为空时则不替换或者说是替换成变量 var的值，即空值。
+③${var:?string}替换规则为：若变量var不为空，则用变量var的值来替换${var:?string}；若变量var为空，
+则把string输出到标准错误中，并从脚本中退出。我们可利用此特性来检查是否设置了变量的值。
+补充扩展：在上面这五种替换结构中string不一定是常值的，可用另外一个变量的值或是一种命令的输出。
+</pre></p>
+</li>
+<li>
+<p>四种模式匹配替换结构<br />
+模式匹配记忆方法:<br />
+# 是去掉左边(在键盘上#在$之左边)<br />
+% 是去掉右边(在键盘上%在$之右边)<br />
+#和%中的单一符号是最小匹配，两个相同符号是最大匹配。<br />
+    <pre>
+${var%pattern},${var%%pattern},${var#pattern},${var##pattern}:
+第一种模式：${variable%pattern}，这种模式时，shell在variable中查找，看它是否以所给模式pattern结尾，
+如果是，就从命令行把variable中的内容去掉右边最短的匹配模式
+第二种模式： ${variable%%pattern}，这种模式时，shell在variable中查找，看它是否以所给模式pattern结尾，
+如果是，就从命令行把variable中的内容去掉右边最长的匹配模式
+第三种模式：${variable#pattern} 这种模式时，shell在variable中查找，看它是否以所给模式pattern开始，
+如果是，就从命令行把variable中的内容去掉左边最短的匹配模式
+第四种模式： ${variable##pattern} 这种模式时，shell在variable中查找，看它是否以所给模式pattern结尾，
+如果是，就从命令行把variable中的内容去掉右边最长的匹配模式
+这四种模式中都不会改变variable的值，其中，只有在pattern中使用了<em>匹配符号时，
+%和%%，#和##才有区别。结构中的pattern支持通配符，</em>表示零个或多个任意字符，?表示仅与一个任意字符匹配，
+[...]表示匹配中括号里面的字符，[!...]表示不匹配中括号里面的字符。
+</pre></p>
+</li>
+</ul>
+<pre><code class="language-C">    # var=testcase  
+    # echo $var  
+    testcase  
+    # echo ${var%s*e} 
+    testca  
+    # echo $var  
+    testcase 
+    # echo ${var%%s*e} 
+    te
+    # echo ${var#?e}  
+    stcase
+    # echo ${var##?e}  
+    stcase
+    # echo ${var##*e}  
+
+    # echo ${var##*s}  
+    e  
+    # echo ${var##test}  
+    case  
+</code></pre>
+<h2 id="linux">linux命令</h2>
+<h3 id="_1">文档编辑</h3>
+<ul>
+<li>wc <br />
+计算文件的Byte数、字数、或是列数，若不指定文件名称、或是所给予的文件名为"-"，则wc指令会从标准输入设备读取数据。<br />
+-c或--bytes或--chars 只显示Bytes数; -l或--lines 显示行数; -w或--words 只显示字数。  </li>
+<li>
+<p>head<br />
+查看文件的开头部分的内容<br />
+    <pre>
+  -c, --bytes=[-]NUM       print the first NUM bytes of each file;
+                             with the leading '-', print all but the last
+                             NUM bytes of each file
+  -n, --lines=[-]NUM       print the first NUM lines instead of the first 10;
+                             (默认打印前10行)
+                             with the leading '-', print all but the last
+                             NUM lines of each file(即除了最后的NUM行都会被打印出来)
+  -q, --quiet, --silent    never print headers giving file names
+  -v, --verbose            always print headers giving file names
+  -z, --zero-terminated    line delimiter is NUL, not newline
+      --help     display this help and exit
+      --version  output version information and exit
+</pre></p>
+</li>
+<li>
+<p>tail<br />
+查看文件内容<br />
+    <pre>
+  -c, --bytes=[+]NUM       output the last NUM bytes; or use -c +NUM to
+                             output starting with byte NUM of each file
+  -f, --follow[={name|descriptor}]
+                           output appended data as the file grows;
+                             an absent option argument means 'descriptor'
+  -F                       same as --follow=name --retry
+  -n, --lines=[+]NUM       output the last NUM lines, instead of the last 10;
+                             or use -n +NUM to output starting with line NUM
+      --max-unchanged-stats=N
+                           with --follow=name, reopen a FILE which has not
+                             changed size after N (default 5) iterations
+                             to see if it has been unlinked or renamed
+                             (this is the usual case of rotated log files);
+                             with inotify, this option is rarely useful
+      --pid=PID            with -f, terminate after process ID, PID dies
+  -q, --quiet, --silent    never output headers giving file names
+      --retry              keep trying to open a file if it is inaccessible
+  -s, --sleep-interval=N   with -f, sleep for approximately N seconds
+                             (default 1.0) between iterations;
+                             with inotify and --pid=P, check process P at
+                             least once every N seconds
+  -v, --verbose            always output headers giving file names
+  -z, --zero-terminated    line delimiter is NUL, not newline
+</pre></p>
+</li>
+<li>
+<p>sed<br />
+轻量级流编辑器，主要用来将数据进行选取、替换、删除、新増的命令<br />
+用法: sed [选项] '[动作]' 文件名<br />
+    <pre>
+    选项:
+    -n：一般 sed 命令会把所有数据都输出到屏幕上。如果加入此选项，则只会把经过 sed 命令处理的行输出到屏幕上；
+    只用于查看 sed 命令操作的数据，而并非查看所有的数据。
+    -e: 允许对输入数据应用多条 sed 命令编辑；
+    -f 脚本文件名：从 sed 脚本中读入 sed 操作。和 awk 命令的 -f 选项非常类似；
+    -r：在 sed 中支持扩展正则表达式；
+    -i：用 sed 的修改结果直接修改读取数据的文件，而不是由屏幕输出动作；
+    动作:
+    a\ ：追加，在当前行后添加一行或多行。当添加多行时，除最后一行外，每行末尾需要用“\”代表数据未完结；
+    c\ ：整行替换，用c后面的字符串替换原数据行。当替换多行时，除最后一行外，每行末尾需用“\”代表数据未完结；
+    i\ ：插入，在当前行前插入一行或多行。当插入多行时，除最后一行外，每行末尾需要用“\”代表数据未完结；
+    d：删除，删除指定的行；
+    P：打印，输出指定的行；
+    s：字符串替换，用一个字符串替换另一个字符串。格式为“行范围s/旧字串/新字串/g”
+       g 是全局替换标志，默认情况下，sed 命令替换每一行第一次出现的模式，它不会替换行中的其他的匹配结果。
+       但是，提供了该替换标志时，所有匹配都将被替换
+       用特定数字n替换g表示替换每一行中第n次出现的模式，如/1，/2
+       /2g，则表示替换每一行从第2个开始的所有模式
+</pre></p>
+</li>
+</ul>
+<pre><code class="language-C">    //查看第 num 行内容
+    sed -n 'numP' filename
+
+    // 在动作中可以使用数字代表行号，逗号代表连续的行范围。还可以使用&quot;$&quot;代表最后一行
+    // 例如&quot;2,$d&quot;，则代表从第二行删除到最后一行。
+    sed '2,4d' filename
+    sed '2,$d' filename
+    // 打印第2到第4行
+    sed -n '2,4P' filename
+
+    // -e&quot;选项可以同时执行多个 sed 动作，多个动作之间要用&quot;;&quot;或回车分隔，
+    sed -e '1s/bin/wh/g;2chello world' test.sh
+
+    // /../中间部分为正则表达式，用来匹配满足条件的行或字符串
+    sed '/^\s*$/d' file //删除所有空格行，\s代表空格
+</code></pre>
+<ul>
+<li>
+<p>grep<br />
+    <pre>
+    Usage: grep [OPTION]... PATTERN [FILE]...
+    Search for PATTERN in each FILE or standard input.
+    PATTERN is, by default, a basic regular expression (BRE).
+    Example: grep -i 'hello world' menu.h main.c</p>
+<p>Regexp selection and interpretation:
+-E, --extended-regexp     PATTERN is an extended regular expression (ERE)
+-F, --fixed-strings       PATTERN is a set of newline-separated strings
+-G, --basic-regexp        PATTERN is a basic regular expression (BRE)
+-P, --perl-regexp         PATTERN is a Perl regular expression
+-e, --regexp=PATTERN      use PATTERN for matching
+-f, --file=FILE           obtain PATTERN from FILE
+-i, --ignore-case         ignore case distinctions
+-w, --word-regexp         force PATTERN to match only whole words
+-x, --line-regexp         force PATTERN to match only whole lines
+-z, --null-data           a data line ends in 0 byte, not newline</p>
+<p>Miscellaneous:
+-s, --no-messages         suppress error messages
+-v, --invert-match        select non-matching lines
+-V, --version             display version information and exit
+    --help                display this help text and exit</p>
+<p>Output control:
+-m, --max-count=NUM       stop after NUM matches
+-b, --byte-offset         print the byte offset with output lines
+-n, --line-number         print line number with output lines
+    --line-buffered       flush output on every line
+-H, --with-filename       print the file name for each match
+-h, --no-filename         suppress the file name prefix on output
+    --label=LABEL         use LABEL as the standard input file name prefix
+-o, --only-matching       show only the part of a line matching PATTERN, 只显示匹配的关键字
+-q, --quiet, --silent     suppress all normal output
+    --binary-files=TYPE   assume that binary files are TYPE;
+                            TYPE is 'binary', 'text', or 'without-match'
+-a, --text                equivalent to --binary-files=text
+-I                        equivalent to --binary-files=without-match
+-d, --directories=ACTION  how to handle directories;
+                            ACTION is 'read', 'recurse', or 'skip'
+-D, --devices=ACTION      how to handle devices, FIFOs and sockets;
+                            ACTION is 'read' or 'skip'
+-r, --recursive           like --directories=recurse
+-R, --dereference-recursive  likewise, but follow all symlinks
+    --include=FILE_PATTERN  search only files that match FILE_PATTERN
+    --exclude=FILE_PATTERN  skip files and directories matching FILE_PATTERN
+    --exclude-from=FILE   skip files matching any file pattern from FILE
+    --exclude-dir=PATTERN  directories that match PATTERN will be skipped.
+-L, --files-without-match  print only names of FILEs containing no match
+-l, --files-with-matches  print only names of FILEs containing matches
+-c, --count               print only a count of matching lines per FILE， 符合匹配的行数
+-T, --initial-tab         make tabs line up (if needed)
+-Z, --null                print 0 byte after FILE name</p>
+<p>Context control:
+-B, --before-context=NUM  print NUM lines of leading context
+-A, --after-context=NUM   print NUM lines of trailing context
+-C, --context=NUM         print NUM lines of output context, 显示关键字前后NUM行
+-NUM                      same as --context=NUM
+    --color[=WHEN],
+    --colour[=WHEN]       use markers to highlight the matching strings;
+                            WHEN is 'always', 'never', or 'auto'
+-U, --binary              do not strip CR characters at EOL (MSDOS/Windows)
+-u, --unix-byte-offsets   report offsets as if CRs were not there
+                            (MSDOS/Windows)
+When FILE is -, read standard input.  With no FILE, read . if a command-line
+-r is given, - otherwise.
+</pre></p>
+</li>
+<li>
+<p>awk<br />
+    <pre>
+    用法: awk [选项参数] '{语句}' filename
+    通常，awk是以文件的一行为处理单位的。awk每接收文件的一行，然后执行相应的命令，来处理文本。
+    &emsp;
+    awk '{ print $0 }' filename #打印每一行
+    awk -F ":" '{ print $1 " " $2 }'  # 以:分割每一行，打印第1个字段、空格、第二个字段
+    awk '{ if(NR&gt;=20 &amp;&amp; NR&lt;=40&gt;) print $0}' filename    # 打印第20行到第23行
+    &emsp;
+    awk 在开始处理输入文件之前会执行 BEGIN 块; 在处理了输入文件中的所有行之后会执行END块
+    awk 'BEGIN{sum=0;} {sum+=$6;} END{print sum}' # 默认以空格作为分割符，$6即第六列对应的值
+    &emsp;
+    常用的内建变量:
+    $n  当前记录的第n个字段，字段间由FS分隔
+    $0  完整的输入记录
+    ARGC    命令行参数的数目
+    FNR 各文件分别计数的行号
+    FS  字段分隔符(默认是任何空格)
+    IGNORECASE  如果为真，则进行忽略大小写的匹配
+    NF  一条记录的字段的数目
+    NR  已经读出的记录数，就是行号，从1开始
+</pre></p>
+</li>
+<li>
+<p>sort<br />
+针对文本文件的内容，以行为单位来排序<br />
+    <pre>
+    Usage: sort [OPTION]... [FILE]...
+    or:  sort [OPTION]... --files0-from=F
+    Write sorted concatenation of all FILE(s) to standard output.
+    With no FILE, or when FILE is -, read standard input.
+    Ordering options:
+    -b, --ignore-leading-blanks  ignore leading blanks
+    -d, --dictionary-order      consider only blanks and alphanumeric characters
+    -f, --ignore-case           fold lower case to upper case characters
+    -g, --general-numeric-sort  compare according to general numerical value
+    -i, --ignore-nonprinting    consider only printable characters
+    -M, --month-sort            compare (unknown) &lt; 'JAN' &lt; ... &lt; 'DEC'
+    -h, --human-numeric-sort    compare human readable numbers (e.g., 2K 1G)
+    -n, --numeric-sort          compare according to string numerical value
+    -R, --random-sort           shuffle, but group identical keys.  See shuf(1)
+        --random-source=FILE    get random bytes from FILE
+    -r, --reverse               reverse the result of comparisons
+        --sort=WORD             sort according to WORD:
+                                    general-numeric -g, human-numeric -h, month -M,
+                                    numeric -n, random -R, version -V
+    -V, --version-sort          natural sort of (version) numbers within text</p>
+<p>Other options:
+  --batch-size=NMERGE   merge at most NMERGE inputs at once;
+                        for more use temp files
+-c, --check, --check=diagnose-first  check for sorted input; do not sort
+-C, --check=quiet, --check=silent  like -c, but do not report first bad line
+    --compress-program=PROG  compress temporaries with PROG;
+                            decompress them with PROG -d
+    --debug               annotate the part of the line used to sort,
+                            and warn about questionable usage to stderr
+    --files0-from=F       read input from the files specified by
+                            NUL-terminated names in file F;
+                            If F is - then read names from standard input
+-k, --key=KEYDEF          sort via a key; KEYDEF gives location and type
+-m, --merge               merge already sorted files; do not sort
+-o, --output=FILE         write result to FILE instead of standard output
+-s, --stable              stabilize sort by disabling last-resort comparison
+-S, --buffer-size=SIZE    use SIZE for main memory buffer
+-t, --field-separator=SEP  use SEP instead of non-blank to blank transition
+-T, --temporary-directory=DIR  use DIR for temporaries, not $TMPDIR or /tmp;
+                            multiple options specify multiple directories
+    --parallel=N          change the number of sorts run concurrently to N
+-u, --unique              with -c, check for strict ordering;
+                            without -c, output only the first of an equal run
+-z, --zero-terminated     line delimiter is NUL, not newline
+    --help     display this help and exit
+    --version  output version information and exit
+</pre></p>
+</li>
+<li>
+<p>uniq<br />
+用于检查及删除文本文件中重复出现的行列<br />
+    <pre>
+    Usage: uniq [OPTION]... [INPUT [OUTPUT]]
+    Filter adjacent matching lines from INPUT (or standard input),
+    writing to OUTPUT (or standard output).
+    With no options, matching lines are merged to the first occurrence.
+    Mandatory arguments to long options are mandatory for short options too.
+    -c, --count           prefix lines by the number of occurrences
+    -d, --repeated        only print duplicate lines, one for each group
+    -D                    print all duplicate lines
+        --all-repeated[=METHOD]  like -D, but allow separating groups
+                                    with an empty line;
+                                    METHOD={none(default),prepend,separate}
+    -f, --skip-fields=N   avoid comparing the first N fields
+        --group[=METHOD]  show all items, separating groups with an empty line;
+                            METHOD={separate(default),prepend,append,both}
+    -i, --ignore-case     ignore differences in case when comparing
+    -s, --skip-chars=N    avoid comparing the first N characters
+    -u, --unique          only print unique lines
+    -z, --zero-terminated     line delimiter is NUL, not newline
+    -w, --check-chars=N   compare no more than N characters in lines
+        --help     display this help and exit
+        --version  output version information and exit</p>
+<p>A field is a run of blanks (usually spaces and/or TABs), then non-blank
+characters.  Fields are skipped before chars.</p>
+<p>Note: 'uniq' does not detect repeated lines unless they are adjacent.
+You may want to sort the input first, or use 'sort -u' without 'uniq'.
+Also, comparisons honor the rules specified by 'LC_COLLATE'.
+</pre></p>
+</li>
+<li>
+<p>tr<br />
+用于转换或删除文件中的字符。<br />
+    <pre>
+    Usage: tr [OPTION]... SET1 [SET2]
+    Translate, squeeze, and/or delete characters from standard input,
+    writing to standard output.</p>
+<p>-c, -C, --complement    use the complement of SET1, 符合 SET1 的部份不做处理，
+                        不符合的剩余部份才进行转换
+-d, --delete            delete characters in SET1, do not translate
+-s, --squeeze-repeats   replace each sequence of a repeated character
+                            that is listed in the last specified SET,
+                            with a single occurrence of that character
+                        即缩减连续重复的字符成指定的单个字符
+-t, --truncate-set1     first truncate SET1 to length of SET2
+    --help     display this help and exit
+    --version  output version information and exit</p>
+<p>SETs are specified as strings of characters.  Most represent themselves.
+Interpreted sequences are:</p>
+<p>\NNN 八进制值的字符 NNN (1 to 3 为八进制值的字符)
+\\ 反斜杠
+\a Ctrl-G 铃声
+\b Ctrl-H 退格符
+\f Ctrl-L 走行换页
+\n Ctrl-J 新行
+\r Ctrl-M 回车
+\t Ctrl-I tab键
+\v Ctrl-X 水平制表符
+CHAR1-CHAR2 ：字符范围从 CHAR1 到 CHAR2 的指定，范围的指定以 ASCII 码的次序为基础，
+只能由小到大，不能由大到小。
+[CHAR*] ：这是 SET2 专用的设定，功能是重复指定的字符到与 SET1 相同长度为止
+[CHAR*REPEAT] ：这也是 SET2 专用的设定，
+功能是重复指定的字符到设定的 REPEAT 次数为止(REPEAT 的数字采 8 进位制计算，以 0 为开始)
+[:alnum:] ：所有字母字符与数字
+[:alpha:] ：所有字母字符
+[:blank:] ：所有水平空格
+[:cntrl:] ：所有控制字符
+[:digit:] ：所有数字
+[:graph:] ：所有可打印的字符(不包含空格符)
+[:lower:] ：所有小写字母
+[:print:] ：所有可打印的字符(包含空格符)
+[:punct:] ：所有标点字符
+[:space:] ：所有水平与垂直空格符
+[:upper:] ：所有大写字母
+[:xdigit:] ：所有 16 进位制的数字
+[=CHAR=] ：所有符合指定的字符(等号里的 CHAR，代表你可自订的字符)</p>
+<p>Translation occurs if -d is not given and both SET1 and SET2 appear.
+-t may be used only when translating.  SET2 is extended to length of
+SET1 by repeating its last character as necessary.  Excess characters
+of SET2 are ignored.  Only [:lower:] and [:upper:] are guaranteed to
+expand in ascending order; used in SET2 while translating, they may
+only be used in pairs to specify case conversion.  -s uses the last
+specified SET, and occurs after translation or deletion.
+</pre></p>
+</li>
+<li>
+<p>find<br />
+来在指定目录下查找文件。任何位于参数之前的字符串都将被视为欲查找的目录名。如果使用该命令时，不设置任何参数，则 find 命令将在当前目录下查找子目录与文件。并且将查找到的子目录和文件全部进行显示。<br />
+    <pre>
+    find   path   -option   [   -print ]   [ -exec   -ok   command ]   {} \;
+    find 根据下列规则判断 path 和 expression，在命令列上第一个 - ( ) , ! 之前的部份为 path，
+    之后的是 expression。如果 path 是空字串则使用目前路径，如果 expression 是空字串，
+    则使用 -print 为预设 expression。</p>
+<p>常用的expression包括:
+-mount, -xdev : 只检查和指定目录在同一个文件系统下的文件，避免列出其它文件系统中的文件
+-amin n : 在过去 n 分钟内被读取过
+-anewer file : 比文件 file 更晚被读取过的文件
+-atime n : 在过去n天内被读取过的文件
+-cmin n : 在过去 n 分钟内被修改过
+-cnewer file :比文件 file 更新的文件
+-ctime n : 在过去n天内被修改过的文件
+-empty : 空的文件-gid n or -group name : gid 是 n 或是 group 名称是 name
+-ipath p, -path p : 路径名称符合 p 的文件，ipath 会忽略大小写
+-name name, -iname name : 文件名称符合 name 的文件。iname 会忽略大小写
+-size n : 文件大小 是 n 单位，b 代表 512 位元组的区块，c 表示字元数，k 表示 kilo bytes，w 是二个位元组。
+-type c : 文件类型是 c 的文件。
+    d: 目录
+    c: 字型装置文件
+    b: 区块装置文件
+    p: 具名贮列
+    f: 一般文件
+    l: 符号连结
+    s: socket
+-pid n : process id 是 n 的文件
+</pre></p>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

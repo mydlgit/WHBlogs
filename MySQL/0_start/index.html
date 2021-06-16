@@ -38,75 +38,75 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../c_base/callable/" class="dropdown-item">callable</a>
+    <a href="../../c_base/callable.md" class="dropdown-item">callable</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/class/" class="dropdown-item">class</a>
+    <a href="../../c_base/class.md" class="dropdown-item">class</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/Complementary/" class="dropdown-item">complementary</a>
+    <a href="../../c_base/Complementary.md" class="dropdown-item">complementary</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/const/" class="dropdown-item">const</a>
+    <a href="../../c_base/const.md" class="dropdown-item">const</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/constructor_destructor/" class="dropdown-item">constructor_destructor</a>
+    <a href="../../c_base/constructor_destructor.md" class="dropdown-item">constructor_destructor</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/container/" class="dropdown-item">container</a>
+    <a href="../../c_base/container.md" class="dropdown-item">container</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/exception/" class="dropdown-item">exception</a>
+    <a href="../../c_base/exception.md" class="dropdown-item">exception</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/function/" class="dropdown-item">function</a>
+    <a href="../../c_base/function.md" class="dropdown-item">function</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/friend_template/" class="dropdown-item">friend_template</a>
+    <a href="../../c_base/friend_template.md" class="dropdown-item">friend_template</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/initialization/" class="dropdown-item">initialization</a>
+    <a href="../../c_base/initialization.md" class="dropdown-item">initialization</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/inline/" class="dropdown-item">inline</a>
+    <a href="../../c_base/inline.md" class="dropdown-item">inline</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/inherit/" class="dropdown-item">inherit</a>
+    <a href="../../c_base/inherit.md" class="dropdown-item">inherit</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/iterator/" class="dropdown-item">iterator</a>
+    <a href="../../c_base/iterator.md" class="dropdown-item">iterator</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/memory/" class="dropdown-item">memory</a>
+    <a href="../../c_base/memory.md" class="dropdown-item">memory</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/new_delete/" class="dropdown-item">new_delete</a>
+    <a href="../../c_base/new_delete.md" class="dropdown-item">new_delete</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/pointer_reference/" class="dropdown-item">pointer_reference</a>
+    <a href="../../c_base/pointer_reference.md" class="dropdown-item">pointer_reference</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/static/" class="dropdown-item">static</a>
+    <a href="../../c_base/static.md" class="dropdown-item">static</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/virtual/" class="dropdown-item">virtual</a>
+    <a href="../../c_base/virtual.md" class="dropdown-item">virtual</a>
 </li>
                                 </ul>
                             </li>
@@ -115,7 +115,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../EffectiveCPP/rule/" class="dropdown-item">RULES</a>
+    <a href="../../EffectiveCPP/rule.md" class="dropdown-item">RULES</a>
 </li>
                                 </ul>
                             </li>
@@ -195,7 +195,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../Network/home/" class="dropdown-item">home</a>
+    <a href="../../Network/home.md" class="dropdown-item">home</a>
 </li>
                                     
 <li>
@@ -313,10 +313,45 @@
 <h2 id="_2">基础概念</h2>
 <ul>
 <li>数据类型: 每个表列都有相应的数据类型，允许该列中可以存储的数据。  </li>
+</ul>
+<pre>
+数值类型: 包括严格数值数据类型(INTEGER、SMALLINT、DECIMAL和NUMERIC)，以及近似数值数据类型
+(FLOAT、REAL和DOUBLE PRECISION)。关键字INT是INTEGER的同义词，关键字DEC是DECIMAL的同义词。  
+&emsp;
+日期和时间类型:有 DATETIME(YYYY-MM-DD HH:MM:SS)、TIMESTAMP(YYYYMMDD HHMMSS)、和DATE(YYYY-MM-DD)、
+TIME(HH:MM:SS)、YEAR(YYYY)。  
+&emsp;
+字符串类型: 包含CHAR、VARCHAR、BINARY、VARBINARY、BLOB、TEXT、ENUM和SET；  
+CHAR定长字符串，特点:
+    存储空间固定。
+    长度不够时内部存储使用空格填充。
+    若字段本身末尾存在空格，检索出来自动截断末尾空格（因为分不清空格是字段含有的还是填充产生的）。
+    若字段本身前端存在空格，是不会截断的。
+    当输入的字符长度超过指定长度时，char会截取超出的字符。
+VARCHAR变长字符串，特点:
+    存储空间不固定，根据字段长度决定。
+    需要额外的1个或2个字节记录字符串的长度，字符串长度小于255字节使用1个字节，否则使用2个。
+    最大容量为 65535 字节（这里单位是字节而非字符)
+    如果列可以为null，则需要额外的一个字节作为标志。
+    最大长度 = 字段长度 + [长度记录：(1或2) B] + [null标志位：1B]
+CAHR(M)中M的范围是0~255，VARCHAR(M)中M的范围是0~65535；M代表字符个数，故VARCHAR最大容量为65535字节。
+对于VARCHAR, 4.0版本以下：varchar(n)，指的是n个字节，如果存放UTF8汉字时，只能存n/3个（每个汉字3字节）。
+5.0版本以上：varchar(n)，指的是n个字符，无论存放的是数字、字母还是UTF8汉字（每个汉字3字节），都可以存放n个，
+考虑到VARCHAR最大容量，此时n的大小受制于字符集，对于UTF-8，n最大为(65535-2)/3=21844；
+对于GBK，n最大为(65535-2)/2=32766。
+&emsp;
+BINARY 和 VARBINARY类似于 CHAR 和 VARCHAR，存储的是字节字符串，即二进制形式子串；  
+BLOB 是一个二进制大对象，可以容纳可变数量的数据。有 4 种 BLOB 类型：TINYBLOB、BLOB、MEDIUMBLOB 和 LONGBLOB。
+它们区别在于可容纳存储范围不同；  
+有 4 种 TEXT 类型：TINYTEXT、TEXT、MEDIUMTEXT 和 LONGTEXT。对应的这 4 种 BLOB 类型，
+可存储的最大长度不同，可根据实际情况选择。
+</pre>
+
+<ul>
 <li>主键(primary key): 一列或一组列，其值(使用多列，则要求它们的组合值)能唯一区分表中每一个行。<br />
 &emsp;任意两行都不具有相同的主键值。<br />
 &emsp;每个行都必须有一个主键值(主键列不允许为NULL值)。  </li>
-<li>NULL: 创建表时，可以指定其中的列是否可以不含值，如果不含值，称其为包含空值NULL。  </li>
+<li>NULL &amp;&amp; NOT NULL: 创建表时，可以对列施加这两种约束；其中NOT NULL，意味着插入时该列不能为NULL，但可以为空值(会占用空间)；如果是NULL，则插入时，该列的值可以为NULL(不占用空间)。  </li>
 <li>外键(foreign key): 以A表中的col列关联B表中的col列，要求B中col列具有唯一性约束，一般为其主键；施加约束后，B表称为主表，A表称为外键表：<br />
 外键字段在创建的时候就应该与主表的类型完全一致(长度啊等)，否则创建外键会报错<br />
 外键表是不能插入主表不存在的数据<br />
@@ -361,7 +396,7 @@
     SELECT col_name FROM tbl_name WHERE col_name IS NULL;   # 检索col_name值为NULL的行
 
     # AND、OR 操作符可以用来组合多个子句，且AND的计算次序更高，可以通过()来明确分组相应的操作符
-    SELECT prod_id FROM products HWERE vend_id = 1000 AND prod_price&lt;100;
+    SELECT prod_id FROM products WHERE vend_id = 1000 AND prod_price&lt;100;
     # IN 操作符，对于()内的每个条件都进行匹配
     SELECT col_name FROM tbl_name WHERE col_name2 IN (x, xx, xxx);
     # NOT 操作符用来否定后跟条件， MySQL支持使用NOT对 IN、BETWEEN 和 EXISTS 子句取反
@@ -388,6 +423,7 @@
 . 表示匹配任意一个字符；
 | 为正则表达式的or操作符，表示匹配其中之一，“100|200|300”；
 [] 匹配其中字符之一，“[123] tom” 表示匹配 “1 tom” 或 “2 tom” 或 “3 tom”；
+() 用圆括号将所有选择项括起来，相邻的选择项之间用 | 分隔
 [0-9] 匹配0到9中的一个数字，[a-z]匹配a到z中的一个字符；
 \\ 转义，用来匹配特殊字符
 定位元字符：
@@ -403,6 +439,35 @@ $ 文本的结尾
 &quot;[[:digit:]]{4}&quot;：匹配连在一起的任意4位数字
 &quot;^[0-9\\.]&quot;：匹配以数字或小数点开始的文本
 </code></pre>
+<p><strong>CASE WHEN</strong><br />
+Show the name and the continent - but substitute Eurasia for Europe and Asia; substitute America - for each country in North America or South America or Caribbean. Show countries beginning with A or B</p>
+<pre><code class="language-SQL">    select name,
+    CASE
+    WHEN continent in ('Europe', 'Asia') THEN 'Eurasia'
+    WHEN continent in ('North America','South America', 'Caribbean') THEN 'America'
+    ELSE continent 
+    END
+    from world
+    where name like 'A%' or name like 'B%'
+
+    /*
+    Put the continents right...
+    Oceania becomes Australasia
+    Countries in Eurasia and Turkey go to Europe/Asia
+    Caribbean islands starting with 'B' go to North America, other Caribbean islands go to South America
+    Show the name, the original continent and the new continent of all countries.
+    */
+    select name,continent,
+    case when continent in ('Eurasia', 'Turkey') then 'Europe/Asia'
+        when continent ='Oceania' then 'Australasia'
+        when continent='Caribbean' then 
+                                    case when name like 'B%' then 'North America'
+                                        else 'South America'
+                                        end
+        else continent
+        end
+    from world
+</code></pre>
 <p><strong>计算字段</strong><br />
 <strong>运行时在SELECT语句内创建</strong>，例如嵌套子查询或者通过组合字段(即 column)来格式化检索输出结果  </p>
 <ul>
@@ -410,10 +475,27 @@ $ 文本的结尾
 <li>删除空格，RTrim()去除串右侧空格，LTrim()去除串右侧空格，Trim()去除两侧空格  </li>
 <li>AS，可以为Concat()得到的结果创建一个列别名，方便客户机使用  </li>
 <li>可以在计算字段中指向算术计算</li>
+<li>ROUND(), returns f rounded to p decimal places</li>
 </ul>
 <pre><code class="language-SQL">    SELECT Concat(Rtrim(vend_name), '(', RTrim(vend_country), ')') AS vend_title FROM vendors;
     SELECT quantity*item_price AS expanded_price FROM orderitems;
 </code></pre>
+<ul>
+<li>关于null<br />
+    <pre>
+1、如果要求查询条件不满足时，输出null，有以下几种处理方法:
+eg: 返回第2高薪资，没有时返回null(例如只有一条记录或者记录中薪资全部相同)
+// 因为select null 返回null
+select (select distinct salary from employee order by salary desc limit 1, 1) as SecondHighestSalary
+或
+// IFNULL(expr1,expr2)的用法：
+// 假如expr1 不为 NULL，则 IFNULL() 的返回值为 expr1; 否则其返回值为 expr2。
+select IFNULL(
+    (select distinct salary from employrr order by salary desc limit 1, 1),
+    null
+) as HighestSecondSalary
+</pre></li>
+</ul>
 <p><strong>数据处理函数</strong>  </p>
 <ul>
 <li>文本处理函数: Trim(), Upper(), Lower(),  Soundex()等；其中Soundex可以将文本串转为描述其语音表示的字母数字模式的算法，考虑了类似的发音字符和音节，使得对串进行发音比较而不是字符比较。  </li>
@@ -431,13 +513,34 @@ MySQL使用的默认日期格式为yyyy-mm-dd, datetime类型除了日期还包�
     SELECT cust_id, order_num FROM orders WHERE Year(order_data)=2005 AND Month(order_date)=9;
 </code></pre>
 <ul>
-<li>数值处理函数<br />
-仅用来处理数值数据，用于代数、三角函数计算。如Abs()、Cos()、Sin()、Pi()、Rand()、Mod()、Sqrt()、Exp().</li>
+<li>
+<p>数值处理函数<br />
+仅用来处理数值数据，用于代数、三角函数计算。如Abs()、Cos()、Sin()、Pi()、Rand()、Mod()、Sqrt()、Exp().</p>
+</li>
+<li>
+<p>开窗函数<br />
+从mysql 8.0开始支持<br />
+    <pre>
+1、语法结构
+&lt;开窗函数&gt; over ([PARTITION by &lt;列清单&gt;]
+                     Order by &lt;排序用列清单&gt;）
+语句中，PARTITION By 指定排序的对象范围，含义上类似Group By, 但不会将结果聚合在一起, 
+而是相同列清单的数据紧挨一起，期间顺序通过 order by进行指定
+order by 指定了按照哪一列，何种顺序进行排列（纵向定义排序规则）
+2、常用开窗函数包括聚合函数和下面几种专用开窗函数
+row_number()：依次递增排名，无重复排名
+rank()：相同分数有重复排名，但是重复后下一个人按照实际排名
+dense_rank()：分数一致排名一致，分数不一致排名+1
+NTILE(4)：分组排名，里面的数字是几，最多排名就是几，里面的数字是4，最多的排名就是4
+</pre></p>
+</li>
 </ul>
-<p><strong>聚集函数</strong>  </p>
+<p><strong>聚合函数(aggregate function)</strong>  </p>
 <ul>
 <li>用于对表中数据进行汇总，但无需返回实际表项数据，如满足条件的行数，表列的最大/小值等。<br />
-<img alt="avatar" src="../../images/DataBase/5.png" /></li>
+<img alt="avatar" src="../../images/DataBase/5.png" /><br />
+&emsp;若某行的score值为null时，计算平均值时会忽略带有null值的那一行。如果想要把null当做0，那么可以使用IsNull函数把null转换成0，语法如下：
+avg(IsNull(score，0)） as 'Average Score'  </li>
 </ul>
 <pre><code class="language-SQL">    # AVG只能用于单个列，为获得多个列，必须使用多个AVG函数
     SELECT AVG(prod_price) AS avg_price WHERE vend_id=100;
@@ -452,6 +555,20 @@ MySQL使用的默认日期格式为yyyy-mm-dd, datetime类型除了日期还包�
 </ul>
 <pre><code class="language-SQL">    SELECT COUNT(*) AS num_items, MIN(prod_price) AS price_min, AVG(prod_price) AS avg_price FROM products;
 </code></pre>
+<p><strong>自定义函数</strong>
+    <pre>
+delimiter 自定义符号　　-- 如果函数体只有一条语句, begin和end可以省略, 同时delimiter也可以省略
+create function 函数名(形参列表) returns 返回类型　　
+-- 注意是retruns； 形参列表形式：形参名，形参类型， 例如 a INT
+　　begin
+　　　　函数体 -- 函数内定义的变量如：set @x = 1; 变量x为全局变量，在函数外面也可以使用； 
+-- 使用declare定义局部变量， 例如 declare i int default 1;
+-- 修改变量值: set i = i+1;
+return  (-- 这里可以写SQL语句);
+　　end
+　　自定义符号
+delimiter ;
+</pre></p>
 <p><strong>分组数据</strong>  </p>
 <ul>
 <li>
@@ -463,7 +580,8 @@ MySQL使用的默认日期格式为yyyy-mm-dd, datetime类型除了日期还包�
 HAVING子句类似WHERE，WHERE子句可以用HAVING代替，两者区别在于:<br />
 &emsp;WHERE只能过滤行，且其在分组前进行过滤，而HAVING基于分组的聚合值而不是特定行的值来过滤数据，主要用来过滤分组。<br />
 &emsp;WHERE子句不可以包含聚合函数，HAVING 子句中的条件可以包含聚合函数。<br />
-&emsp;HAVING 子句是在数据分组后进行过滤，WHERE 子句会在数据分组前进行过滤。WHERE 子句排除的行不包含在分组中，可能会影响 HAVING 子句基于这些值过滤掉的分组。  </p>
+&emsp;HAVING 子句是在数据分组后进行过滤，WHERE 子句会在数据分组前进行过滤。WHERE 子句排除的行不包含在分组中，可能会影响 HAVING 子句基于这些值过滤掉的分组。<br />
+&emsp;使用GROUP BY时，select 后面的所有列中,没有使用聚合函数的列,必须出现在 group by 后面</p>
 </li>
 </ul>
 <pre><code class="language-SQL">    SELECT vend_id, COUNT(*) AS num_prods FROM products GROUP BY vend_id;
@@ -536,6 +654,7 @@ HAVING子句类似WHERE，WHERE子句可以用HAVING代替，两者区别在于:
     ON customers.cust_id=orders.cust_id
     GROUP BY customers.cust_id;
 </code></pre>
+<p><img alt="avatar" src="../../images/DataBase/17.png" /></p>
 <p><strong>组合查询</strong><br />
 &emsp;在单个查询中从不同的表返回类似结构的数据<br />
 &emsp;对单个表执行多个查询，按单个查询返回数据<br />
@@ -556,7 +675,7 @@ UNION默认会去除多条查询语句返回中重复的行，使用UNION ALL可
     WHERE vend_id in (1000, 1005);
 </code></pre>
 <p><strong>全文本搜索</strong>
-MyISAM引擎支持，而InnoDB不支持。</p>
+MyISAM引擎支持，而InnoDB不支持(5.7版本开始支持)。</p>
 <pre>
 相较于通配符和正则表达式尝试匹配表中所有行，无法明确控制匹配条件，以及不能提供智能化的搜索结果，
 全文本搜索可以解决这些问题。
@@ -604,7 +723,7 @@ FULLTEXT可以索引多个列，定义之后，MySQL会自动维护索引。使�
 
     # 插入多行, 可以使用多条INSERT语句，一次提交，中间用‘;’隔开, 
     # 或者如下, 要求INSERT语句中列名和次序相同，这种方式性能也要更好
-    INSERT INTO tbl_name(col_name1, ..) VALUES(col1_value,..), VALUES(col1_value2, ..);
+    INSERT INTO tbl_name(col_name1, ..) VALUES(col1_value,..), (col1_value2, ..);
 
     # 插入检索出的数据, 将从其他表中检索到的数据插入表中
     # 检索的列对应被插入表的每一列

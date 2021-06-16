@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>About friend and template - Note</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Note</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">C++ Base <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../c_base/callable.md" class="dropdown-item">callable</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/class.md" class="dropdown-item">class</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/Complementary.md" class="dropdown-item">complementary</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/const.md" class="dropdown-item">const</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/constructor_destructor.md" class="dropdown-item">constructor_destructor</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/container.md" class="dropdown-item">container</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/exception.md" class="dropdown-item">exception</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/function.md" class="dropdown-item">function</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/friend_template.md" class="dropdown-item">friend_template</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/initialization.md" class="dropdown-item">initialization</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inline.md" class="dropdown-item">inline</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inherit.md" class="dropdown-item">inherit</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/iterator.md" class="dropdown-item">iterator</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/memory.md" class="dropdown-item">memory</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/new_delete.md" class="dropdown-item">new_delete</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/pointer_reference.md" class="dropdown-item">pointer_reference</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/static.md" class="dropdown-item">static</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/virtual.md" class="dropdown-item">virtual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EffectiveCPP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../EffectiveCPP/rule.md" class="dropdown-item">RULES</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Linux os <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../os/0_index/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../os/1_introduction/" class="dropdown-item">1_开始</a>
+</li>
+                                    
+<li>
+    <a href="../../os/2_as86/" class="dropdown-item">2_汇编语法</a>
+</li>
+                                    
+<li>
+    <a href="../../os/3_80x86_protect_mode/" class="dropdown-item">3_保护模式</a>
+</li>
+                                    
+<li>
+    <a href="../../os/4_kernel_struct/" class="dropdown-item">4_内核体系结构</a>
+</li>
+                                    
+<li>
+    <a href="../../os/5_os/" class="dropdown-item">5_现代操作系统</a>
+</li>
+                                    
+<li>
+    <a href="../../os/7_simple_os/" class="dropdown-item">7_simple_os</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MySQL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../MySQL/0_start/" class="dropdown-item">home</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DataStruct <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../DataStruct/Tree/" class="dropdown-item">Tree</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Sort/" class="dropdown-item">Sort</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Graph/" class="dropdown-item">Graph</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/OtherStruct/" class="dropdown-item">Others</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Algorithm/" class="dropdown-item">Algorithm</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/API/" class="dropdown-item">API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Network <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Network/home.md" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/1_application/" class="dropdown-item">application</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/2_transport/" class="dropdown-item">transport</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/3_network/" class="dropdown-item">network</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/4_link/" class="dropdown-item">link</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/5_netsafe/" class="dropdown-item">safe</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">interview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interview/" class="dropdown-item">面试</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#about-friend-and-template" class="nav-link">About friend and template</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#friend" class="nav-link">friend</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#template" class="nav-link">template</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#alias-template" class="nav-link">Alias Template</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#variadic-template" class="nav-link">variadic template</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="about-friend-and-template">About friend and template</h1>
+<h2 id="friend">friend</h2>
+<p>&emsp;在定义一个类的时候，可以把一些函数（包括全局函数和其他类的成员函数）声明为“友元”，这样那些函数就成为该类的友元函数，在友元函数内部就可以访问该类对象的私有成员了。 将全局函数声明为友元的写法如下：</p>
+<pre><code class="language-C">friend  返回值类型  函数名(参数表);
+将其他类的成员函数声明为友元的写法如下：
+friend  返回值类型  其他类的类名::成员函数名(参数表);
+</code></pre>
+<p>但是，不能把其他类的私有成员函数声明为友元.</p>
+<p>&emsp;友元的声明：只能出现在类定义的内部，在类内出现的位置不限；友元不是类的成员，也不受它所在区域访问控制级别的约束；友元的声明仅仅指定了访问的权限，而非一个通常意义上的函数声明，如果我们希望类的用户能调用某个友元函数，必须在友元声明之外再专门对函数进行一次声明。  </p>
+<p>&emsp;一个类 A 可以将另一个类 B 声明为自己的友元，类 B 的所有成员函数就都可以访问类 A 对象的私有成员。在类定义中声明友元类的写法如下：<code>friend  class  类名;</code></p>
+<h2 id="template">template</h2>
+<ul>
+<li>
+<p>类模板：一个类模板(类生成类)允许用户为类定义个一种模式，使得类中的某些数据成员、默认成员函数的参数，某些成员函数的返回值，能够取任意类型(包括系统预定义的和用户自定义的)。如果一个类中的数据成员的数据类型不能确定，或者是某个成员函数的参数或返回值的类型不能确定，就必须将此类声明为模板，它的存在不是代表一个具体的、实际的类，而是代表一类类。  </p>
+</li>
+<li>
+<p>通过<strong><em>typename</em></strong>或<strong><em>class</em></strong>关键字将T视为一种未知类型  </p>
+</li>
+<li>
+<p><strong>类模板的声明和实现要在同一个文件中，否则，会出现连接错误。</strong>  </p>
+</li>
+<li>C++ - 类模板(class template)友元(friend) 的 全部六种形式 及代码</li>
+</ul>
+<pre><code class="language-C">    #include &lt;iostream&gt;
+    #include &lt;string&gt;
+
+    template &lt;typename T&gt; class Pal; //模板类的前置声明
+
+    class C {
+        friend class Pal&lt;C&gt;; //&quot;以类C实例化&quot;的Pal类, 为C的友元
+        template &lt;typename T&gt; friend class Pal2; //Pal2类的所有实例化, 都为C的友元
+    private:
+        void print() { std::cout &lt;&lt; &quot;class C&quot; &lt;&lt; std::endl; }
+    };
+
+    template &lt;typename T&gt;
+    class C2 {
+        friend class Pal&lt;T&gt;; //&quot;与C2类相同实例化&quot;的Pal类, 为C2的友元
+        //Pal2类的所有实例化, 都为C2的友元, 注意模板参数(X)不能相同
+        template &lt;typename X&gt; friend class Pal2;
+        friend class Pal3; //普通友元
+        friend T; //C++11 模板类型参数友元
+    private:
+        void print() { std::cout &lt;&lt; &quot;class C2&quot; &lt;&lt; std::endl; }
+    };
+
+    template &lt;typename T&gt;
+    class Pal {
+        C myC;
+        C2&lt;T&gt; myC2; //必须为T
+        //C2&lt;double&gt; myC2; //实例化不同, 无法使用
+    public:
+        void printC() {
+            std::cout &lt;&lt; &quot;this is class Pal : &quot;;
+            myC.print();
+        }
+        void printC2() {
+            std::cout &lt;&lt; &quot;this is class Pal : &quot;;
+            myC2.print();
+        }
+    };
+
+    template &lt;typename T&gt;
+    class Pal2 {
+        C myC;
+        C2&lt;double&gt; myC2;
+    public:
+        void printC() {
+            std::cout &lt;&lt; &quot;this is class Pal2 : &quot;;
+            myC.print();
+        }
+        void printC2() {
+            std::cout &lt;&lt; &quot;this is class Pal2 : &quot;;
+            myC2.print();
+        }
+    };
+
+    class Pal3 {
+        C2&lt;double&gt; myC2;
+    public:
+        void printC2() {
+            std::cout &lt;&lt; &quot;this is class Pal3 : &quot;;
+            myC2.print();
+        }
+    };
+
+    class Pal4 {
+        C2&lt;Pal4&gt; myC2; //注意Pal4是C2类的模板参数
+    public:
+        void printC2() {
+            std::cout &lt;&lt; &quot;this is class Pal4 : &quot;;
+            myC2.print();
+        }
+    };
+
+    int main (void) { 
+        Pal&lt;C&gt; pc; //Pal类必须实例化为C
+        pc.printC(); //可以使用
+        //Pal&lt;int&gt; pci;
+        //pci.print(); //报错, 访问了私有成员
+
+        Pal2&lt;int&gt; pi2; //Pal2类可以随意实例化
+        pi2.printC();
+
+        Pal&lt;int&gt; pi; //有相同的示例化, 在类声明C2&lt;T&gt;
+        pi.printC2();
+
+        pi2.printC2(); //注意, Pal2类被实例化为&lt;int&gt;, 内部C2类被实例化为&lt;double&gt;;
+
+        Pal3 p3;
+        p3.printC2();
+
+        Pal4 p4;
+        p4.printC2();
+
+        return 0;
+    }
+</code></pre>
+<ul>
+<li><strong><em>typename</em></strong><br />
+声明一个类型<br />
+&emsp;默认情况，C++语言假定通过作用域运算符访问的名字不是类型，而是static成员，如T::m；例如在类模板中如果定义了一个结构体模板，且存在返回类型为该结构体指针的成员函数，则在类外实现该成员函数定义时，需要按照以下格式：  </li>
+</ul>
+<pre><code class="language-C">        template&lt;typename T&gt;
+        class A{
+            private:
+                struct s{
+                    T val;
+                }
+
+                s* fun(s*);
+        }
+
+        template&lt;typename T&gt;
+        typename A&lt;T&gt;::s* A&lt;T&gt;::fun(s*){}
+</code></pre>
+<p>&emsp;&emsp;模板中依赖于模板参数的名称属于dependent name,而其嵌套在一个类里面时，称为nested dependent name,
+上述的A<T>::s即属于nested dependent name, 在声明时需要用typename声明；<br />
+当模板参数T已知时，则无需typename.   </p>
+<pre><code class="language-C">        // 模板特化
+        template&lt;&gt;
+        A&lt;double&gt;::s* A&lt;double&gt;::fcn(){..}
+
+        A&lt;int&gt;::s s1;
+</code></pre>
+<p>&emsp;&emsp;在派生类的基类列表以及构造函数的基类初始化列表中，则不允许typename  </p>
+<pre><code class="language-C">        template&lt;typename T&gt;
+        class Derived: public Base&lt;T&gt;{
+            Derived(T t): Base&lt;T&gt;(t){..}
+        }  
+</code></pre>
+<ul>
+<li>在实例化类模板时，空&lt;&gt;表示使用默认模板实参  </li>
+</ul>
+<pre><code class="language-C">    template &lt;class T=int&gt; class Numbers{...};
+    Numbers&lt;&gt; a;    
+</code></pre>
+<ul>
+<li>控制实例化：在代码中包含类/函数模板本身不会生成类/函数定义,编译器使用模板为特定类型生成类/函数定义时，得到的是模板实例，因此相同的实例(即采用相同类型生成的实例)可能出现在多个对象文件中，当多个独立编译的源文件使用了相同的模板，并提供了相同的模板参数时，每个文件就会有该模板的一个实例，造成严重的额外开销。  </li>
+<li>使用显示实例化来避免上述开销：  </li>
+</ul>
+<pre><code class="language-C">    extern template declaration;    //实例化声明
+    template declaration;   //显示实例化的定义
+</code></pre>
+<p>&emsp;&emsp;declaration是一个类或函数声明，其中所有模板参数已被替换为模板实参。例如:<br />
+extern template const int &amp; Max<int>(const int &amp;a, const int &amp;b); <br />
+&emsp;&emsp;当编译器遇到extern模板声明时，它不会在本文件中生成实例化代码。将一个实例化声明为extern就表示承诺在程序其他位置有该实例化的一个非extern声明（定义）。 这样不同的对象文件中关于该模板仅有一份实例。 <br />
+&emsp;&emsp;在一个类模板的实例化定义中，所用类型必须能用于模板的所有成员函数，因此编译器会实例化该类的所有成员。
+而在处理类模板的普通实例化时，其成员只有在使用时才被实例化。<br />
+&emsp;将实参传递给带模板类型的函数实参时，形参和实参中的顶层const会被忽略；能够自动应用的类型转换只有const转换（可以将一个非const对象的引用或指针传递给一个const的引用或指针形参），以及数组或函数到指针的转换（要求函数形参不是引用类型，否则数组不会转换为指针）。<br />
+&emsp;若模板类型参数用作多个函数形参的类型，由于只允许有限的类型转换，则传递给这些形参的实参必须具有相同的类型，若推断出的类型不匹配，则调用错误。对于函数模板中的普通类型定义的参数，其可以正常转换为对应形参的类型。  </p>
+<ul>
+<li>
+<p><strong>模板特例化</strong>
+&emsp;一个特例化模板就是模板的一个独立的定义或者实例，在其中一个或多个模板参数被指定为特定的类型。
+函数模板特例化本质是一个特例，而非函数名的一个重载版本。<br />
+&emsp;模板特例化又分为全特化和偏特化(例如部分参数特化，或者参数范围上进行特化, &lt; T*&gt;)<br />
+&emsp;对于一些定义在std namespace中的class template 和 function template，C++允许我们同样在std namespace中，对两者进行全特化，但只允许对前者进行偏特化；可以在name space中提供funtion template的重载版本，不过最好在自定义namespace时中实现 funtion template的偏特化版本</p>
+</li>
+<li>
+<p>标准库模板function<br />
+&emsp;<code>function<T> f(obj) or function<T> f=obj; //f中存储了函数类型为T的可调用对象obj的副本。</code><br />
+obj可以是函数指针、函数对象类的对象、lambda. 因此对于不是可调用对象的成员函数指针,可以通过function生成一个成员函数的可调用对象。</p>
+</li>
+</ul>
+<pre><code class="language-C">    function&lt;bool (const string&amp;)&gt; fcn = &amp;string::empty;
+    auto fcn = mem_fn(&amp;string::empty);
+    // mem_fn可以根据成员指针的类型推断可调用对象的类型，无须用户显式指定。
+</code></pre>
+<h2 id="alias-template">Alias Template</h2>
+<pre><code class="language-C">template &lt;typename T&gt;
+using Vec = std::vector&lt;T, MyAlloc&lt;t&gt;&gt;;
+
+Vec&lt;int&gt; coll;
+
+//等价于
+std::vector&lt;int, Myalloc&lt;int&gt;&gt; coll;
+// 这里无法采用macro或者typedef,前者只是简单的替换；后者不能接受参数
+</code></pre>
+<p>&emsp; 思考:在模板接受一个template参数Container时，当Container本身又是一个class template,如何取出其template参数，例如接受vector<string>, 取出其元素类型。  </p>
+<pre><code class="language-C">// function template+iterator+traits
+template&lt;typename Container&gt;
+void test(Contrainer c){
+    typedef typename iterator_traits&lt;typename Container::iterator&gt;::value_type Valtype;
+    ...
+}
+// template template parameter + alias template
+template&lt;typename T, template&lt;class&gt; class Container&gt;
+class X{
+    private:
+        Container&lt;T&gt; c;
+};
+template&lt;typename T&gt;
+using Vec=vector&lt;T, allocator&lt;T&gt;&gt;   //不能再function body中声明
+
+X&lt;string, Vec&gt; x1;
+
+</code></pre>
+<h2 id="variadic-template">variadic template</h2>
+<p>&emsp;接受可变数目参数的模板函数或模板类，可变数目的参数被称为参数包。<br />
+模板参数包: class...或typename...指出接下来的参数表示零个或多个类型的列表；<br />
+函数参数包: 一个类型名后面跟一个省略号表示零个或多个给定类型的非类型参数的列表。<br />
+sizeof...(): 运算符可以返回一个常量表达式，表示参数包中元素数目。  </p>
+<pre><code class="language-C">// example 1
+void printX(){} // to end the recursion, the non-template overload of printX is provided.
+
+template&lt;typename T, typename... Types&gt; 
+void printX(const T&amp; first, const Types&amp;... args){
+    cout &lt;&lt; first&lt;&lt;endl&gt;;
+    printX(args...);
+}
+// template &lt;typename... Types&gt; void printX(const Types&amp;... args){} 可以和上面并存，但永远不会被调用，因为上面的属于特化版本
+</code></pre>
+<p>// example 2 
+<img alt="avatar" src="../../images/c_base/4.png" />
+//例2中的Head::type不能被编译通过， 应修改为下面
+<img alt="avatar" src="../../images/c_base/5.png" />   </p>
+<p>// example 3
+<img alt="avatar" src="../../images/c_base/6.png" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

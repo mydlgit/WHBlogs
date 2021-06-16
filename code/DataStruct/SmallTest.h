@@ -120,24 +120,23 @@ void PolySum(){
 
 /*厄拉多塞筛，计算小于N的素数*/
 void Primer(int num){
-    bool primer[num+1];
+    vector<bool> primer(num+1, false);
     int num_primer=0;
     std::cout<<"primer:"<<std::endl;
-    for(int i=2;i<=sqrt(num);i++){
-        if(!primer[i])
-            {
-                num_primer++;
-                //std::cout<<i<<std::endl;
-            }
-        int j=1;    
-        while(j*i<=num){
-            if(!primer[j*i])
-                primer[j*i]=true;
-            j++;
-        }
-    }
-    for(int i=sqrt(num)+1;i<=num;i++){
+    int i=2;
+    while(i*i<=num){
         if(!primer[i]){
+            num_primer++;
+            int j=2*i;
+            while(j<=num){
+                primer[j]=true;
+                j+=i;
+            }
+        }
+        i++;
+    }
+   while(i<=num){
+        if(!primer[i++]){
             //std::cout<<i<<std::endl;
             num_primer++;
         }
@@ -315,12 +314,12 @@ void Josephus2(int M, int N){
 void Josephus2_1(int M, int N){
     int a[N+1]; //存放指针，a[i]存放着下一个元素
     int b[N+1]; //出链顺序
-    int i, j, k;
+    int j, k;
     for(int i=1;i<N;i++)a[i]=i+1;
     a[N]=1; //形成闭环
 
     k=1; j=N;
-    for(i=1;i<=N;i++){
+    for(int i=1;i<=N;i++){
         while(k<M){
             j=a[j]; //移动指针
             k++;
@@ -328,7 +327,7 @@ void Josephus2_1(int M, int N){
         b[i]=a[j];
         a[j] = a[a[j]];
         k=1;
-        printf("%dout a[%d]=%d\n", b[i], j, a[j]);
+        // printf("%dout a[%d]=%d\n", b[i], j, a[j]);
     }
     for(int i=1;i<=N;i++)std::cout<<b[i]<<" ";
     std::cout<<std::endl;
@@ -1062,11 +1061,11 @@ void getNext(std::vector<int>& next, string& p){
             k = next[k];
     }
 }
-int KMP(string& s, string& p){
+int KMP(string s, string p){
     if(p.size() == 0 || s.size()<p.size())return -1;
     vector<int> next(p.size());
     getNext(next, p);
-    int i=0, j=-1;
+    int i=0, j=0;
     int sLen = s.size(), pLen = p.size();
     while(i<sLen && j<pLen){
         if(j==-1 || s[i]==p[j]){
@@ -1076,5 +1075,72 @@ int KMP(string& s, string& p){
     }
     if(j==pLen)return i-j;
     else return -1;
+}
+//寻找模板串p在源串s中出现的次数
+class KMPSolution {
+public:
+    int kmp(string p, string s) {
+        if(s.size()<p.size())return 0;
+        int i=0,j=0, slen=s.size(), plen=p.size(), pos=0;
+        vector<int> next(plen);
+        getNext(p, next);
+        int ans=0;
+        for(int i = 0, j = -1; i < slen; ++i)
+        {   /*
+            相当于p在s滑动，匹配成功一次ans++
+            */
+            while(j >= 0 && s[i] != p[j + 1])j = next[j];
+            if(s[i] == p[j + 1])++j;
+            if(j+1 == plen)
+            {
+                ++ans;
+                j = next[j];    
+                /*
+                此时s[i+1-plen, i]与p是相同的，下一步i向后移动
+                此时j回退到next[j]位置，因为p[0, next[j]-1]与s[i+1-next[j], i]是相同的
+                */
+            }
+        }
+        /*
+            for(int i=0, j=0;i<slen;i++){
+                while(j>0 && s[i]!=p[j]){
+                    j = next[j-1];
+                }
+                if(s[i] == p[j])++j;
+                if(j==plen){
+                    ans++;
+                    j=next[j-1]+1;
+                }
+            }
+        */
+        return ans;
+    }
+ private:
+    void getNext(const string& p, vector<int>& next){
+        next[0]=-1;
+        int j=0,k=-1;
+        int len=p.size();
+        while(j<len-1){
+            if(k==-1 || p[j]==p[k]){
+                next[++j] = ++k;
+            }else k=next[k];
+        }
+    }
+};
+
+int SundayStrMatch(string source, string pattern) {
+    int sSize = source.size(), pSize = pattern.size();
+    if(sSize<pSize || pSize==0)return -1;
+    unordered_map<char, int> shift;
+    for(int i=0;i<pSize;i++)shift[pattern[i]]=pSize-i;
+    int idx=0;
+    while(idx+pSize<=sSize){
+        string sub = source.substr(idx, pSize);
+        if(sub == pattern)return idx;
+        if(idx+pSize>=sSize)return -1;
+        if(shift.find(source[idx+pSize]) == shift.end())idx += pSize;
+        else idx += shift[source[idx+pSize]];
+    }
+    return -1;
 }
 #endif

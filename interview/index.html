@@ -38,75 +38,75 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../c_base/callable/" class="dropdown-item">callable</a>
+    <a href="../c_base/callable.md" class="dropdown-item">callable</a>
 </li>
                                     
 <li>
-    <a href="../c_base/class/" class="dropdown-item">class</a>
+    <a href="../c_base/class.md" class="dropdown-item">class</a>
 </li>
                                     
 <li>
-    <a href="../c_base/Complementary/" class="dropdown-item">complementary</a>
+    <a href="../c_base/Complementary.md" class="dropdown-item">complementary</a>
 </li>
                                     
 <li>
-    <a href="../c_base/const/" class="dropdown-item">const</a>
+    <a href="../c_base/const.md" class="dropdown-item">const</a>
 </li>
                                     
 <li>
-    <a href="../c_base/constructor_destructor/" class="dropdown-item">constructor_destructor</a>
+    <a href="../c_base/constructor_destructor.md" class="dropdown-item">constructor_destructor</a>
 </li>
                                     
 <li>
-    <a href="../c_base/container/" class="dropdown-item">container</a>
+    <a href="../c_base/container.md" class="dropdown-item">container</a>
 </li>
                                     
 <li>
-    <a href="../c_base/exception/" class="dropdown-item">exception</a>
+    <a href="../c_base/exception.md" class="dropdown-item">exception</a>
 </li>
                                     
 <li>
-    <a href="../c_base/function/" class="dropdown-item">function</a>
+    <a href="../c_base/function.md" class="dropdown-item">function</a>
 </li>
                                     
 <li>
-    <a href="../c_base/friend_template/" class="dropdown-item">friend_template</a>
+    <a href="../c_base/friend_template.md" class="dropdown-item">friend_template</a>
 </li>
                                     
 <li>
-    <a href="../c_base/initialization/" class="dropdown-item">initialization</a>
+    <a href="../c_base/initialization.md" class="dropdown-item">initialization</a>
 </li>
                                     
 <li>
-    <a href="../c_base/inline/" class="dropdown-item">inline</a>
+    <a href="../c_base/inline.md" class="dropdown-item">inline</a>
 </li>
                                     
 <li>
-    <a href="../c_base/inherit/" class="dropdown-item">inherit</a>
+    <a href="../c_base/inherit.md" class="dropdown-item">inherit</a>
 </li>
                                     
 <li>
-    <a href="../c_base/iterator/" class="dropdown-item">iterator</a>
+    <a href="../c_base/iterator.md" class="dropdown-item">iterator</a>
 </li>
                                     
 <li>
-    <a href="../c_base/memory/" class="dropdown-item">memory</a>
+    <a href="../c_base/memory.md" class="dropdown-item">memory</a>
 </li>
                                     
 <li>
-    <a href="../c_base/new_delete/" class="dropdown-item">new_delete</a>
+    <a href="../c_base/new_delete.md" class="dropdown-item">new_delete</a>
 </li>
                                     
 <li>
-    <a href="../c_base/pointer_reference/" class="dropdown-item">pointer_reference</a>
+    <a href="../c_base/pointer_reference.md" class="dropdown-item">pointer_reference</a>
 </li>
                                     
 <li>
-    <a href="../c_base/static/" class="dropdown-item">static</a>
+    <a href="../c_base/static.md" class="dropdown-item">static</a>
 </li>
                                     
 <li>
-    <a href="../c_base/virtual/" class="dropdown-item">virtual</a>
+    <a href="../c_base/virtual.md" class="dropdown-item">virtual</a>
 </li>
                                 </ul>
                             </li>
@@ -115,7 +115,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../EffectiveCPP/rule/" class="dropdown-item">RULES</a>
+    <a href="../EffectiveCPP/rule.md" class="dropdown-item">RULES</a>
 </li>
                                 </ul>
                             </li>
@@ -195,7 +195,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../Network/home/" class="dropdown-item">home</a>
+    <a href="../Network/home.md" class="dropdown-item">home</a>
 </li>
                                     
 <li>
@@ -275,8 +275,178 @@
 
 <h1 id="_1">面试题</h1>
 <ul>
-<li>海量数据排序，寻找TOPK</li>
-</ul></div>
+<li>将阿拉伯数字转成大写中文，数字整数部分不会超过九位，小数部分不超过三位</li>
+</ul>
+<pre><code class="language-C">void test(double _money){
+    vector&lt;string&gt; nums{
+        &quot;零&quot;, &quot;壹&quot;, &quot;贰&quot;, &quot;叁&quot;, &quot;肆&quot;, &quot;伍&quot;, &quot;陆&quot;, &quot;柒&quot;, &quot;捌&quot;, &quot;玖&quot;
+    };
+    vector&lt;string&gt; radix{
+        &quot;圆&quot;, &quot;拾&quot;, &quot;佰&quot;, &quot;仟&quot;, &quot;万&quot;, &quot;拾&quot;, &quot;佰&quot;, &quot;仟&quot;, &quot;亿&quot;
+    };
+    int money = (int)_money, point = (int)(_money - money) * 1000 + 1;
+    vector&lt;string&gt; ans;
+    int cnt = 0, tmp=0;
+    while (money) {
+        tmp = money % 10;
+        if (tmp != 0) {
+            ans.emplace_back(radix[cnt]);
+            ans.emplace_back(nums[tmp]);
+        }
+        else {
+            if ((cnt % 4)==0)ans.emplace_back(radix[cnt]);
+            else if (ans.back() != &quot;零&quot; &amp;&amp; ans.back()!=&quot;圆&quot;  &amp;&amp; ans.back() != &quot;万&quot;) {
+                ans.emplace_back(&quot;零&quot;);
+            }
+        }
+        cnt++;
+        money /= 10;
+    }
+    string result = &quot;&quot;;
+    for (int i = ans.size() - 1;i &gt;= 0;i--) {
+        result += ans[i];
+    }
+    vector&lt;string&gt; extra;
+    cnt = 1;
+    while (point) {
+        tmp = point%10;
+        point /= 10;
+        if (tmp != 0) {
+            if (cnt == 1)extra.emplace_back(&quot;厘&quot;);
+            else if (cnt == 2)extra.emplace_back(&quot;分&quot;);
+            else if (cnt == 3) extra.emplace_back(&quot;角&quot;);
+            extra.emplace_back(nums[tmp]);
+        }
+        cnt++;
+    }
+    for(int i=extra.size()-1;i&gt;=0;i--)
+        result += extra[i];
+    cout &lt;&lt; result &lt;&lt; endl;
+}
+
+//输入 123456789.123
+//输出 壹亿贰仟叁佰肆拾伍万陆仟柒佰捌拾玖圆壹角贰分叁厘
+//输入 120304010.102
+//输出 壹亿贰仟零叁拾万肆仟零壹拾圆壹角贰厘
+</code></pre>
+<ul>
+<li>共有n台服务器，每台服务器每秒处理的最大请求数为qps[ i ], 设计一个调度算法，每个客服端使用该调度算法时会生成一个服务器编号(0~n-1)，设计的算法应保证同一时刻有多个客户端发起请求时，某个服务器不会过载，或者说server[ i ]接收的请求数与server[ j ]接收的请求数应有server[ i ]:server[ j ] = qps[ i ]:qps[ j ].</li>
+</ul>
+<pre><code class="language-C">void findX(vector&lt;int&gt;&amp; qps){
+    int sum=0;
+    int len=qps.size();
+    vector&lt;int&gt; vec(len+1, 0);
+    for(int i=0;i&lt;len;i++){
+        sum += qps[i];
+        vec[i+1] = sum;
+    }
+    srand(clock());
+    int target=rand()%(sum-1);
+    int left=0, right=len;
+    cout&lt;&lt;&quot;target:&quot;&lt;&lt;target&lt;&lt;endl;  //模拟每次客户端每次发送请求时产生的随机数
+    while(left&lt;=right){
+        int mid=(left+right)/2;
+        if(vec[mid] &lt; target)left=mid+1;
+        else right=mid-1;
+    }
+    if(vec[left]==target)cout&lt;&lt;left;
+    else cout&lt;&lt;left-1;
+    cout&lt;&lt;endl;
+}
+int main(){
+    vector&lt;int&gt; qps{3, 6, 9, 2, 10, 5};
+    findX(qps);
+    return 0;
+}
+</code></pre>
+<ul>
+<li>有n个排序好的数组/链表，将它们合并成一个有序的数组/链表</li>
+</ul>
+<pre><code class="language-C">/*
+给你一个链表数组，每个链表都已经按升序排列。请你将所有链表合并到一个升序链表中，返回合并后的链表.
+lists中可能存在空链表
+采用堆的方式
+*/
+class Solution {
+public:
+    ListNode* mergeKLists(vector&lt;ListNode*&gt;&amp; lists) {
+        if(lists.size()==0)return nullptr;
+        int k=lists.size(), cnt=k;
+        priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt; &gt;  heap;
+        ListNode *root = new ListNode(-1), *cur=root;
+        while(cnt){
+            cnt=k;
+            for(auto&amp; node:lists){
+                if(node){
+                    heap.push(node-&gt;val);
+                    node=node-&gt;next;
+                }else cnt--;
+            }
+            if(cnt==0)break;
+            cur-&gt;next=new ListNode(heap.top());
+            heap.pop();
+            cur = cur-&gt;next;
+        }
+        while(!heap.empty()){
+            cur-&gt;next=new ListNode(heap.top());
+            heap.pop();
+            cur = cur-&gt;next;
+        }
+        return root-&gt;next;
+    }
+};
+</code></pre>
+<ul>
+<li>
+<p>hashmap的数组大小为什么是2的幂次<br />
+h=hash(key), h在数组中的位置为 h%length， 而如果length是2的整数次幂，则 h%length 等于 h&amp;(length-1)，而&amp;的效率要高于%，出于这个原因，数组扩容时直接翻倍即可。  </p>
+</li>
+<li>
+<p>给定一个数组，给定一个数字，返回数组中所有两数之和为指定数字的两个数的索引  </p>
+</li>
+</ul>
+<pre><code class="language-C">void findIndex(vector&lt;int&gt;&amp; nums, int target, vector&lt;vector&lt;int&gt;&gt;&amp; ans){
+    unordered_map&lt;int, vector&lt;int&gt;&gt; memo;
+    for(int i=0; i&lt;nums.size(); i++){
+        if(memo.count(nums[i]) == 0){
+            memo[nums[i]] = vector&lt;int&gt;{i};
+        }else{
+            memo[nums[i]].push_back(i);
+        }
+    }
+    for(auto &amp;v:memo){
+        if(memo.count(target - v.first)){
+            for(auto&amp; a1:v.second){
+                vector&lt;int&gt; res(2);
+                res[0]=a1;
+                for(auto&amp; a2:memo[target-v.first]){
+                    res[1] = a2;
+                    ans.push_back(res);
+                }
+            }
+            memo.erase(target-v.first);
+        }
+    }
+}
+int main()
+{   
+    vector&lt;int&gt; nums{4, 4, 2, 4};
+    vector&lt;vector&lt;int&gt;&gt; ans;
+    findIndex(nums, 6, ans);
+    for(auto &amp;v:ans){
+        for(int i:v){
+            cout&lt;&lt;i&lt;&lt;&quot; &quot;;
+        }
+        cout&lt;&lt;endl;
+    }
+    return 0;
+}
+/*
+2 0
+2 1
+2 3
+*/
+</code></pre></div>
             </div>
         </div>
 

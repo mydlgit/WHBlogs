@@ -38,75 +38,75 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../c_base/callable/" class="dropdown-item">callable</a>
+    <a href="../../c_base/callable.md" class="dropdown-item">callable</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/class/" class="dropdown-item">class</a>
+    <a href="../../c_base/class.md" class="dropdown-item">class</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/Complementary/" class="dropdown-item">complementary</a>
+    <a href="../../c_base/Complementary.md" class="dropdown-item">complementary</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/const/" class="dropdown-item">const</a>
+    <a href="../../c_base/const.md" class="dropdown-item">const</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/constructor_destructor/" class="dropdown-item">constructor_destructor</a>
+    <a href="../../c_base/constructor_destructor.md" class="dropdown-item">constructor_destructor</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/container/" class="dropdown-item">container</a>
+    <a href="../../c_base/container.md" class="dropdown-item">container</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/exception/" class="dropdown-item">exception</a>
+    <a href="../../c_base/exception.md" class="dropdown-item">exception</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/function/" class="dropdown-item">function</a>
+    <a href="../../c_base/function.md" class="dropdown-item">function</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/friend_template/" class="dropdown-item">friend_template</a>
+    <a href="../../c_base/friend_template.md" class="dropdown-item">friend_template</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/initialization/" class="dropdown-item">initialization</a>
+    <a href="../../c_base/initialization.md" class="dropdown-item">initialization</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/inline/" class="dropdown-item">inline</a>
+    <a href="../../c_base/inline.md" class="dropdown-item">inline</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/inherit/" class="dropdown-item">inherit</a>
+    <a href="../../c_base/inherit.md" class="dropdown-item">inherit</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/iterator/" class="dropdown-item">iterator</a>
+    <a href="../../c_base/iterator.md" class="dropdown-item">iterator</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/memory/" class="dropdown-item">memory</a>
+    <a href="../../c_base/memory.md" class="dropdown-item">memory</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/new_delete/" class="dropdown-item">new_delete</a>
+    <a href="../../c_base/new_delete.md" class="dropdown-item">new_delete</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/pointer_reference/" class="dropdown-item">pointer_reference</a>
+    <a href="../../c_base/pointer_reference.md" class="dropdown-item">pointer_reference</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/static/" class="dropdown-item">static</a>
+    <a href="../../c_base/static.md" class="dropdown-item">static</a>
 </li>
                                     
 <li>
-    <a href="../../c_base/virtual/" class="dropdown-item">virtual</a>
+    <a href="../../c_base/virtual.md" class="dropdown-item">virtual</a>
 </li>
                                 </ul>
                             </li>
@@ -115,7 +115,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../EffectiveCPP/rule/" class="dropdown-item">RULES</a>
+    <a href="../../EffectiveCPP/rule.md" class="dropdown-item">RULES</a>
 </li>
                                 </ul>
                             </li>
@@ -195,7 +195,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../Network/home/" class="dropdown-item">home</a>
+    <a href="../../Network/home.md" class="dropdown-item">home</a>
 </li>
                                     
 <li>
@@ -341,6 +341,26 @@
             vec[j]=std::move(tmp);
         }
     }
+
+    // 对链表进行插入排序
+    ListNode* insertionSortList(ListNode* head) {
+        ListNode *dumpy = new ListNode(-1, head), *lastSorted=head, *cur = head-&gt;next;
+        while(cur){
+            if(lastSorted-&gt;val &lt;= cur-&gt;val){
+                lastSorted = lastSorted-&gt;next;
+            }else{
+                ListNode *prev=dumpy;
+                while(prev-&gt;next-&gt;val &lt;=cur-&gt;val){
+                    prev=prev-&gt;next;
+                }
+                lastSorted-&gt;next = cur-&gt;next;
+                cur-&gt;next = prev-&gt;next;
+                prev-&gt;next = cur;
+            }
+            cur = lastSorted-&gt;next;
+        }
+        return dumpy-&gt;next;
+    }
 </code></pre>
 <p><strong>简单排序算法的下界</strong>:<br />
 &emsp;N个互异元素的数组其和自身逆序后数组，两个数组中存在的逆序对的数量和是C<sup>2</sup><sub>N</sub>=N(N-1)/2，故N个互异元素的数组中存在的平均逆序对数是N(N-1)/4。<br />
@@ -455,7 +475,9 @@
 </code></pre>
 <ul>
 <li>7、快速排序, 时间复杂度O(Nlog N)<br />
-&emsp;针对可能出现的预排序的数据或包含一大段排序数据，固定第一个或中间元素作为枢纽元可能会对排序时间造成严重伤害，因为此时枢纽元无法很好的将数组分割成均匀的两部分;随机选取则需要借助随机数发生器，带来额外开销；这里采用三元中值法选取枢纽，即开始、中间、末尾三个元素的中值作为枢纽元。  </li>
+&emsp;将第一个元素作为枢纽元，如果输入是随机的，那么是可以接受的，但如果输入是预排序的或者逆序的，那将产生一个劣质的分割，所有的元素都被划分到一个集合中；
+&emsp;随机选取枢纽元，是安全的，但是生成随机数会有额外的开销，会增加算法其余部分的平均运行时间。
+&emsp;枢纽元的最佳选择是数组的中值，但是无法提前获知的，因此可以采用三元中值法选取枢纽，即开始、中间、末尾三个元素的中值作为枢纽元来近似估计。  </li>
 </ul>
 <pre><code class="language-C">    //快速排序 简易版
     void simple_quick_sort(std::vector&lt;int&gt;&amp; vec){

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>创建型模式 - Note</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Note</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">C++ Base <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../c_base/callable.md" class="dropdown-item">callable</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/class.md" class="dropdown-item">class</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/Complementary.md" class="dropdown-item">complementary</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/const.md" class="dropdown-item">const</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/constructor_destructor.md" class="dropdown-item">constructor_destructor</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/container.md" class="dropdown-item">container</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/exception.md" class="dropdown-item">exception</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/function.md" class="dropdown-item">function</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/friend_template.md" class="dropdown-item">friend_template</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/initialization.md" class="dropdown-item">initialization</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inline.md" class="dropdown-item">inline</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/inherit.md" class="dropdown-item">inherit</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/iterator.md" class="dropdown-item">iterator</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/memory.md" class="dropdown-item">memory</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/new_delete.md" class="dropdown-item">new_delete</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/pointer_reference.md" class="dropdown-item">pointer_reference</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/static.md" class="dropdown-item">static</a>
+</li>
+                                    
+<li>
+    <a href="../../c_base/virtual.md" class="dropdown-item">virtual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">EffectiveCPP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../EffectiveCPP/rule.md" class="dropdown-item">RULES</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Linux os <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../os/0_index/" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../os/1_introduction/" class="dropdown-item">1_开始</a>
+</li>
+                                    
+<li>
+    <a href="../../os/2_as86/" class="dropdown-item">2_汇编语法</a>
+</li>
+                                    
+<li>
+    <a href="../../os/3_80x86_protect_mode/" class="dropdown-item">3_保护模式</a>
+</li>
+                                    
+<li>
+    <a href="../../os/4_kernel_struct/" class="dropdown-item">4_内核体系结构</a>
+</li>
+                                    
+<li>
+    <a href="../../os/5_os/" class="dropdown-item">5_现代操作系统</a>
+</li>
+                                    
+<li>
+    <a href="../../os/7_simple_os/" class="dropdown-item">7_simple_os</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MySQL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../MySQL/0_start/" class="dropdown-item">home</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DataStruct <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../DataStruct/Tree/" class="dropdown-item">Tree</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Sort/" class="dropdown-item">Sort</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Graph/" class="dropdown-item">Graph</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/OtherStruct/" class="dropdown-item">Others</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/Algorithm/" class="dropdown-item">Algorithm</a>
+</li>
+                                    
+<li>
+    <a href="../../DataStruct/API/" class="dropdown-item">API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Network <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Network/home.md" class="dropdown-item">home</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/1_application/" class="dropdown-item">application</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/2_transport/" class="dropdown-item">transport</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/3_network/" class="dropdown-item">network</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/4_link/" class="dropdown-item">link</a>
+</li>
+                                    
+<li>
+    <a href="../../Network/5_netsafe/" class="dropdown-item">safe</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">interview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../interview/" class="dropdown-item">面试</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">创建型模式</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">单例模式</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">工厂模式</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">抽象工厂模式</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">创建型模式</h1>
+<p>创建型模式提供了创建对象的机制， 能够提升已有代码的灵活性和可复用性。</p>
+<h2 id="_2">单例模式</h2>
+<p>&emsp;保证一个类只有一个实例(控制某些共享资源 （例如数据库或文件） 的访问权限);<br />
+&emsp;为该实例提供一个全局访问节点。  </p>
+<ul>
+<li>实现 <br />
+    <pre>
+将默认构造函数设为私有: 防止其他对象使用单例类的 new运算符。
+新建一个静态构建方法作为构造函数: 该函数会 “偷偷” 调用私有构造函数来创建对象， 
+并将其保存在一个静态成员变量中, 此后所有对于该函数的调用都将返回这一缓存对象。
+</pre></li>
+</ul>
+<pre><code class="language-C">class Singleton
+{
+private:
+    static Singleton * pinstance_;
+    static std::mutex mutex_;
+protected:
+    Singleton(const std::string value): value_(value){}
+    ~Singleton() {}
+    std::string value_;
+public:
+    Singleton(Singleton &amp;other) = delete;
+    void operator=(const Singleton &amp;) = delete;
+    static Singleton *GetInstance(const std::string&amp; value);
+    void SomeBusinessLogic(){// ...}
+    std::string value() const{
+        return value_;
+    } 
+};
+/**
+ * Static methods should be defined outside the class.
+ */
+Singleton* Singleton::pinstance_{nullptr};
+std::mutex Singleton::mutex_;
+/**
+ * The first time we call GetInstance we will lock the storage location
+ *      and then we make sure again that the variable is null and then we
+ *      set the value. RU:
+ */
+Singleton *Singleton::GetInstance(const std::string&amp; value)
+{
+    std::lock_guard&lt;std::mutex&gt; lock(mutex_);
+    if (pinstance_ == nullptr)
+    {
+        pinstance_ = new Singleton(value);
+    }
+    return pinstance_;
+}
+
+void ThreadFoo(){
+    // Following code emulates slow initialization.
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    Singleton* singleton = Singleton::GetInstance(&quot;FOO&quot;);
+    std::cout &lt;&lt; singleton-&gt;value() &lt;&lt; &quot;\n&quot;;
+}
+
+void ThreadBar(){
+    // Following code emulates slow initialization.
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    Singleton* singleton = Singleton::GetInstance(&quot;BAR&quot;);
+    std::cout &lt;&lt; singleton-&gt;value() &lt;&lt; &quot;\n&quot;;
+}
+
+int main()
+{   
+    std::cout &lt;&lt;&quot;If you see the same value, then singleton was reused (yay!\n&quot; &lt;&lt;
+                &quot;If you see different values, then 2 singletons were created (booo!!)\n\n&quot; &lt;&lt;
+                &quot;RESULT:\n&quot;;   
+    std::thread t1(ThreadFoo);
+    std::thread t2(ThreadBar);
+    t1.join();
+    t2.join();
+
+    return 0;
+</code></pre>
+<h2 id="_3">工厂模式</h2>
+<p>&emsp;定义一个创建对象的接口，让其子类自己决定实例化哪一个工厂类，工厂模式使其创建过程延迟到子类进行。  <br />
+&emsp;优点： 1、一个调用者想创建一个对象，只要知道其名称就可以了。 2、扩展性高，如果想增加一个产品，只要扩展一个工厂类就可以。 3、屏蔽产品的具体实现，调用者只关心产品的接口。<br />
+&emsp;缺点：每次增加一个产品时，都需要增加一个具体类和对象实现工厂，使得系统中类的个数成倍增加，在一定程度上增加了系统的复杂度，同时也增加了系统具体类的依赖。这并不是什么好事。  </p>
+<pre><code class="language-JAVA">//创建接口
+//Shape.java
+public interface Shape {
+   void draw();
+}
+
+//创建实现接口的实体类。
+//Rectangle.java
+public class Rectangle implements Shape {
+   @Override
+   public void draw() {
+      System.out.println(&quot;Inside Rectangle::draw() method.&quot;);
+   }
+}
+//Square.java
+public class Square implements Shape {
+   @Override
+   public void draw() {
+      System.out.println(&quot;Inside Square::draw() method.&quot;);
+   }
+}
+//Circle.java
+public class Circle implements Shape {
+   @Override
+   public void draw() {
+      System.out.println(&quot;Inside Circle::draw() method.&quot;);
+   }
+}
+
+//创建一个工厂，生成基于给定信息的实体类的对象。
+//ShapeFactory.java
+public class ShapeFactory {  
+   //使用 getShape 方法获取形状类型的对象
+   public Shape getShape(String shapeType){
+      if(shapeType == null){
+         return null;
+      }        
+      if(shapeType.equalsIgnoreCase(&quot;CIRCLE&quot;)){
+         return new Circle();
+      } else if(shapeType.equalsIgnoreCase(&quot;RECTANGLE&quot;)){
+         return new Rectangle();
+      } else if(shapeType.equalsIgnoreCase(&quot;SQUARE&quot;)){
+         return new Square();
+      }
+      return null;
+   }
+}
+
+//使用该工厂，通过传递类型信息来获取实体类的对象。
+//FactoryPatternDemo.java
+public class FactoryPatternDemo {
+   public static void main(String[] args) {
+      ShapeFactory shapeFactory = new ShapeFactory();
+      //获取 Circle 的对象，并调用它的 draw 方法
+      Shape shape1 = shapeFactory.getShape(&quot;CIRCLE&quot;);
+      //调用 Circle 的 draw 方法
+      shape1.draw();
+      //获取 Rectangle 的对象，并调用它的 draw 方法
+      Shape shape2 = shapeFactory.getShape(&quot;RECTANGLE&quot;); 
+      //调用 Rectangle 的 draw 方法
+      shape2.draw();
+      //获取 Square 的对象，并调用它的 draw 方法
+      Shape shape3 = shapeFactory.getShape(&quot;SQUARE&quot;);
+      //调用 Square 的 draw 方法
+      shape3.draw();
+   }
+}
+</code></pre>
+<h2 id="_4">抽象工厂模式</h2>
+<p>&emsp;围绕一个超级工厂创建其他工厂, 该超级工厂又称为其他工厂的工厂;在抽象工厂模式中，接口是负责创建一个相关对象的工厂，
+不需要显式指定它们的类。每个生成的工厂都能按照工厂模式提供对象。<br />
+&emsp;如果代码需要与多个不同系列的相关产品交互， 但是由于无法提前获取相关信息， 或者出于对未来扩展性的考虑， 
+你不希望代码基于产品的具体类进行构建， 在这种情况下， 你可以使用抽象工厂。<br />
+&emsp;抽象工厂为你提供了一个接口， 可用于创建每个系列产品的对象。 只要代码通过该接口创建对象， 
+那么你就不会生成与应用程序已生成的产品类型不一致的产品。
+<img alt="avaatar" src="../../images/DesignPattern/1.png" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
